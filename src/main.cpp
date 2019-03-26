@@ -1574,9 +1574,6 @@ int64_t GetBlockValue(int nHeight)
 {
     
     CBlockIndex* pindexActual = chainActive.Tip();
-    
-    for(int i=0; i<pindexActual; ++i)
-        std::cout << pindexActual[i] << ' ';
         
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     CAmount nTx = pindexActual->nTx;
