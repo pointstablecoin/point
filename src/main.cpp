@@ -43,7 +43,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "MERGE cannot be compiled without assertions."
+#error "POINT cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -1581,6 +1581,7 @@ int64_t GetBlockValue(int nHeight)
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);
+    LogPrintf("############################PRINT nLastBlockTx: %d", nLastBlockTx);
     
     if (nHeight == 0) {
         return 100000000 * COIN;
