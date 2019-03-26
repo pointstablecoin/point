@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MERGE
+Comment=MERGE P2P Cryptocurrency
+Comment[fr]=MERGE, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=MERGE, eşten eşe kriptografik sanal para birimi
+Exec=merge-qt %u
+Terminal=false
+Type=Application
+Icon=MERGE128
+MimeType=x-scheme-handler/MERGE;
+Categories=Office;Finance;
