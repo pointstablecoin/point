@@ -46,10 +46,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0,  uint256("0x00000e44bca505863831d65cf302884eaf6eed296dc59088e89324bccf5d9dca"))
-    (5,  uint256("0x000000c286816d11a56d750f7a060860cc915d7153bd86766fa77a3d7a2b01dc"))
-    (10, uint256("0x000007e0ba8c10fca3dd32a453f1c92c834f91e9e424e9ef4f70568c108e56fe"))
-    (15, uint256("0x00000430b1e322298082e63175fafa7bccd907e3c2c0a860011184e92181e8f1"));
+    (0,  uint256("0x00000e44bca505863831d65cf302884eaf6eed296dc59088e89324bccf5d9dca"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -120,11 +117,11 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x2b77d68f79c8c45b77335607c928533950da763a4a16c34555bdf8446aa6cc1c"));
 
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("projectmerge.org", "seed.projectmerge.org"));
+        vSeeds.push_back(CDNSSeedData("165.227.14.110", "165.227.14.110"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 50); // M
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 53); // N
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 178);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55); // M
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16); // N
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 204);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
@@ -143,7 +140,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "0421783d5f8b38c2f71f10a7e8a4c5df39bfe1d3ca10dd17e5fc76ff5b523ab21e89ae0276aae967d0d7f26c3f34136acdc0a2f41bab19cc262658703f38a3da55";
-        strObfuscationPoolDummyAddress = "MERGEXXXXXXXXXXXXXXXXXXXXXXXYmkoB4";
+        strObfuscationPoolDummyAddress = "POINTXXXXXXXXXXXXXXXXXXXXXXXH7grFt";
         nStartMasternodePayments = genesis.nTime + 5400;
         nBudget_Fee_Confirmations = 6;
     }
@@ -220,8 +217,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("mergetest-seed.mergeseeders.com", "mergetest-seed.mergeseeders.com"));
-        vSeeds.push_back(CDNSSeedData("mergetest-seed.mergeseeders.org", "mergetest-seed.mergeseeders.org"));
+        vSeeds.push_back(CDNSSeedData("165.227.14.110", "165.227.14.110"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 80); // Z
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83); // a
@@ -244,7 +240,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04aba3f6d2e8066a19ef79724d7340d3259dea3fc00b7a8ad7e60e91c0984609ab33559f80dd366894ecfcf26025bd2db59a8b8de444fdcff349e07ae36399ad67";
-        strObfuscationPoolDummyAddress = "ZERGEXXXXXXXXXXXXXXXXXXXXXXXcMy12n";
+        strObfuscationPoolDummyAddress = "TOINTXXXXXXXXXXXXXXXXXXXXXXXJ7nw4G";
         nStartMasternodePayments = genesis.nTime + 5400;
         nBudget_Fee_Confirmations = 6;
     }
