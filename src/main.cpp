@@ -1572,53 +1572,25 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 int64_t GetBlockValue(int nHeight)
 {
-    if (Params().NetworkID() == CBaseChainParams::MAIN) {
-      if (nHeight == 0) { return 33000000 * COIN;
-        } else if (nHeight > 0 && nHeight <= 43201)     { return 15 * COIN;
-        } else if (nHeight > 43201 && nHeight <= 57601) { return 10 * COIN;
-        } else if (nHeight > 57601 && nHeight <= 72001) { return 20 * COIN;
-        } else if (nHeight > 72001 && nHeight <= 86401) { return 30 * COIN;
-        } else if (nHeight > 86401 && nHeight <= 100801) { return 40 * COIN;
-        } else if (nHeight > 100801 && nHeight <= 144001) { return 50 * COIN;
-        } else if (nHeight > 144001 && nHeight <= 273601) { return 55 * COIN;
-        } else if (nHeight > 273601 && nHeight <= 316801) { return 50 * COIN;
-        } else if (nHeight > 316801 && nHeight <= 360001) { return 45 * COIN;
-        } else if (nHeight > 360001 && nHeight <= 403201) { return 40 * COIN;
-        } else if (nHeight > 403201 && nHeight <= 446401) { return 35 * COIN;
-        } else if (nHeight > 446401 && nHeight <= 489601) { return 30 * COIN;
-        } else if (nHeight > 489601 && nHeight <= 532802) { return 25 * COIN;
-        } else if (nHeight > 532802 && nHeight <= 576003) { return 24 * COIN;
-        } else if (nHeight > 576003 && nHeight <= 662404) { return 23 * COIN;
-        } else if (nHeight > 662404 && nHeight <= 748805) { return 22 * COIN;
-        } else if (nHeight > 748805 && nHeight <= 835206) { return 21 * COIN;
-        } else if (nHeight > 835206 && nHeight <= 969127) { return 20 * COIN;
-        } else if (nHeight > 969127 && nHeight <= 1098728) { return 19 * COIN;
-        } else if (nHeight > 1098728 && nHeight <= 1228329) { return 18 * COIN;
-        } else if (nHeight > 1228329 && nHeight <= 1357930) { return 17 * COIN;
-        } else if (nHeight > 1357930 && nHeight <= 1487531) { return 16 * COIN;
-        } else if (nHeight > 1487531 && nHeight <= 1660332) { return 15 * COIN;
-        } else if (nHeight > 1660332 && nHeight <= 1833133) { return 14 * COIN;
-        } else if (nHeight > 1833133 && nHeight <= 2049134) { return 13 * COIN;
-        } else if (nHeight > 2049134 && nHeight <= 2265135) { return 12 * COIN;
-        } else if (nHeight > 2265135 && nHeight <= 2481136) { return 11 * COIN;
-        } else if (nHeight > 2481136 && nHeight <= 2697137) { return 10 * COIN;
-        } else if (nHeight > 2697137 && nHeight <= 2956338) { return 9 * COIN;
-        } else if (nHeight > 2956338 && nHeight <= 3215539) { return 8 * COIN;
-        } else if (nHeight > 3215539 && nHeight <= 3474740) { return 7 * COIN;
-        } else if (nHeight > 3474740 && nHeight <= 3733941) { return 6 * COIN;
-        } else if (nHeight > 3733941 && nHeight <= 3993142) { return 5 * COIN;
-        } else if (nHeight > 3993142 && nHeight <= 4338743) { return 4 * COIN;
-        } else if (nHeight > 4338743 && nHeight <= 4684344) { return 3 * COIN;
-        } else if (nHeight > 4684344 && nHeight <= 5029945) { return 2 * COIN;
-        } else if (nHeight > 5029945 && nHeight <= 5314421) { return 1 * COIN;
-        } else if (nHeight > 5314421 && nHeight <= 9999999) { return 0 * COIN;
-      }
-    } else {
-      if (nHeight == 0) { return 33000000 * COIN;
-        } else if (nHeight > 0 && nHeight <= 500)      { return 15 * COIN;
-        } else if (nHeight > 500 && nHeight <= 999999) { return 30 * COIN;
-      }
+    
+    CBlockIndex* pindexActual = chainActive.Tip();
+    
+    for(int i=0; i<pindexActual; ++i)
+        std::cout << pindexActual[i] << ' ';
+        
+    CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
+    CAmount nTx = pindexActual->nTx;
+    CAmount nMoneySupplyAnterior = pindexActual->pprev->nMoneySupply;
+    
+    LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
+    LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);
+    
+    if (nHeight == 0) {
+        return 100000000 * COIN;
+    } else if (nHeight > 0){
+        return 1 * COIN;
     }
+    
     return 0;
 }
 
