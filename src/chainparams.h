@@ -122,7 +122,7 @@ protected:
     int nMaturity;
     int nModifierUpdateBlock;
     CAmount nMaxMoneyOut;
-    CAmount nValueOut
+    CAmount nValueOut;
     int nMinerThreads;
     std::vector<CDNSSeedData> vSeeds;
     std::vector<unsigned char> base58Prefixes[MAX_BASE58_TYPES];
