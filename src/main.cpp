@@ -2187,8 +2187,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         }
         nValueOut += tx.GetValueOut();
         
-        Params().MaxMoneyOut() = nValueOut;
-
         CTxUndo undoDummy;
         if (i > 0) {
             blockundo.vtxundo.push_back(CTxUndo());
