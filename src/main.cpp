@@ -1582,8 +1582,9 @@ int64_t GetBlockValue(int nHeight)
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);
     
-    for (auto i: pindexActual)
+    for (auto i: pindexActual){}
         std::cout << i << ' ';
+}
     
     if (nHeight == 0) {
         return 100000000 * COIN;
