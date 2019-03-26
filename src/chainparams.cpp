@@ -94,7 +94,6 @@ public:
         nMaturity = 25;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN;
-        nValueOut = 0;
         nLastPOWBlock = 57601;
         nModifierUpdateBlock = 50;
 
@@ -181,7 +180,6 @@ public:
         nStakeMinAge = 60 * 60;
         nMaturity = 25;
         nMasternodeCountDrift = 20;
-        nValueOut = 0;
         nMaxMoneyOut = 100000000 * COIN;
         nLastPOWBlock = 1000;
         nModifierUpdateBlock = 50;
