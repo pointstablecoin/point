@@ -1577,12 +1577,12 @@ int64_t GetBlockValue(int nHeight)
     
     CBlockIndex* pindexActual = chainActive.Tip();
             
-    CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
-    int64_t nTx = pindexActual->nTx;
+    CAmount nMoneySupplyActual = pindexActual->nMoneySupply / 100000000;
+    int64_t nTx = pindexActual->nTx - 1;
     if (nMoneySupplyActual < 1){
         nMoneySupplyActual = 1;
     }
-    CAmount nVelocidad = nMoneySupplyActual / nValorTotal;
+    CAmount nVelocidad = nValorTotal / nMoneySupplyActual;
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", nMoneySupplyActual);
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
@@ -2168,7 +2168,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
     
-    nValorTotal = nValueOut;
+    nValorTotal = (nValueOut / 100000000) - 1;
 
     //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
     //          FormatMoney(nValueOut), FormatMoney(nValueIn),
