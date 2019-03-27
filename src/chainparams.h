@@ -16,6 +16,8 @@
 
 #include <vector>
 
+CAmount nValueOut = 0;
+
 typedef unsigned char MessageStartChars[MESSAGE_START_SIZE];
 
 struct CDNSSeedData {
