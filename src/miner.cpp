@@ -317,6 +317,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             nBlockSigOps += nTxSigOps;
             nFees += nTxFees;
             CAmount nValorTotal = nValorTotal + tx.GetValueOut();
+            LogPrintf("###############VALOR TOTAL EN MINER: %d\n", nValorTotal);
 
             if (fPrintPriority) {
                 LogPrintf("priority %.1f fee %s txid %s\n",
