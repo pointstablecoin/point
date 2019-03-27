@@ -1587,10 +1587,10 @@ int64_t GetBlockValue(int nHeight)
     
     double nVelocidad = nValorTotal / nMoneySupplyActual;
     
-    LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
+    LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", nMoneySupplyActual);
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
-    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", FormatMoney(nValorTotal));
-    LogPrintf("############################PRINT TEST VELOCIDAD: %d.\n", FormatMoney(nVelocidad));
+    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", nValorTotal);
+    LogPrintf("############################PRINT TEST VELOCIDAD: %d.\n", nVelocidad);
     
     LogPrintf("\n\n");
     
