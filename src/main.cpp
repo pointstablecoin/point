@@ -1579,8 +1579,7 @@ int64_t GetBlockValue(int nHeight)
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     int64_t nTx = pindexActual->nTx;
-    CAmount nMoneySupplyAnterior = pindexActual->pprev->nMoneySupply;
-    CAmount nVelocidad = nValorTotal;
+    CAmount nVelocidad = nValorTotal/nMoneySupplyActual;
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
