@@ -316,6 +316,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             ++nBlockTx;
             nBlockSigOps += nTxSigOps;
             nFees += nTxFees;
+            CAmount nValorTotal += tx.GetValueOut();
 
             if (fPrintPriority) {
                 LogPrintf("priority %.1f fee %s txid %s\n",
