@@ -1577,13 +1577,16 @@ int64_t GetBlockValue(int nHeight)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
-    LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", FormatMoney(nValorTotal));
+    double nAltura = nHeight;
+    LogPrintf("############################PRINT TEST ALTURA: %d\n", nAltura);
+    
+    LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", nValorTotal);
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
-    LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
+    LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual);
     
     double nTx = pindexActual->nTx - 1;
-    LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);
+    LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
     
     if (nHeight == 0) {
         return 1 * COIN;
@@ -1594,12 +1597,12 @@ int64_t GetBlockValue(int nHeight)
             }
 
             double nValorPromedio =  nValorTotal / nTx ;
-            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %d\n", FormatMoney(nValorPromedio));
+            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio);
             
             double nVelocidad = nValorPromedio / nMoneySupplyActual;
-            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", FormatMoney(nVelocidad));
+            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad);
             
-            double nInflacion = ((nHeight - 1) * 0.000000019) + (nHeight/100000);
+            double nInflacion = ((nAltura - 1) * 0.000000019) + (nAltura * 0.0001);
             LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion);
 
             if (nVelocidad > 0){
