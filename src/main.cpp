@@ -1579,30 +1579,34 @@ int64_t GetBlockValue(int nHeight)
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     int64_t nTx = pindexActual->nTx;
-    if (nMoneySupplyActual < 1){
-        nMoneySupplyActual = 1;
-    }
-        
-    double nValorPromedio = nValorTotal / nTx;
-    double nVelocidad = nValorPromedio / nMoneySupplyActual;
-    
-    if (nVelocidad > 0){
-        LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA");
-    }
-    
-    LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
-    LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);  
-    LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", FormatMoney(nValorTotal));
-    LogPrintf("############################PRINT TEST VALOR PROMEDIO: %d\n", FormatMoney(nValorPromedio));
-    LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", FormatMoney(nVelocidad));
-    
-    LogPrintf("\n\n");
-    
-    
-    if (nHeight == 0) {
-        return 99999999 * COIN;
-    } else if (nHeight > 0){
-        return 1 * COIN;
+    if (nTx > 1){
+        if (nMoneySupplyActual < 1){
+            nMoneySupplyActual = 1;
+        }
+
+        nValorTotal = nValorTotal - 1 * COIN;
+
+        double nValorPromedio = nValorTotal / (nTx - 1);
+        double nVelocidad = nValorPromedio / nMoneySupplyActual;
+
+        if (nVelocidad > 0){
+            LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA");
+        }
+
+        LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
+        LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);  
+        LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", FormatMoney(nValorTotal));
+        LogPrintf("############################PRINT TEST VALOR PROMEDIO: %d\n", FormatMoney(nValorPromedio));
+        LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", FormatMoney(nVelocidad));
+
+        LogPrintf("\n\n");
+
+
+        if (nHeight == 0) {
+            return 99999999 * COIN;
+        } else if (nHeight > 0){
+            return 1 * COIN;
+        }
     }
     
     return 0;
