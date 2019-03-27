@@ -1582,7 +1582,7 @@ int64_t GetBlockValue(int nHeight)
     if (nMoneySupplyActual < 1){
         nMoneySupplyActual = 1;
     }
-    double nVelocidad = nValorTotal / nMoneySupplyActual;
+    (double)nVelocidad = (double)nValorTotal / (double)nMoneySupplyActual;
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", nMoneySupplyActual);
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
