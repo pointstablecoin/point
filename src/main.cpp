@@ -1576,9 +1576,14 @@ int64_t GetBlockValue(int nHeight)
 {
     
     CBlockIndex* pindexActual = chainActive.Tip();
+    
+    LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", FormatMoney(nValorTotal));
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
+    LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
+    
     double nTx = pindexActual->nTx - 1;
+    LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);
     
     if (nHeight == 0) {
         return 1 * COIN;
@@ -1589,9 +1594,12 @@ int64_t GetBlockValue(int nHeight)
             }
 
             double nValorPromedio =  nValorTotal / nTx ;
+            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %d\n", FormatMoney(nValorPromedio));
+            
             double nVelocidad = nValorPromedio / nMoneySupplyActual;
+            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", FormatMoney(nVelocidad));
+            
             double nInflacion = ((nHeight - 1) * 0.000000019) + (nHeight/100000);
-
             LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion);
 
             if (nVelocidad > 0){
@@ -1601,18 +1609,10 @@ int64_t GetBlockValue(int nHeight)
                     return nInflacion - nValorPromedio;
                 }
             }
-
-            LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
-            LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);  
-            LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", FormatMoney(nValorTotal));
-            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %d\n", FormatMoney(nValorPromedio));
-            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", FormatMoney(nVelocidad));
-
-            LogPrintf("\n\n");
         }
     }
     
-    
+    LogPrintf("\n\n");
     
     return 0;
 }
