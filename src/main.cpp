@@ -1579,35 +1579,40 @@ int64_t GetBlockValue(int nHeight)
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     int64_t nTx = pindexActual->nTx - 1;
-    if (nTx > 1){
-        if (nMoneySupplyActual < 1){
-            nMoneySupplyActual = 1;
-        }
+    
+    if (nHeight == 0) {
+        return 1 * COIN;
+    } else {
+        if (nTx > 1){
+            if (nMoneySupplyActual < 1){
+                nMoneySupplyActual = 1;
+            }
 
-        nValorTotal = nValorTotal - 1 * COIN;
+            double nValorPromedio = double nValorTotal / nTx ;
+            double nVelocidad = nValorPromedio / nMoneySupplyActual;
+            double nInflacion = ((nHeight - 1) * 0.000000019) + (nHeight/100000);
 
-        double nValorPromedio = nValorTotal / nTx ;
-        double nVelocidad = nValorPromedio / nMoneySupplyActual;
+            LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion);
 
-        if (nVelocidad > 0){
-            LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA");
-        }
+            if (nVelocidad > 0){
+                LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA\n");
 
-        LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
-        LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);  
-        LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", FormatMoney(nValorTotal));
-        LogPrintf("############################PRINT TEST VALOR PROMEDIO: %d\n", FormatMoney(nValorPromedio));
-        LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", FormatMoney(nVelocidad));
+                if (nValorPromedio < nInflacion){
+                    return nInflacion - nValorPromedio;
+                }
+            }
 
-        LogPrintf("\n\n");
+            LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
+            LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);  
+            LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", FormatMoney(nValorTotal));
+            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %d\n", FormatMoney(nValorPromedio));
+            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", FormatMoney(nVelocidad));
 
-
-        if (nHeight == 0) {
-            return 99999999 * COIN;
-        } else if (nHeight > 0){
-            return 1 * COIN;
+            LogPrintf("\n\n");
         }
     }
+    
+    
     
     return 0;
 }
