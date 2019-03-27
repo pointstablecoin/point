@@ -1581,10 +1581,11 @@ int64_t GetBlockValue(int nHeight)
     
     
     
-    for (unsigned int i = 0; i < block.vtx.size(); i++) {
-        const CTransaction& tx = block.vtx[i];
+    for (unsigned int i = 0; i < pindexActual.size(); i++) {
+        //const CTransaction& tx = pindexActual[i];
 
-        nValueOut += tx.GetValueOut();
+        //nValueOut += tx.GetValueOut();
+        LogPrintf("############################PRINT TEST popopopop: %d.\n", pindexActual[i]);    
     }
     
     
