@@ -1583,8 +1583,8 @@ int64_t GetBlockValue(int nHeight)
         nMoneySupplyActual = 1;
     }
         
-    double nVelocidad = nValorTotal / nMoneySupplyActual;
     double nValorPromedio = nValorTotal / nTx;
+    double nVelocidad = nValorPromedio / nMoneySupplyActual;
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", FormatMoney(nMoneySupplyActual));
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d\n", nTx);  
