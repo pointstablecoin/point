@@ -83,6 +83,8 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
+CAmount nValueOut = 0;
+
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -1574,9 +1576,7 @@ int64_t GetBlockValue(int nHeight)
 {
     
     CBlockIndex* pindexActual = chainActive.Tip();
-    
-    LogPrintf("############################PRINT TEST popopopop: %d.\n", pblock); 
-        
+            
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     CAmount nTx = pindexActual->nTx;
     CAmount nMoneySupplyAnterior = pindexActual->pprev->nMoneySupply;
@@ -1594,52 +1594,8 @@ int64_t GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
-    if (Params().NetworkID() == CBaseChainParams::MAIN) {
-        if (nHeight >= 0 && nHeight <= 43201) { return 0 * COIN;
-        } else if (nHeight > 43201 && nHeight <= 57601) { return 0 * COIN;
-        } else if (nHeight > 57601 && nHeight <= 72001) { return 10.0 * COIN;
-        } else if (nHeight > 72001 && nHeight <= 86401) { return 15.0 * COIN;
-        } else if (nHeight > 86401 && nHeight <= 100801) { return 20.0 * COIN;
-        } else if (nHeight > 100801 && nHeight <= 144001) { return 25.0 * COIN;
-        } else if (nHeight > 144001 && nHeight <= 273601) { return 27.5 * COIN;
-        } else if (nHeight > 273601 && nHeight <= 316801) { return 25.0 * COIN;
-        } else if (nHeight > 316801 && nHeight <= 360001) { return 22.5 * COIN;
-        } else if (nHeight > 360001 && nHeight <= 403201) { return 20.0 * COIN;
-        } else if (nHeight > 403201 && nHeight <= 446401) { return 17.5 * COIN;
-        } else if (nHeight > 446401 && nHeight <= 489601) { return 15.0 * COIN;
-        } else if (nHeight > 489601 && nHeight <= 532802) { return 12.5 * COIN;
-        } else if (nHeight > 532802 && nHeight <= 576003) { return 12.0 * COIN;
-        } else if (nHeight > 576003 && nHeight <= 662404) { return 11.5 * COIN;
-        } else if (nHeight > 662404 && nHeight <= 748805) { return 11.0 * COIN;
-        } else if (nHeight > 748805 && nHeight <= 835206) { return 10.5 * COIN;
-        } else if (nHeight > 835206 && nHeight <= 969127) { return 10.0 * COIN;
-        } else if (nHeight > 969127 && nHeight <= 1098728) { return 9.5 * COIN;
-        } else if (nHeight > 1098728 && nHeight <= 1228329) { return 9.0 * COIN;
-        } else if (nHeight > 1228329 && nHeight <= 1357930) { return 8.5 * COIN;
-        } else if (nHeight > 1357930 && nHeight <= 1487531) { return 8.0 * COIN;
-        } else if (nHeight > 1487531 && nHeight <= 1660332) { return 7.5 * COIN;
-        } else if (nHeight > 1660332 && nHeight <= 1833133) { return 7.0 * COIN;
-        } else if (nHeight > 1833133 && nHeight <= 2049134) { return 6.5 * COIN;
-        } else if (nHeight > 2049134 && nHeight <= 2265135) { return 6.0 * COIN;
-        } else if (nHeight > 2265135 && nHeight <= 2481136) { return 5.5 * COIN;
-        } else if (nHeight > 2481136 && nHeight <= 2697137) { return 5.0 * COIN;
-        } else if (nHeight > 2697137 && nHeight <= 2956338) { return 4.5 * COIN;
-        } else if (nHeight > 2956338 && nHeight <= 3215539) { return 4.0 * COIN;
-        } else if (nHeight > 3215539 && nHeight <= 3474740) { return 3.5 * COIN;
-        } else if (nHeight > 3474740 && nHeight <= 3733941) { return 3.0 * COIN;
-        } else if (nHeight > 3733941 && nHeight <= 3993142) { return 2.5 * COIN;
-        } else if (nHeight > 3993142 && nHeight <= 4338743) { return 2.0 * COIN;
-        } else if (nHeight > 4338743 && nHeight <= 4684344) { return 1.5 * COIN;
-        } else if (nHeight > 4684344 && nHeight <= 5029945) { return 1.0 * COIN;
-        } else if (nHeight > 5029945 && nHeight <= 5314421) { return 0.5 * COIN;
-        } else if (nHeight > 5314421 && nHeight <= 9999999) { return 0.0 * COIN;
-      }
-    } else {
-      if (nHeight < 501) { return 0 * COIN;
-        } else { return 15 * COIN;
-      }
-    }
-    return 0;
+    
+    return 1 * COIN;
 }
 
 bool IsInitialBlockDownload()
