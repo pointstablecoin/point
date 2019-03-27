@@ -83,6 +83,8 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
+CAmount nValorTotal = 0;
+
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -1581,7 +1583,7 @@ int64_t GetBlockValue(int nHeight)
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
-    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", nValueOut);  
+    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", nValorTotal);  
     
     if (nHeight == 0) {
         return 100000000 * COIN;
@@ -2158,6 +2160,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     CAmount nMoneySupplyPrev = pindex->pprev ? pindex->pprev->nMoneySupply : 0;
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
+    
+    nValorTotal = nValueOut;
 
     //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
     //          FormatMoney(nValueOut), FormatMoney(nValueIn),
