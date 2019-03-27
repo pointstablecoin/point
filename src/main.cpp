@@ -1578,7 +1578,7 @@ int64_t GetBlockValue(int nHeight)
     CBlockIndex* pindexActual = chainActive.Tip();
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
-    int64_t nTx = pindexActual->nTx - 1;
+    double nTx = pindexActual->nTx - 1;
     
     if (nHeight == 0) {
         return 1 * COIN;
@@ -1588,7 +1588,7 @@ int64_t GetBlockValue(int nHeight)
                 nMoneySupplyActual = 1;
             }
 
-            double nValorPromedio = double nValorTotal / nTx ;
+            double nValorPromedio =  nValorTotal / nTx ;
             double nVelocidad = nValorPromedio / nMoneySupplyActual;
             double nInflacion = ((nHeight - 1) * 0.000000019) + (nHeight/100000);
 
