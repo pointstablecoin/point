@@ -1578,7 +1578,7 @@ int64_t GetBlockValue(int nHeight)
     CBlockIndex* pindexActual = chainActive.Tip();
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
-    int64_t nTx = pindexActual->nTx - 1;
+    int64_t nTx = pindexActual->nTx;
     if (nMoneySupplyActual < 1){
         nMoneySupplyActual = 1;
     }
@@ -2169,7 +2169,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
     
-    nValorTotal = nValueOut - 1 * COIN;
+    nValorTotal = nValueOut;
 
     //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
     //          FormatMoney(nValueOut), FormatMoney(nValueIn),
