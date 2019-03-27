@@ -1574,6 +1574,23 @@ int64_t GetBlockValue(int nHeight)
 {
     
     CBlockIndex* pindexActual = chainActive.Tip();
+    
+    
+    
+    
+    
+    
+    
+    for (unsigned int i = 0; i < pindexActual.vtx.size(); i++) {
+        const CTransaction& tx = pindexActual.vtx[i];
+        nValueOut += tx.GetValueOut();
+    }
+    
+    
+    
+    
+    
+    
         
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     CAmount nTx = pindexActual->nTx;
@@ -2056,7 +2073,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("MERGE-scriptch");
+    RenameThread("POINT-scriptch");
     scriptcheckqueue.Thread();
 }
 
