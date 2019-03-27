@@ -1577,14 +1577,12 @@ int64_t GetBlockValue(int nHeight)
     
     CBlockIndex* pindexActual = chainActive.Tip();
             
-    double nMoneySupplyActual = pindexActual->nMoneySupply / double 100000000;
+    double nMoneySupplyActual = pindexActual->nMoneySupply;
     int64_t nTx = pindexActual->nTx - 1;
     if (nMoneySupplyActual < 1){
         nMoneySupplyActual = 1;
     }
-    
-    double nValorTotal = nValorTotal / double 100000000;
-    
+        
     double nVelocidad = nValorTotal / nMoneySupplyActual;
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", nMoneySupplyActual);
