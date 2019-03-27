@@ -1580,7 +1580,8 @@ int64_t GetBlockValue(int nHeight)
     double nAltura = nHeight;
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
-    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", nValorTotal);
+    double nValorTotaldeTx = nValorTotal * 0.00000001;
+    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", nValorTotaldeTx);
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply * 0.00000001;
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual);
@@ -1596,7 +1597,7 @@ int64_t GetBlockValue(int nHeight)
                 nMoneySupplyActual = 1;
             }
 
-            double nValorPromedio =  (nValorTotal * 0.00000001) / nTx ;
+            double nValorPromedio =  nValorTotaldeTx / nTx ;
             LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio);
             
             double nVelocidad = nValorPromedio / nMoneySupplyActual;
