@@ -1583,7 +1583,7 @@ int64_t GetBlockValue(int nHeight)
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
-    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", nValorTotal);  
+    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", nValorTotal/100000000);  
     
     if (nHeight == 0) {
         return 100000000 * COIN;
@@ -2161,7 +2161,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
     
-    nValorTotal = nValueOut * COIN;
+    nValorTotal = nValueOut;
 
     //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
     //          FormatMoney(nValueOut), FormatMoney(nValueIn),
