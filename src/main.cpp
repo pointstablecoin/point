@@ -1575,24 +1575,7 @@ int64_t GetBlockValue(int nHeight)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
-    
-    
-    
-    
-    
-    
-    for (unsigned int i = 0; i < chainActive.Tip()->size(); i++) {
-        //const CTransaction& tx = pindexActual[i];
-
-        //nValueOut += tx.GetValueOut();
-        LogPrintf("############################PRINT TEST popopopop: %d.\n", chainActive.Tip()[i]);    
-    }
-    
-    
-    
-    
-    
-    
+    LogPrintf("############################PRINT TEST popopopop: %d.\n", chainActive.Tip()[i]); 
         
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     CAmount nTx = pindexActual->nTx;
