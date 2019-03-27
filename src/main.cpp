@@ -1583,7 +1583,7 @@ int64_t GetBlockValue(int nHeight)
         nMoneySupplyActual = 1;
     }
     
-    double nMoneySupplyActual = nMoneySupplyActual / 100000000;
+    nMoneySupplyActual = nMoneySupplyActual / 100000000;
     
     double nVelocidad = nValorTotal / nMoneySupplyActual;
     
