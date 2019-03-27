@@ -247,6 +247,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         // Collect transactions into block
         uint64_t nBlockSize = 1000;
         uint64_t nBlockTx = 0;
+        CAmount nValueOut = 0;
         int nBlockSigOps = 100;
         bool fSortedByFee = (nBlockPrioritySize <= 0);
 
@@ -314,6 +315,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             pblocktemplate->vTxSigOps.push_back(nTxSigOps);
             nBlockSize += nTxSize;
             ++nBlockTx;
+            nValueOut += tx.GetValueOut();
             nBlockSigOps += nTxSigOps;
             nFees += nTxFees;
 
@@ -356,7 +358,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         } else if (!fProofOfStake) {
             txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
             pblock->vtx[0] = txNew;
-	    pblock->vtx[0].vout[0].nValue = GetBlockValue(pindexPrev->nHeight);
+	    pblock->vtx[0].vout[0].nValue = GetBlockValue(pindexPrev->nHeight, nValue);
             pblocktemplate->vTxFees[0] = -nFees;
         }
 
