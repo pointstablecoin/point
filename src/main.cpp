@@ -1586,7 +1586,7 @@ int64_t GetBlockValue(int nHeight)
 
         nValorTotal = nValorTotal - 1 * COIN;
 
-        double nValorPromedio = nValorTotal / (nTx ;
+        double nValorPromedio = nValorTotal / nTx ;
         double nVelocidad = nValorPromedio / nMoneySupplyActual;
 
         if (nVelocidad > 0){
