@@ -1583,7 +1583,9 @@ int64_t GetBlockValue(int nHeight)
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", FormatMoney(nMoneySupplyActual));
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
-    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", nValorTotal/100000000);  
+    LogPrintf("############################PRINT TEST VALORTOTAL: %d.\n", FormatMoney(nValorTotal));
+    LogPrintf("############################PRINT TEST VELOCIDAD: %d.\n", nValorTotal/nMoneySupplyActual);
+    
     
     if (nHeight == 0) {
         return 100000000 * COIN;
