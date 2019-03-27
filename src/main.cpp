@@ -1581,7 +1581,7 @@ int64_t GetBlockValue(int nHeight)
     
     
     
-    for (unsigned int i = 0; i < pindexActual.size(); i++) {
+    for (unsigned int i = 0; i < pindexActual->size(); i++) {
         //const CTransaction& tx = pindexActual[i];
 
         //nValueOut += tx.GetValueOut();
