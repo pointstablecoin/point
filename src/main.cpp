@@ -1578,11 +1578,11 @@ int64_t GetBlockValue(int nHeight)
     CBlockIndex* pindexActual = chainActive.Tip();
     
     double nAltura = nHeight;
-    LogPrintf("############################PRINT TEST ALTURA: %d\n", nAltura);
+    LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
-    LogPrintf("############################PRINT TEST VALOR TOTAL: %d\n", nValorTotal);
+    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", nValorTotal);
             
-    CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
+    CAmount nMoneySupplyActual = pindexActual->nMoneySupply * 0.00000001;
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual);
     
     double nTx = pindexActual->nTx - 1;
@@ -1596,7 +1596,7 @@ int64_t GetBlockValue(int nHeight)
                 nMoneySupplyActual = 1;
             }
 
-            double nValorPromedio =  nValorTotal / nTx ;
+            double nValorPromedio =  (nValorTotal * 0.00000001) / nTx ;
             LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio);
             
             double nVelocidad = nValorPromedio / nMoneySupplyActual;
