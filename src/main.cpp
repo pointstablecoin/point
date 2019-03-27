@@ -1581,11 +1581,11 @@ int64_t GetBlockValue(int nHeight)
     
     
     
-    for (unsigned int i = 0; i < pindexActual->size(); i++) {
+    for (unsigned int i = 0; i < chainActive.Tip()->size(); i++) {
         //const CTransaction& tx = pindexActual[i];
 
         //nValueOut += tx.GetValueOut();
-        LogPrintf("############################PRINT TEST popopopop: %d.\n", pindexActual[i]);    
+        LogPrintf("############################PRINT TEST popopopop: %d.\n", chainActive.Tip()[i]);    
     }
     
     
