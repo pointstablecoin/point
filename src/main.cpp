@@ -2161,7 +2161,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
     
-    nValorTotal = nValueOut;
+    nValorTotal = nValueOut * COIN;
 
     //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
     //          FormatMoney(nValueOut), FormatMoney(nValueIn),
