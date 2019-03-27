@@ -317,6 +317,9 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             nBlockSigOps += nTxSigOps;
             nFees += nTxFees;
             
+            CAmount nValorTotal = tx.GetValueOut();
+            LogPrintf("###############VALOR TOTAL EN MINER: %d\n", nValorTotal);
+            
 
             if (fPrintPriority) {
                 LogPrintf("priority %.1f fee %s txid %s\n",
@@ -350,9 +353,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         nLastBlockTx = nBlockTx;
         nLastBlockSize = nBlockSize;
         // LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
-        
-        CAmount nValorTotal = tx.GetValueOut();
-        LogPrintf("###############VALOR TOTAL EN MINER: %d\n", nValorTotal);
 
         // Compute final coinbase transaction.
         if (fProofOfStake) {
