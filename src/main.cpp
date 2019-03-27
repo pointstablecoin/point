@@ -1575,7 +1575,7 @@ int64_t GetBlockValue(int nHeight)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
-    LogPrintf("############################PRINT TEST popopopop: %d.\n", pindexActual[0]); 
+    LogPrintf("############################PRINT TEST popopopop: %d.\n", pindexActual->txns); 
         
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
     CAmount nTx = pindexActual->nTx;
