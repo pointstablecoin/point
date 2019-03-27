@@ -1589,7 +1589,7 @@ int64_t GetBlockValue(int nHeight)
     
     
     if (nHeight == 0) {
-        return 1000000000 * COIN;
+        return 99999999 * COIN;
     } else if (nHeight > 0){
         return 1 * COIN;
     }
