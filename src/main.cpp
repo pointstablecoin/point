@@ -83,7 +83,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-CAmount nValorTotal = 0;
+int64_t nValorTotal = 0;
 
 int64_t nReserveBalance = 0;
 
