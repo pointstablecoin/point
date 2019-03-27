@@ -83,7 +83,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-CAmount nValorTotal = 0.0000000000;
+double nValorTotal = 0.0000000000;
 
 int64_t nReserveBalance = 0;
 
@@ -1577,12 +1577,12 @@ int64_t GetBlockValue(int nHeight)
     
     CBlockIndex* pindexActual = chainActive.Tip();
             
-    CAmount nMoneySupplyActual = pindexActual->nMoneySupply / 100000000;
+    double nMoneySupplyActual = pindexActual->nMoneySupply / 100000000;
     int64_t nTx = pindexActual->nTx - 1;
     if (nMoneySupplyActual < 1){
         nMoneySupplyActual = 1;
     }
-    CAmount nVelocidad = nValorTotal / nMoneySupplyActual;
+    double nVelocidad = nValorTotal / nMoneySupplyActual;
     
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %d.\n", nMoneySupplyActual);
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %d.\n", nTx);  
