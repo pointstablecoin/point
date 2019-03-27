@@ -1610,9 +1610,9 @@ int64_t GetBlockValue(int nHeight)
                 LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA\n");
 
                 if (nValorPromedio < nInflacion){
-                    double nRecompensa = nInflacion - nValorPromedio;
+                    CAmount nRecompensa = (nInflacion - nValorPromedio) * COIN;
                     LogPrintf("\n############################PRINT TEST RECOMPENSA: %.8g\n", nRecompensa);
-                    return CAmount nRecompensa * COIN;
+                    return nRecompensa;
                 }
             }
         }
