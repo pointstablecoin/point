@@ -1669,7 +1669,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         nPreferredDenom = 0;
     }
 
-    nAnonymizeMergeAmount = 2;
+    nAnonymizePointAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1683,7 +1683,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
-    LogPrintf("Anonymize MERGE Amount %d\n", nAnonymizeMergeAmount);
+    LogPrintf("Anonymize MERGE Amount %d\n", nAnonymizePointAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations
