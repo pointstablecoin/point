@@ -19,17 +19,17 @@ and group.  They must be created before attempting to use these scripts.
 2. Configuration
 ---------------------------------
 
-At a bare minimum, merged requires that the rpcpassword setting be set
+At a bare minimum, pointd requires that the rpcpassword setting be set
 when running as a daemon.  If the configuration file does not exist or this
-setting is not set, merged will shutdown promptly after startup.
+setting is not set, pointd will shutdown promptly after startup.
 
 This password does not have to be remembered or typed as it is mostly used
-as a fixed token that merged and client programs read from the configuration
+as a fixed token that pointd and client programs read from the configuration
 file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If merged is run with "-daemon" flag, and no rpcpassword is set, it will
+If pointd is run with "-daemon" flag, and no rpcpassword is set, it will
 print a randomly generated suitable password to stderr.  You can also
 generate one from the shell yourself like this:
 
@@ -54,7 +54,7 @@ PID file:            /var/run/merged/merged.pid (OpenRC and Upstart)
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by The Merge user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-MERGE user and group.  Access to merge-cli and other merged rpc clients
+MERGE user and group.  Access to point-cli and other merged rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration
