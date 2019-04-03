@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 PIVX Developers
-// Copyright (c) 2018 -2019 MERGE Developers
+// Copyright (c) 2018 -2019 POINT Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MERGE);
-    unitlist.append(mMERGE);
-    unitlist.append(uMERGE);
+    unitlist.append(POINT);
+    unitlist.append(mPOINT);
+    unitlist.append(uPOINT);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case MERGE:
-    case mMERGE:
-    case uMERGE:
+    case POINT:
+    case mPOINT:
+    case uPOINT:
         return true;
     default:
         return false;
@@ -41,12 +41,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case MERGE:
-        return QString("MERGE");
-    case mMERGE:
-        return QString("mmerge");
-    case uMERGE:
-        return QString::fromUtf8("umerge");
+    case POINT:
+        return QString("POINT");
+    case mPOINT:
+        return QString("mpoint");
+    case uPOINT:
+        return QString::fromUtf8("upoint");
     default:
         return QString("???");
     }
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case MERGE:
-            return QString("MERGE");
-        case mMERGE:
-            return QString("mMERGE");
-        case uMERGE:
-            return QString::fromUtf8("μMERGE");
+        case POINT:
+            return QString("POINT");
+        case mPOINT:
+            return QString("mPOINT");
+        case uPOINT:
+            return QString::fromUtf8("μPOINT");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case MERGE:
-            return QString("tMERGE");
-        case mMERGE:
-            return QString("mtMERGE");
-        case uMERGE:
-            return QString::fromUtf8("μtMERGE");
+        case POINT:
+            return QString("tPOINT");
+        case mPOINT:
+            return QString("mtPOINT");
+        case uPOINT:
+            return QString::fromUtf8("μtPOINT");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case MERGE:
-            return QString("MERGE");
-        case mMERGE:
-            return QString("Milli-MERGE (1 / 1" THIN_SP_UTF8 "000)");
-        case uMERGE:
-            return QString("Micro-MERGE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case POINT:
+            return QString("POINT");
+        case mPOINT:
+            return QString("Milli-POINT (1 / 1" THIN_SP_UTF8 "000)");
+        case uPOINT:
+            return QString("Micro-POINT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case MERGE:
-            return QString("TestMERGEs");
-        case mMERGE:
-            return QString("Milli-TestMERGE (1 / 1" THIN_SP_UTF8 "000)");
-        case uMERGE:
-            return QString("Micro-TestMERGE (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case POINT:
+            return QString("TestPOINTs");
+        case mPOINT:
+            return QString("Milli-TestPOINT (1 / 1" THIN_SP_UTF8 "000)");
+        case uPOINT:
+            return QString("Micro-TestPOINT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case MERGE:
+    case POINT:
         return 100000000;
-    case mMERGE:
+    case mPOINT:
         return 100000;
-    case uMERGE:
+    case uPOINT:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case MERGE:
+    case POINT:
         return 8;
-    case mMERGE:
+    case mPOINT:
         return 5;
-    case uMERGE:
+    case uPOINT:
         return 2;
     default:
         return 0;

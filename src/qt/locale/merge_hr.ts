@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The MERGE address the message was signed with</source>
-        <translation>MERGE adresa s kojom je potpisana poruka</translation>
+        <source>The POINT address the message was signed with</source>
+        <translation>POINT adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Core</translation>
+        <source>POINT Core</source>
+        <translation>POINT Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>MERGE Core client</source>
-        <translation>MERGE Core klijent</translation>
+        <source>POINT Core client</source>
+        <translation>POINT Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -260,15 +260,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Core</translation>
+        <source>POINT Core</source>
+        <translation>POINT Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Core</translation>
+        <source>POINT Core</source>
+        <translation>POINT Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -550,8 +550,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 MERGE</source>
-        <translation>0 MERGE</translation>
+        <source>0 POINT</source>
+        <translation>0 POINT</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -612,8 +612,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>MERGE Core is shutting down...</source>
-        <translation>MERGE Core se gasi...</translation>
+        <source>POINT Core is shutting down...</source>
+        <translation>POINT Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -635,8 +635,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The MERGE address the message was signed with</source>
-        <translation>MERGE adresa s kojom je potpisana poruka</translation>
+        <source>The POINT address the message was signed with</source>
+        <translation>POINT adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -650,8 +650,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Core</translation>
+        <source>POINT Core</source>
+        <translation>POINT Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -805,7 +805,7 @@
     </message>
     </context>
 <context>
-    <name>MERGE-core</name>
+    <name>POINT-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

@@ -62,12 +62,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your MERGE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan MERGE adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your POINT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan POINT adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your MERGE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan MERGE adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your POINT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan POINT adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>MERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERGEs from being stolen by malware infecting your computer.</source>
-        <translation>MERGE şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, MERGE'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>POINT will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POINTs from being stolen by malware infecting your computer.</source>
+        <translation>POINT şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, POINT'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -242,8 +242,8 @@
         <translation>&amp;BIP 38 şifrele</translation>
     </message>
     <message>
-        <source>Enter a MERGE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir MERGE Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
+        <source>Enter a POINT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir POINT Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
 </translation>
     </message>
     <message>
@@ -251,8 +251,8 @@
         <translation>adres</translation>
     </message>
     <message>
-        <source>The MERGE address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için MERGE adresi
+        <source>The POINT address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için POINT adresi
 </translation>
     </message>
     <message>
@@ -289,8 +289,8 @@
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MERGE address</source>
-        <translation>Bu MERGE adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this POINT address</source>
+        <translation>Bu POINT adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
@@ -316,12 +316,12 @@
         <translation>BIP 38 şifreli özel anahtarını girin. Orta kutuya şifreyi  girin. Özel anahtarı hesaplamak için Anahtarın Çözülmesini tıklayın. Anahtar çözüldükten sonra 'Alma Adresi'ni tıklamak, bu özel anahtarı cüzdana ekleyecektir.</translation>
     </message>
     <message>
-        <source>The MERGE address the message was signed with</source>
-        <translation>Mesajın imzalandığı MERGE adresi</translation>
+        <source>The POINT address the message was signed with</source>
+        <translation>Mesajın imzalandığı POINT adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
-        <translation>Belirtilen MERGE adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified POINT address</source>
+        <translation>Belirtilen POINT adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -613,16 +613,16 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE CORE</translation>
+        <source>POINT Core</source>
+        <translation>POINT CORE</translation>
     </message>
     <message>
-        <source>Send coins to a MERGE address</source>
-        <translation>Koinleri MERGE adresine gönder</translation>
+        <source>Send coins to a POINT address</source>
+        <translation>Koinleri POINT adresine gönder</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and MERGE: URIs)</source>
-        <translation>Ödeme talep etme (QR kodları ve MERGE üretir: URI'ler)</translation>
+        <source>Request payments (generates QR codes and POINT: URIs)</source>
+        <translation>Ödeme talep etme (QR kodları ve POINT üretir: URI'ler)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -637,24 +637,24 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About MERGE Core</source>
+        <source>&amp;About POINT Core</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about MERGE Core</source>
+        <source>Show information about POINT Core</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
-        <source>Modify configuration options for MERGE</source>
-        <translation>MERGE için yapılandırma seçeneklerini değiştirin</translation>
+        <source>Modify configuration options for POINT</source>
+        <translation>POINT için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
-        <source>Sign messages with your MERGE addresses to prove you own them</source>
-        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı MERGE adresleriyle imzalayın</translation>
+        <source>Sign messages with your POINT addresses to prove you own them</source>
+        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı POINT adresleriyle imzalayın</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MERGE addresses</source>
-        <translation>Belirtilen MERGE adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
+        <source>Verify messages to ensure they were signed with specified POINT addresses</source>
+        <translation>Belirtilen POINT adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -686,8 +686,8 @@
         <translation>Açık Masternode yapılandırma dosyası</translation>
     </message>
     <message>
-        <source>Open a MERGE: URI or payment request</source>
-        <translation>Bir MERGE: URI veya ödeme isteği açın</translation>
+        <source>Open a POINT: URI or payment request</source>
+        <translation>Bir POINT: URI veya ödeme isteği açın</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -698,12 +698,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the MERGE Core help message to get a list with possible MERGE command-line options</source>
-        <translation>Olası MERGE komut satırı seçeneklerine sahip bir liste almak için MERGE Core yardım mesajını gösterin</translation>
+        <source>Show the POINT Core help message to get a list with possible POINT command-line options</source>
+        <translation>Olası POINT komut satırı seçeneklerine sahip bir liste almak için POINT Core yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>MERGE Core client</source>
-        <translation>MERGE Core istemci</translation>
+        <source>POINT Core client</source>
+        <translation>POINT Core istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -830,8 +830,8 @@ Adres: %4</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (MERGE.conf).</source>
-        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (MERGE.conf).
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (POINT.conf).</source>
+        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (POINT.conf).
 </translation>
     </message>
 </context>
@@ -1117,8 +1117,8 @@ Adres: %4</translation>
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE CORE</translation>
+        <source>POINT Core</source>
+        <translation>POINT CORE</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1140,16 +1140,16 @@ Adres: %4</translation>
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to MERGE Core.</source>
-        <translation>MERGE Core'a hoşgeldiniz.</translation>
+        <source>Welcome to POINT Core.</source>
+        <translation>POINT Core'a hoşgeldiniz.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Varsayılan veri dosyasını kullanınız</translation>
     </message>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE CORE</translation>
+        <source>POINT Core</source>
+        <translation>POINT CORE</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1515,8 +1515,8 @@ Adres: %4</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The MERGE address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için MERGE adresi
+        <source>The POINT address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için POINT adresi
 </translation>
     </message>
     <message>
@@ -1545,17 +1545,17 @@ Adres: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MERGE address</source>
-        <translation>Bu MERGE adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this POINT address</source>
+        <translation>Bu POINT adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
-        <source>The MERGE address the message was signed with</source>
-        <translation>Mesajın imzalandığı MERGE adresi</translation>
+        <source>The POINT address the message was signed with</source>
+        <translation>Mesajın imzalandığı POINT adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
-        <translation>Belirtilen MERGE adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified POINT address</source>
+        <translation>Belirtilen POINT adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1594,8 +1594,8 @@ Adres: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE CORE</translation>
+        <source>POINT Core</source>
+        <translation>POINT CORE</translation>
     </message>
     </context>
 <context>
@@ -1701,7 +1701,7 @@ Adres: %4</translation>
     </message>
     </context>
 <context>
-    <name>MERGE-core</name>
+    <name>POINT-core</name>
     <message>
         <source>Error</source>
         <translation>hata</translation>

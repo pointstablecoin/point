@@ -482,12 +482,12 @@ DISTCLEANFILES = obj/build.h
 
 EXTRA_DIST = leveldb
 
-config/merge-config.h: config/stamp-h1
+config/point-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/merge-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/point-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/merge-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/merge-config.h.in
+$(top_srcdir)/$(subdir)/config/point-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/point-config.h.in
 
 clean-local:
 	-$(MAKE) -C leveldb clean
