@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./MERGE
+pushd ./POINT
 git fetch
 git checkout ${COMMIT}
 popd
@@ -261,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./MERGE-binaries/${VERSION}
+	mkdir -p ./POINT-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../MERGE/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../POINT/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit MERGE=${COMMIT} --url MERGE=${url} ../MERGE/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/MERGE-*.tar.gz build/out/src/MERGE-*.tar.gz ../MERGE-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit POINT=${COMMIT} --url POINT=${url} ../POINT/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/POINT-*.tar.gz build/out/src/POINT-*.tar.gz ../POINT-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -289,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit MERGE=${COMMIT} --url MERGE=${url} ../MERGE/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/MERGE-*-win-unsigned.tar.gz inputs/MERGE-win-unsigned.tar.gz
-	    mv build/out/MERGE-*.zip build/out/MERGE-*.exe ../MERGE-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit POINT=${COMMIT} --url POINT=${url} ../POINT/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/POINT-*-win-unsigned.tar.gz inputs/POINT-win-unsigned.tar.gz
+	    mv build/out/POINT-*.zip build/out/POINT-*.exe ../POINT-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -300,10 +300,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit MERGE=${COMMIT} --url MERGE=${url} ../MERGE/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/MERGE-*-osx-unsigned.tar.gz inputs/MERGE-osx-unsigned.tar.gz
-	    mv build/out/MERGE-*.tar.gz build/out/MERGE-*.dmg ../MERGE-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit POINT=${COMMIT} --url POINT=${url} ../POINT/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/POINT-*-osx-unsigned.tar.gz inputs/POINT-osx-unsigned.tar.gz
+	    mv build/out/POINT-*.tar.gz build/out/POINT-*.dmg ../POINT-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -311,9 +311,9 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit MERGE=${COMMIT} --url MERGE=${url} ../MERGE/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/MERGE-*.tar.gz build/out/src/MERGE-*.tar.gz ../MERGE-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit POINT=${COMMIT} --url POINT=${url} ../POINT/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/POINT-*.tar.gz build/out/src/POINT-*.tar.gz ../POINT-binaries/${VERSION}
 	popd
 
         if [[ $commitFiles = true ]]
@@ -340,32 +340,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../MERGE/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../POINT/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../MERGE/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../POINT/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../MERGE/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../POINT/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../MERGE/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../POINT/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../MERGE/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../POINT/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../MERGE/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../POINT/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -380,10 +380,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../MERGE/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/MERGE-*win64-setup.exe ../MERGE-binaries/${VERSION}
-	    mv build/out/MERGE-*win32-setup.exe ../MERGE-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../POINT/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/POINT-*win64-setup.exe ../POINT-binaries/${VERSION}
+	    mv build/out/POINT-*win32-setup.exe ../POINT-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -391,9 +391,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../MERGE/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/MERGE-osx-signed.dmg ../MERGE-binaries/${VERSION}/MERGE-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../POINT/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/POINT-osx-signed.dmg ../POINT-binaries/${VERSION}/POINT-${VERSION}-osx.dmg
 	fi
 	popd
 

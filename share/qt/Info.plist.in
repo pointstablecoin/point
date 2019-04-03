@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>MERGE-Qt</string>
+  <string>POINT-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.MERGE.Merge-Qt</string>
+  <string>io.POINT.Merge-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.MERGE.MERGEPayment</string>
+      <string>io.POINT.POINTPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>MERGE</string>
+        <string>POINT</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.MERGE.paymentrequest</string>
+      <string>io.POINT.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>MERGE payment request</string>
+      <string>POINT payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-MERGE-payment-request</string>
+        <string>application/x-POINT-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>MERGEpaymentrequest</string>
+          <string>POINTpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.MERGE.paymentrequest</string>
+        <string>io.POINT.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

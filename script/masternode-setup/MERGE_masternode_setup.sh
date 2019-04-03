@@ -1,8 +1,8 @@
 #/bin/bash
 cd ~
-rm -rf MERGE_masternode_setup.sh*
+rm -rf POINT_masternode_setup.sh*
 echo "****************************************************************************"
-echo "*       This script will install and configure your MERGE masternode       *"
+echo "*       This script will install and configure your POINT masternode       *"
 echo "*                             (Remote Wallet)                              *"
 echo "*                                                                          *"
 echo "*      If you have any issues, please ask for help on Merge's Discord:     *"
@@ -20,14 +20,14 @@ echo ""
 
 echo "Hit [ENTER] to start the masternode setup"
 read setup
-rm -rf MERGE_masternode_setup.sh*
-MERGE_CLI_CMD="point-cli"
-MERGE_TX_CMD="point-tx"
-MERGED_CMD="pointd"
-MERGE_CLI=`find . -name "$MERGE_CLI_CMD" | tail -1`
-MERGE_TX=`find . -name "$MERGE_TX_CMD" | tail -1`
-MERGED=`find . -name "$MERGED_CMD" | tail -1`
-$MERGE_CLI stop
+rm -rf POINT_masternode_setup.sh*
+POINT_CLI_CMD="point-cli"
+POINT_TX_CMD="point-tx"
+POINTD_CMD="pointd"
+POINT_CLI=`find . -name "$POINT_CLI_CMD" | tail -1`
+POINT_TX=`find . -name "$POINT_TX_CMD" | tail -1`
+POINTD=`find . -name "$POINTD_CMD" | tail -1`
+$POINT_CLI stop
 echo "Configuring your VPS with the recommended settings..."
 sudo apt-get update
 sudo apt-get install -y build-essential
@@ -66,10 +66,10 @@ sudo ufw status
 echo ""
 echo ""
 echo "Installing/Updating your masternode..."
-$MERGE_CLI stop
-rm $MERGED
-rm $MERGE_CLI
-rm $MERGE_TX
+$POINT_CLI stop
+rm $POINTD
+rm $POINT_CLI
+rm $POINT_TX
 # Retrieve the latest wallet release
 LATEST_RELEASE_URL=https://api.github.com/repos/ProjectMerge/merge/releases/latest
 FILE_ENDIND=x86_64-linux-gnu.tar.gz
@@ -79,9 +79,9 @@ wget $release_file_url
 tar -xf $release_file_name
 rm $release_file_name
 
-MERGE_CLI=`find . -name "$MERGE_CLI_CMD" | tail -1`
-MERGE_TX=`find . -name "$MERGE_TX_CMD" | tail -1`
-MERGED=`find . -name "$MERGED_CMD" | tail -1`
+POINT_CLI=`find . -name "$POINT_CLI_CMD" | tail -1`
+POINT_TX=`find . -name "$POINT_TX_CMD" | tail -1`
+POINTD=`find . -name "$POINTD_CMD" | tail -1`
 
 echo "Masternode Configuration"
 # Ask for the IP address
@@ -121,8 +121,8 @@ echo "" >> $CONF_DIR/$CONF_FILE
 echo "port=$PORT" >> $CONF_DIR/$CONF_FILE
 echo "masternodeaddr=$IP:$PORT" >> $CONF_DIR/$CONF_FILE
 echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
-$MERGED -resync
-echo "If the server fails to start, try $MERGED -reindex"
+$POINTD -resync
+echo "If the server fails to start, try $POINTD -reindex"
 echo ""
 
 echo "****************************************************************************"

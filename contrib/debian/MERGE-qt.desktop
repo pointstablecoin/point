@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=MERGE
-Comment=MERGE P2P Cryptocurrency
-Comment[fr]=MERGE, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=MERGE, eşten eşe kriptografik sanal para birimi
+Name=POINT
+Comment=POINT P2P Cryptocurrency
+Comment[fr]=POINT, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=POINT, eşten eşe kriptografik sanal para birimi
 Exec=point-qt %u
 Terminal=false
 Type=Application
-Icon=MERGE128
-MimeType=x-scheme-handler/MERGE;
+Icon=POINT128
+MimeType=x-scheme-handler/POINT;
 Categories=Office;Finance;

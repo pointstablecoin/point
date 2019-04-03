@@ -1,25 +1,25 @@
-# /etc/conf.d/MERGEd: config file for /etc/init.d/MERGEd
+# /etc/conf.d/POINTd: config file for /etc/init.d/POINTd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/MERGE/MERGE.conf"
+#BITCOIND_CONFIGFILE="/etc/POINT/POINT.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/MERGEd"
+#BITCOIND_PIDDIR="/var/run/POINTd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/MERGEd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/POINTd.pid"
 
-# Where to write MERGEd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/MERGEd"
+# Where to write POINTd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/POINTd"
 
-# User and group to own MERGEd process
-#BITCOIND_USER="MERGE"
-#BITCOIND_GROUP="MERGE"
+# User and group to own POINTd process
+#BITCOIND_USER="POINT"
+#BITCOIND_GROUP="POINT"
 
-# Path to MERGEd executable
-#BITCOIND_BIN="/usr/bin/MERGEd"
+# Path to POINTd executable
+#BITCOIND_BIN="/usr/bin/POINTd"
 
-# Nice value to run MERGEd under
+# Nice value to run POINTd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

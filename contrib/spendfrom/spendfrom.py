@@ -35,10 +35,10 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of The Merge data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/MERGE/")
+        return os.path.expanduser("~/Library/Application Support/POINT/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "MERGE")
-    return os.path.expanduser("~/.MERGE")
+        return os.path.join(os.environ['APPDATA'], "POINT")
+    return os.path.expanduser("~/.POINT")
 
 def read_bitcoin_config(dbdir):
     """Read The Merge.conf file from dbdir, returns dictionary of settings"""
@@ -59,7 +59,7 @@ def read_bitcoin_config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "MERGE.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "POINT.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
@@ -110,7 +110,7 @@ def list_available(merged):
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-MERGE-address
+        # This code only deals with ordinary pay-to-POINT-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue
@@ -229,7 +229,7 @@ def main():
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of MERGE.conf file with RPC username/password (default: %default)")
+                      help="location of POINT.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",

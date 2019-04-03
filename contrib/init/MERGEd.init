@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  MERGEd The MERGE core server.
+#  POINTd The POINT core server.
 #
 #
 # chkconfig: 345 80 20
-# description: MERGEd
-# processname: MERGEd
+# description: POINTd
+# processname: POINTd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/MERGEd, see below
-if [ -f /etc/sysconfig/MERGEd ]; then
-        . /etc/sysconfig/MERGEd
+# you can override defaults in /etc/sysconfig/POINTd, see below
+if [ -f /etc/sysconfig/POINTd ]; then
+        . /etc/sysconfig/POINTd
 fi
 
 RETVAL=0
 
-prog=MERGEd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/MERGEd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/MERGEd}
+prog=POINTd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/POINTd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/POINTd}
 
-# MERGEd defaults to /usr/bin/MERGEd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/MERGEd}
+# POINTd defaults to /usr/bin/POINTd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/POINTd}
 
-# MERGEd opts default to -disablewallet, override with BITCOIND_OPTS
+# POINTd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

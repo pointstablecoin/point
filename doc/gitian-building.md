@@ -1,7 +1,7 @@
 Gitian building
 ================
 
-*Setup instructions for a gitian build of MERGE using a Debian VM or physical system.*
+*Setup instructions for a gitian build of POINT using a Debian VM or physical system.*
 
 Gitian is the deterministic build process that is used to build The Merge
 Core executables. It provides a way to be reasonably sure that the
@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to MERGE-crypto.com.
+to POINT-crypto.com.
 
 More independent gitian builders are needed, which is why I wrote this
 guide. It is preferred to follow these steps yourself instead of using someone else's
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing gitian](#installing-gitian)
 - [Setting up gitian images](#setting-up-gitian-images)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building MERGE](#building-MERGE)
+- [Building POINT](#building-POINT)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -277,12 +277,12 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user *debian* not for *root*.
 
-Clone the git repositories for MERGE and gitian and then checkout The Merge version that you want to build.
+Clone the git repositories for POINT and gitian and then checkout The Merge version that you want to build.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/MERGE-crypto/MERGE.git
-cd MERGE
+git clone https://github.com/POINT-crypto/POINT.git
+cd POINT
 git checkout v${VERSION}
 cd ..
 ```
@@ -326,10 +326,10 @@ under 'Fetch and build inputs' to install sources which require manual intervent
 the next step: 'Seed the Gitian sources cache', which will fetch all necessary source files allowing
 for gitian to work offline.
 
-Building MERGE
+Building POINT
 ----------------
 
-To build MERGE (for Linux, OSX and Windows) just follow the steps under 'perform
+To build POINT (for Linux, OSX and Windows) just follow the steps under 'perform
 gitian builds' in [doc/release-process.md](release-process.md) in The Merge repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
@@ -345,12 +345,12 @@ tail -f var/build.log
 Output from `gbuild` will look something like
 
 ```bash
-    Initialized empty Git repository in /home/debian/gitian-builder/inputs/MERGE/.git/
+    Initialized empty Git repository in /home/debian/gitian-builder/inputs/POINT/.git/
     remote: Reusing existing pack: 35606, done.
     remote: Total 35606 (delta 0), reused 0 (delta 0)
     Receiving objects: 100% (35606/35606), 26.52 MiB | 4.28 MiB/s, done.
     Resolving deltas: 100% (25724/25724), done.
-    From https://github.com/MERGE-crypto/MERGE
+    From https://github.com/POINT-crypto/POINT
     ... (new tags, new branch etc)
     --- Building for precise x86_64 ---
     Stopping target if it is up
@@ -377,11 +377,11 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/crowning-/MERGE.git
+URL=https://github.com/crowning-/POINT.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
-./bin/gbuild --commit MERGE=${COMMIT} --url MERGE=${URL} ../MERGE/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit MERGE=${COMMIT} --url MERGE=${URL} ../MERGE/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit MERGE=${COMMIT} --url MERGE=${URL} ../MERGE/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit POINT=${COMMIT} --url POINT=${URL} ../POINT/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit POINT=${COMMIT} --url POINT=${URL} ../POINT/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit POINT=${COMMIT} --url POINT=${URL} ../POINT/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 Signing externally
@@ -396,9 +396,9 @@ When you execute `gsign` you will get an error from GPG, which can be ignored. C
 in `gitian.sigs` to your signing machine and do
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${SIGNER}/MERGE-build.assert
-    gpg --detach-sign ${VERSION}-win/${SIGNER}/MERGE-build.assert
-    gpg --detach-sign ${VERSION}-osx/${SIGNER}/MERGE-build.assert
+    gpg --detach-sign ${VERSION}-linux/${SIGNER}/POINT-build.assert
+    gpg --detach-sign ${VERSION}-win/${SIGNER}/POINT-build.assert
+    gpg --detach-sign ${VERSION}-osx/${SIGNER}/POINT-build.assert
 ```
 
 This will create the `.sig` files that can be committed together with the `.assert` files to assert your
@@ -408,6 +408,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[MERGE/gitian.sigs](https://github.com/MERGE-crypto/gitian.sigs/) repository, or if that's not possible to create a pull
+[POINT/gitian.sigs](https://github.com/POINT-crypto/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.
