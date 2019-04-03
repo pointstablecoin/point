@@ -1,4 +1,4 @@
-bin_PROGRAMS += qt/test/test_merge-qt
+bin_PROGRAMS += qt/test/test_point-qt
 
 TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp
 
@@ -42,7 +42,7 @@ CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 
 CLEANFILES += $(CLEAN_BITCOIN_QT_TEST)
 
-test_merge_qt : qt/test/test_merge-qt$(EXEEXT)
+test_merge_qt : qt/test/test_point-qt$(EXEEXT)
 
 test_merge_qt_clean: FORCE
 	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_merge_qt_OBJECTS)

@@ -1,4 +1,4 @@
-bin_PROGRAMS += qt/merge-qt
+bin_PROGRAMS += qt/point-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
 # merge qt core #
@@ -350,7 +350,7 @@ $(qt_libbitcoinqt_a_OBJECTS) $(qt_merge_qt_OBJECTS) : | $(QT_MOC)
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# merge-qt binary #
+# point-qt binary #
 qt_merge_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
@@ -403,9 +403,9 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 CLEANFILES += $(CLEAN_QT)
 
 merge_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_merge_qt_OBJECTS) qt/merge-qt$(EXEEXT) $(LIBBITCOINQT)
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_merge_qt_OBJECTS) qt/point-qt$(EXEEXT) $(LIBBITCOINQT)
 
-merge_qt : qt/merge-qt$(EXEEXT)
+merge_qt : qt/point-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)
