@@ -217,8 +217,8 @@ public:
         hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
         //assert(genesis.hashMerkleRoot == uint256("0x4c218b8dd3d653815dce0ea7d14827c1708247ba39f7137886ab19567ecac159"));
-        assert(hashGenesisBlock == uint256("0x000000000000000000000000000000000000000000000000000000000000000000"));
-        assert(genesis.hashMerkleRoot == uint256("0x000000000000000000000000000000000000000000000000000000000000000000"));
+        assert(hashGenesisBlock == uint256(""));
+        assert(genesis.hashMerkleRoot == uint256(""));
 
         vFixedSeeds.clear();
         vSeeds.clear();
