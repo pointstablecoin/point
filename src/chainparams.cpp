@@ -186,7 +186,8 @@ public:
 
         genesis.SetNull();
 
-        const char* pszTimestamp = "Zero Hedge Wed, 03/06/2019 - 23:45 Civil War Would Erupt If Green New Deal Socialists Actually Get What They";
+        //const char* pszTimestamp = "Zero Hedge Wed, 03/06/2019 - 23:45 Civil War Would Erupt If Green New Deal Socialists Actually Get What They";
+        const char* pszTimestamp = "JSXTI Jueves, 04/04/2019 - 00:50 Bitcoin subió 20% en un día";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -198,8 +199,9 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         //genesis.nTime = 1545670001;
-        genesis.nTime = 1545670002;
-        genesis.nBits = 0x1e0ffff0;
+        genesis.nTime = 1554360600;
+        //genesis.nBits = 0x1e0ffff0;
+        genesis.nBits = 0x;
         //genesis.nNonce = 86643;
         genesis.nNonce = 0;
 
@@ -213,8 +215,10 @@ public:
 	      }
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
-        assert(genesis.hashMerkleRoot == uint256("0x4c218b8dd3d653815dce0ea7d14827c1708247ba39f7137886ab19567ecac159"));
+        //assert(hashGenesisBlock == uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
+        //assert(genesis.hashMerkleRoot == uint256("0x4c218b8dd3d653815dce0ea7d14827c1708247ba39f7137886ab19567ecac159"));
+        assert(hashGenesisBlock == uint256("0x"));
+        assert(genesis.hashMerkleRoot == uint256("0x"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
