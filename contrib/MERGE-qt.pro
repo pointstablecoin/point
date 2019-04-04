@@ -375,7 +375,7 @@ SOURCES += src/activemasternode.cpp \
            src/obfuscation.cpp \
            src/point-cli.cpp \
            src/point-tx.cpp \
-           src/point.cpp \
+           src/merge.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -470,7 +470,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/point.cpp \
+           src/qt/merge.cpp \
            src/qt/mergestrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_point.cpp \
+           src/test/test_merge.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -640,7 +640,7 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/point.qrc src/qt/merge_locale.qrc
+RESOURCES += src/qt/merge.qrc src/qt/merge_locale.qrc
 
 TRANSLATIONS += src/qt/locale/merge_bg.ts \
                 src/qt/locale/merge_de.ts \

@@ -117,7 +117,7 @@ QT_MOC = \
   qt/rpcconsole.moc
 
 QT_QRC_CPP = qt/qrc_merge.cpp
-QT_QRC = qt/point.qrc
+QT_QRC = qt/merge.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_merge_locale.cpp
 QT_QRC_LOCALE = qt/merge_locale.qrc
 
@@ -354,7 +354,7 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 qt_point_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_point_qt_SOURCES = qt/point.cpp
+qt_point_qt_SOURCES = qt/merge.cpp
 if TARGET_DARWIN
   qt_point_qt_SOURCES += $(BITCOIN_MM)
 endif
