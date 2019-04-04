@@ -197,9 +197,11 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1545670001;
+        //genesis.nTime = 1545670001;
+        genesis.nTime = 1545670002;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 86643;
+        //genesis.nNonce = 86643;
+        genesis.nNonce = 0;
 
         if (genesis.nNonce == 0) {
 	          while (genesis.GetHash() > bnProofOfWorkLimit) {
