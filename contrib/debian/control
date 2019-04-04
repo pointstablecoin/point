@@ -42,7 +42,7 @@ Description: peer-to-peer network based digital currency - daemon
  This package provides the daemon, merged, and the CLI tool
  merge-cli to interact with the daemon.
 
-Package: point-qt
+Package: merge-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI

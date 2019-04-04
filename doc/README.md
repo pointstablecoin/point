@@ -1,9 +1,9 @@
-Point Core
+Merge Core
 =====================
 
 Setup
 ---------------------
-[Point Core](http://MERGE.org/wallet) is the original MERGE client and it builds the backbone of the network. However, it downloads and stores the entire history of MERGE transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Merge Core](http://MERGE.org/wallet) is the original MERGE client and it builds the backbone of the network. However, it downloads and stores the entire history of MERGE transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -13,12 +13,12 @@ The following are some helpful notes on how to run MERGE on your native platform
 
 Unpack the files into a directory and run:
 
-- bin/32/point-qt (GUI, 32-bit) or bin/32/merged (headless, 32-bit)
-- bin/64/point-qt (GUI, 64-bit) or bin/64/merged (headless, 64-bit)
+- bin/32/merge-qt (GUI, 32-bit) or bin/32/merged (headless, 32-bit)
+- bin/64/merge-qt (GUI, 64-bit) or bin/64/merged (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run point-qt.exe.
+Unpack the files into a directory, and then run merge-qt.exe.
 
 ### OSX
 

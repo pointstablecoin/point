@@ -1,7 +1,7 @@
-Contributing to Point Core
+Contributing to Merge Core
 ==========================
 
-The Point Core project operates an open contributor model where anyone is
+The Merge Core project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -57,7 +57,7 @@ the pull request affects. Valid areas as:
 
   - *Consensus* for changes to consensus critical code
   - *Docs* for changes to the documentation
-  - *Qt* for changes to point-qt
+  - *Qt* for changes to merge-qt
   - *Minting* for changes to the minting code
   - *Net* or *P2P* for changes to the peer-to-peer network code
   - *RPC/REST* for changes to the RPC or REST APIs
@@ -157,10 +157,10 @@ where possible keep them short, un-complex and easy to verify.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to The Point Core project, and is not to be
+The following applies to code changes to The Merge Core project, and is not to be
 confused with overall MERGE Network Protocol consensus changes.
 
-Whether a pull request is merged into Point Core rests with the project merge
+Whether a pull request is merged into Merge Core rests with the project merge
 maintainers and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
@@ -254,7 +254,7 @@ about:
 Release Policy
 --------------
 
-The project leader is the release manager for each Point Core release.
+The project leader is the release manager for each Merge Core release.
 
 Copyright
 ---------

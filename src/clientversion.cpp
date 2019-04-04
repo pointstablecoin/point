@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both merged and point-qt, to make it harder for attackers to
+ * for both merged and merge-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Point Core");
+const std::string CLIENT_NAME("Merge Core");
 
 /**
  * Client version number

@@ -1,6 +1,6 @@
-usr/local/bin/point-qt usr/bin
+usr/local/bin/merge-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
 share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/point-qt.desktop usr/share/applications
-debian/point-qt.protocol usr/share/kde4/services/
+debian/merge-qt.desktop usr/share/applications
+debian/merge-qt.protocol usr/share/kde4/services/
