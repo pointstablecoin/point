@@ -369,7 +369,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-pointd_LDADD = \
+merged_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -381,11 +381,11 @@ pointd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-pointd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+merged_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-pointd_LDADD += libbitcoin_wallet.a
+merged_LDADD += libbitcoin_wallet.a
 endif
 pointd_SOURCES = pointd.cpp
 #
