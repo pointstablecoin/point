@@ -201,7 +201,7 @@ public:
         //genesis.nTime = 1545670001;
         genesis.nTime = 1554360600;
         //genesis.nBits = 0x1e0ffff0;
-        genesis.nBits = 0x;
+        genesis.nBits = 0;
         //genesis.nNonce = 86643;
         genesis.nNonce = 0;
 
