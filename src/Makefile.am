@@ -387,16 +387,16 @@ endif
 if ENABLE_WALLET
 merged_LDADD += libbitcoin_wallet.a
 endif
-pointd_SOURCES = pointd.cpp
+merged_SOURCES = pointd.cpp
 #
 
 if TARGET_WINDOWS
-pointd_SOURCES += pointd-res.rc
+merged_SOURCES += pointd-res.rc
 endif
 
-pointd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-pointd_CPPFLAGS = $(BITCOIN_INCLUDES)
-pointd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+merged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+merged_CPPFLAGS = $(BITCOIN_INCLUDES)
+merged_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # point-cli binary #
