@@ -35,7 +35,7 @@ QT_TRANSLATE_NOOP("MERGE-core", ""
 QT_TRANSLATE_NOOP("MERGE-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("MERGE-core", ""
-"Cannot obtain a lock on data directory %s. Merge Core is probably already "
+"Cannot obtain a lock on data directory %s. Point Core is probably already "
 "running."),
 QT_TRANSLATE_NOOP("MERGE-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -184,7 +184,7 @@ QT_TRANSLATE_NOOP("MERGE-core", ""
 "It is also recommended to set alertnotify so you are notified of problems;\n"
 "for example: alertnotify=echo %%s | mail -s \"MERGE Alert\" admin@foo.com\n"),
 QT_TRANSLATE_NOOP("MERGE-core", ""
-"Unable to bind to %s on this computer. Merge Core is probably already running."),
+"Unable to bind to %s on this computer. Point Core is probably already running."),
 QT_TRANSLATE_NOOP("MERGE-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("MERGE-core", ""
@@ -204,7 +204,7 @@ QT_TRANSLATE_NOOP("MERGE-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong Merge Core will not work properly."),
+"your clock is wrong Point Core will not work properly."),
 QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -260,7 +260,7 @@ QT_TRANSLATE_NOOP("MERGE-core", "Connect to a node to retrieve peer addresses, a
 QT_TRANSLATE_NOOP("MERGE-core", "Connection options:"),
 QT_TRANSLATE_NOOP("MERGE-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("MERGE-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("MERGE-core", "Copyright (C) 2015-%i The Merge Core Developers"),
+QT_TRANSLATE_NOOP("MERGE-core", "Copyright (C) 2015-%i The Point Core Developers"),
 QT_TRANSLATE_NOOP("MERGE-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("MERGE-core", "Could not parse -rpcbind value %s as network address"),
 QT_TRANSLATE_NOOP("MERGE-core", "Could not parse masternode.conf"),
@@ -290,7 +290,7 @@ QT_TRANSLATE_NOOP("MERGE-core", "Error initializing wallet database environment 
 QT_TRANSLATE_NOOP("MERGE-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("MERGE-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("MERGE-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("MERGE-core", "Error loading wallet.dat: Wallet requires newer version of Merge Core"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error loading wallet.dat: Wallet requires newer version of Point Core"),
 QT_TRANSLATE_NOOP("MERGE-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("MERGE-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("MERGE-core", "Error recovering public key."),
@@ -321,7 +321,7 @@ QT_TRANSLATE_NOOP("MERGE-core", "Incompatible mode."),
 QT_TRANSLATE_NOOP("MERGE-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("MERGE-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("MERGE-core", "Information"),
-QT_TRANSLATE_NOOP("MERGE-core", "Initialization sanity check failed. Merge Core is shutting down."),
+QT_TRANSLATE_NOOP("MERGE-core", "Initialization sanity check failed. Point Core is shutting down."),
 QT_TRANSLATE_NOOP("MERGE-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("MERGE-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("MERGE-core", "Insufficient funds."),
@@ -475,7 +475,7 @@ QT_TRANSLATE_NOOP("MERGE-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("MERGE-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("MERGE-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("MERGE-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("MERGE-core", "Wallet needed to be rewritten: restart Merge Core to complete"),
+QT_TRANSLATE_NOOP("MERGE-core", "Wallet needed to be rewritten: restart Point Core to complete"),
 QT_TRANSLATE_NOOP("MERGE-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("MERGE-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("MERGE-core", "Warning"),
