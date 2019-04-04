@@ -98,8 +98,8 @@ echo "Enter the masternode's private key, followed by [ENTER]: "
 read PRIVKEY
 
 # Remove old configuration file
-CONF_DIR=~/.merge
-CONF_FILE=merge.conf
+CONF_DIR=~/.point
+CONF_FILE=point.conf
 today=`date '+%Y_%m_%d_%H-%M-%S'`
 echo "mv ~/.Merge ~/.Merge.oldtestnet.$today"
 mv $CONF_DIR $CONF_DIR.oldnetwork.$today

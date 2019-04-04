@@ -27,7 +27,7 @@ RUN deps="alpine-sdk curl autoconf automake libtool boost-dev openssl-dev libeve
   apk del $deps && \
   rm -r /opt/db/docs /var/cache/apk/* /wallet /db-$DB_VERSION 
 
-VOLUME ["/home/wallet/.merge"]
+VOLUME ["/home/wallet/.point"]
 EXPOSE 52000/tcp 
 USER wallet 
 CMD merged -printtoconsole

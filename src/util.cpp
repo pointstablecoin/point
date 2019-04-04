@@ -431,7 +431,7 @@ boost::filesystem::path GetDefaultDataDir()
 // Unix: ~/.merge
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "merge";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "point";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -443,10 +443,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "merge";
+    return pathRet / "point";
 #else
     // Unix
-    return pathRet / ".merge";
+    return pathRet / ".point";
 #endif
 #endif
 }
