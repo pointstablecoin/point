@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="POINTSupply">
+    <widget class="QLabel" name="MERGESupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="POINTDemand">
+    <widget class="QLabel" name="MERGEDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyPOINT">
+    <widget class="QPushButton" name="BuyMERGE">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,7 +442,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy POINT</string>
+      <string>Buy MERGE</string>
      </property>
      <property name="icon">
       <iconset resource="../MERGE.qrc">
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>POINT</string>
+      <string>MERGE</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>POINT</string>
+      <string>MERGE</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputPOINT">
+    <widget class="QLineEdit" name="UnitsInputMERGE">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellPOINTBTN">
+    <widget class="QPushButton" name="SellMERGEBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,7 +1751,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell POINT</string>
+      <string>Sell MERGE</string>
      </property>
      <property name="icon">
       <iconset resource="../merge">
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>POINT Available:</string>
+         <string>MERGE Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="POINTAvailableLabel">
+       <widget class="QLabel" name="MERGEAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelPOINT">
+       <widget class="QLabel" name="labelMERGE">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>POINT</string>
+         <string>MERGE</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="POINTBalanceLabel">
+    <widget class="QLabel" name="MERGEBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>POINT Balance:</string>
+      <string>MERGE Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="POINTAvailableLabel_2">
+    <widget class="QLabel" name="MERGEAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>POINT Available:</string>
+      <string>MERGE Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>POINT Pending:</string>
+      <string>MERGE Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="POINTPendingLabel">
+    <widget class="QLabel" name="MERGEPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex POINT Deposit Address:</string>
+      <string>Bittrex MERGE Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">
@@ -2941,7 +2941,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate POINT Deposit Address</string>
+      <string>Generate MERGE Deposit Address</string>
      </property>
      <property name="icon">
       <iconset resource="../MERGE.qrc">
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertPOINT">
+     <widget class="QPushButton" name="btnConvertMERGE">
       <property name="geometry">
        <rect>
         <x>260</x>

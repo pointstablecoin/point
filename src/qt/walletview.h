@@ -126,7 +126,7 @@ public slots:
     /** Show progress dialog e.g. for rescan */
     void showProgress(const QString& title, int nProgress);
 
-    /** Update selected POINT amount from transactionview */
+    /** Update selected MERGE amount from transactionview */
     void trxAmount(QString amount);
 
 signals:

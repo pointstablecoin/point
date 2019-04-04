@@ -8,488 +8,488 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *point_strings[] = {
-QT_TRANSLATE_NOOP("POINT-core", " mints deleted\n"),
-QT_TRANSLATE_NOOP("POINT-core", " mints updated, "),
-QT_TRANSLATE_NOOP("POINT-core", " unconfirmed transactions removed\n"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+static const char UNUSED *merge_strings[] = {
+QT_TRANSLATE_NOOP("MERGE-core", " mints deleted\n"),
+QT_TRANSLATE_NOOP("MERGE-core", " mints updated, "),
+QT_TRANSLATE_NOOP("MERGE-core", " unconfirmed transactions removed\n"),
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "(1 = keep tx meta data e.g. account owner and payment request information, 2 "
 "= drop tx meta data)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Allow JSON-RPC connections from specified source. Valid for <ip> are a "
 "single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or "
 "a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "An error occurred while setting up the RPC address %s port %u for listening: "
 "%s"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Bind to given address and always listen on it. Use [host]:port notation for "
 "IPv6"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Bind to given address and whitelist peers connecting to it. Use [host]:port "
 "notation for IPv6"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Bind to given address to listen for JSON-RPC connections. Use [host]:port "
 "notation for IPv6. This option can be specified multiple times (default: "
 "bind to all interfaces)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
-QT_TRANSLATE_NOOP("POINT-core", ""
-"Cannot obtain a lock on data directory %s. Point Core is probably already "
+QT_TRANSLATE_NOOP("MERGE-core", ""
+"Cannot obtain a lock on data directory %s. Merge Core is probably already "
 "running."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
 "exact finalized budget match to my generated budget. (string, default: auto)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Continuously rate-limit free transactions to <n>*1000 bytes per minute "
 "(default:%u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Create new files with system default permissions, instead of umask 077 (only "
 "effective with disabled wallet functionality)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
-QT_TRANSLATE_NOOP("POINT-core", ""
-"Disable all POINT specific functionality (Masternodes, SwiftX, "
+QT_TRANSLATE_NOOP("MERGE-core", ""
+"Disable all MERGE specific functionality (Masternodes, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Distributed under the MIT software license, see the accompanying file "
 "COPYING or <http://www.opensource.org/licenses/mit-license.php>."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Enable automatic wallet backups triggered after each zPiv minting (0-1, "
 "default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Enable spork administration functionality with the appropriate private key."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Enter regression test mode, which uses a special chain in which blocks can "
 "be solved instantly."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Error: Listening for incoming connections failed (listen returned error %s)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Error: The transaction was rejected! This might happen if some of the coins "
 "in your wallet were already spent, such as if you used a copy of wallet.dat "
 "and coins were spent in the copy but not marked as spent here."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Error: This transaction requires a transaction fee of at least %s because of "
 "its amount, complexity, or use of recently received funds!"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Error: Unsupported argument -checklevel found. Checklevel must be level 4."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Error: Unsupported argument -socks found. Setting SOCKS version isn't "
 "possible anymore, only SOCKS5 proxies are supported."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Execute command when a relevant alert is received or we see a really long "
 "fork (%s in cmd is replaced by message)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Execute command when a wallet transaction changes (%s in cmd is replaced by "
 "TxID)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
-"Fees (in POINT/Kb) smaller than this are considered zero fee for relaying "
+QT_TRANSLATE_NOOP("MERGE-core", ""
+"Fees (in MERGE/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
-"Fees (in POINT/Kb) smaller than this are considered zero fee for transaction "
+QT_TRANSLATE_NOOP("MERGE-core", ""
+"Fees (in MERGE/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
 "(default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Found unconfirmed denominated outputs, will wait till they confirm to "
 "continue."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "If paytxfee is not set, include enough fee so transactions begin "
 "confirmation on average within n blocks (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "In this mode -genproclimit controls how many blocks are generated "
 "immediately."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Insufficient or insufficient confirmed funds, you might need to wait a few "
 "minutes and try again."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Invalid amount for -maxtxfee=<amount>: '%s' (must be at least the minrelay "
 "fee of %s to prevent stuck transactions)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Keep the specified amount available for spending at all times (default: 0)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Log transaction priority and fee per kB when mining blocks (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Maintain a full transaction index, used by the getrawtransaction rpc call "
 "(default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Maximum size of data in data carrier transactions we relay and mine "
 "(default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Maximum total fees to use in a single wallet transaction, setting too low "
 "may abort large transactions (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Number of seconds to keep misbehaving peers from reconnecting (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Obfuscation uses exact denominated amounts to send funds, you might simply "
 "need to anonymize some more coins."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Output debugging information (default: %u, supplying <category> is optional)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Preferred Denomination for automatically minted Zerocoin  "
 "(1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Query for peer addresses via DNS lookup, if low on addresses (default: 1 "
 "unless -connect)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Randomize credentials for every proxy connection. This enables Tor stream "
 "isolation (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Require high priority for relaying free or low-fee transactions (default:%u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Send trace/debug info to console instead of debug.log file (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Set maximum size of high-priority/low-fee transactions in bytes (default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Set the number of script verification threads (%u to %d, 0 = auto, <0 = "
 "leave that many cores free, default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Set the number of threads for coin generation if enabled (-1 = all cores, "
 "default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Support filtering of blocks and transaction with bloom filters (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "SwiftX requires inputs with at least 6 confirmations, you might need to wait "
 "a few minutes and try again."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
 "staking or merchant applications!"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "This version will only run on TESTNET"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "This product includes software developed by the OpenSSL Project for use in "
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
-QT_TRANSLATE_NOOP("POINT-core", ""
-"To use pointd, or the -server option to point-qt, you must set an rpcpassword "
+QT_TRANSLATE_NOOP("MERGE-core", ""
+"To use merged, or the -server option to merge-qt, you must set an rpcpassword "
 "in the configuration file:\n"
 "%s\n"
 "It is recommended you use the following random password:\n"
-"rpcuser=pointrpc\n"
+"rpcuser=mergerpc\n"
 "rpcpassword=%s\n"
 "(you do not need to remember this password)\n"
 "The username and password MUST NOT be the same.\n"
 "If the file does not exist, create it with owner-readable-only file "
 "permissions.\n"
 "It is also recommended to set alertnotify so you are notified of problems;\n"
-"for example: alertnotify=echo %%s | mail -s \"POINT Alert\" admin@foo.com\n"),
-QT_TRANSLATE_NOOP("POINT-core", ""
-"Unable to bind to %s on this computer. Point Core is probably already running."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+"for example: alertnotify=echo %%s | mail -s \"MERGE Alert\" admin@foo.com\n"),
+QT_TRANSLATE_NOOP("MERGE-core", ""
+"Unable to bind to %s on this computer. Merge Core is probably already running."),
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 POINT."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+"transaction that are not equal 10000 MERGE."),
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"POINT."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+"MERGE."),
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: -maxtxfee is set very high! Fees this large could be paid on a "
 "single transaction."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: -paytxfee is set very high! This is the transaction fee you will "
 "pay if you send a transaction."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong Point Core will not work properly."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+"your clock is wrong Merge Core will not work properly."),
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: We do not appear to fully agree with our peers! You may need to "
 "upgrade, or other nodes may need to upgrade."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: error reading wallet.dat! All keys read correctly, but transaction "
 "data or address book entries might be missing or incorrect."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as "
 "wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect "
 "you should restore from a backup."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Whitelist peers connecting from the given netmask or IP address. Can be "
 "specified multiple times."),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "Whitelisted peers cannot be DoS banned and their transactions are always "
 "relayed, even if they are already in the mempool, useful e.g. for a gateway"),
-QT_TRANSLATE_NOOP("POINT-core", ""
+QT_TRANSLATE_NOOP("MERGE-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("POINT-core", "(52000 could be used only on mainnet)"),
-QT_TRANSLATE_NOOP("POINT-core", "(default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("POINT-core", "(must be 52000 for mainnet)"),
-QT_TRANSLATE_NOOP("POINT-core", "<category> can be:"),
-QT_TRANSLATE_NOOP("POINT-core", "Accept command line and JSON-RPC commands"),
-QT_TRANSLATE_NOOP("POINT-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
-QT_TRANSLATE_NOOP("POINT-core", "Accept public REST requests (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Acceptable ciphers (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Add a node to connect to and attempt to keep the connection open"),
-QT_TRANSLATE_NOOP("POINT-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
-QT_TRANSLATE_NOOP("POINT-core", "Already have that input."),
-QT_TRANSLATE_NOOP("POINT-core", "Always query for peer addresses via DNS lookup (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Attempt to force blockchain corruption recovery"),
-QT_TRANSLATE_NOOP("POINT-core", "Attempt to recover private keys from a corrupt wallet.dat"),
-QT_TRANSLATE_NOOP("POINT-core", "Automatically create Tor hidden service (default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", "Block creation options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Calculating missing accumulators..."),
-QT_TRANSLATE_NOOP("POINT-core", "Can't denominate: no compatible inputs left."),
-QT_TRANSLATE_NOOP("POINT-core", "Can't find random Masternode."),
-QT_TRANSLATE_NOOP("POINT-core", "Can't mix while sync in progress."),
-QT_TRANSLATE_NOOP("POINT-core", "Cannot downgrade wallet"),
-QT_TRANSLATE_NOOP("POINT-core", "Cannot resolve -bind address: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Cannot resolve -externalip address: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Cannot resolve -whitebind address: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Cannot write default address"),
-QT_TRANSLATE_NOOP("POINT-core", "Collateral not valid."),
-QT_TRANSLATE_NOOP("POINT-core", "Connect only to the specified node(s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Connect through SOCKS5 proxy"),
-QT_TRANSLATE_NOOP("POINT-core", "Connect to a node to retrieve peer addresses, and disconnect"),
-QT_TRANSLATE_NOOP("POINT-core", "Connection options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
-QT_TRANSLATE_NOOP("POINT-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("POINT-core", "Copyright (C) 2015-%i The Point Core Developers"),
-QT_TRANSLATE_NOOP("POINT-core", "Corrupted block database detected"),
-QT_TRANSLATE_NOOP("POINT-core", "Could not parse -rpcbind value %s as network address"),
-QT_TRANSLATE_NOOP("POINT-core", "Could not parse masternode.conf"),
-QT_TRANSLATE_NOOP("POINT-core", "Debugging/Testing options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Delete blockchain folders and resync from scratch"),
-QT_TRANSLATE_NOOP("POINT-core", "Disable OS notifications for incoming transactions (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Disable safemode, override a real safe mode event (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Discover own IP address (default: 1 when listening and no -externalip)"),
-QT_TRANSLATE_NOOP("POINT-core", "Display the stake modifier calculations in the debug.log file."),
-QT_TRANSLATE_NOOP("POINT-core", "Display verbose coin stake messages in the debug.log file."),
-QT_TRANSLATE_NOOP("POINT-core", "Do not load the wallet and disable wallet RPC calls"),
-QT_TRANSLATE_NOOP("POINT-core", "Do you want to rebuild the block database now?"),
-QT_TRANSLATE_NOOP("POINT-core", "Done loading"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable publish hash block in <address>"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable publish hash transaction in <address>"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable publish raw block in <address>"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable publish raw transaction (locked via SwiftX) in <address>"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable publish raw transaction in <address>"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable staking functionality (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Enable the client to act as a masternode (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Entries are full."),
-QT_TRANSLATE_NOOP("POINT-core", "Error connecting to Masternode."),
-QT_TRANSLATE_NOOP("POINT-core", "Error initializing block database"),
-QT_TRANSLATE_NOOP("POINT-core", "Error initializing wallet database environment %s!"),
-QT_TRANSLATE_NOOP("POINT-core", "Error loading block database"),
-QT_TRANSLATE_NOOP("POINT-core", "Error loading wallet.dat"),
-QT_TRANSLATE_NOOP("POINT-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("POINT-core", "Error loading wallet.dat: Wallet requires newer version of Point Core"),
-QT_TRANSLATE_NOOP("POINT-core", "Error opening block database"),
-QT_TRANSLATE_NOOP("POINT-core", "Error reading from database, shutting down."),
-QT_TRANSLATE_NOOP("POINT-core", "Error recovering public key."),
-QT_TRANSLATE_NOOP("POINT-core", "Error"),
-QT_TRANSLATE_NOOP("POINT-core", "Error: A fatal internal error occured, see debug.log for details"),
-QT_TRANSLATE_NOOP("POINT-core", "Error: Can't select current denominated inputs"),
-QT_TRANSLATE_NOOP("POINT-core", "Error: Disk space is low!"),
-QT_TRANSLATE_NOOP("POINT-core", "Error: Unsupported argument -tor found, use -onion."),
-QT_TRANSLATE_NOOP("POINT-core", "Error: Wallet locked, unable to create transaction!"),
-QT_TRANSLATE_NOOP("POINT-core", "Error: You already have pending entries in the Obfuscation pool"),
-QT_TRANSLATE_NOOP("POINT-core", "Failed to calculate accumulator checkpoint"),
-QT_TRANSLATE_NOOP("POINT-core", "Failed to listen on any port. Use -listen=0 if you want this."),
-QT_TRANSLATE_NOOP("POINT-core", "Failed to read block index"),
-QT_TRANSLATE_NOOP("POINT-core", "Failed to read block"),
-QT_TRANSLATE_NOOP("POINT-core", "Failed to write block index"),
-QT_TRANSLATE_NOOP("POINT-core", "Fee (in POINT/kB) to add to transactions you send (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Finalizing transaction."),
-QT_TRANSLATE_NOOP("POINT-core", "Force safe mode (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Found enough users, signing ( waiting %s )"),
-QT_TRANSLATE_NOOP("POINT-core", "Found enough users, signing ..."),
-QT_TRANSLATE_NOOP("POINT-core", "Generate coins (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "How many blocks to check at startup (default: %u, 0 = all)"),
-QT_TRANSLATE_NOOP("POINT-core", "If <category> is not supplied, output all debugging information."),
-QT_TRANSLATE_NOOP("POINT-core", "Importing..."),
-QT_TRANSLATE_NOOP("POINT-core", "Imports blocks from external blk000??.dat file"),
-QT_TRANSLATE_NOOP("POINT-core", "Include IP addresses in debug output (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Incompatible mode."),
-QT_TRANSLATE_NOOP("POINT-core", "Incompatible version."),
-QT_TRANSLATE_NOOP("POINT-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
-QT_TRANSLATE_NOOP("POINT-core", "Information"),
-QT_TRANSLATE_NOOP("POINT-core", "Initialization sanity check failed. Point Core is shutting down."),
-QT_TRANSLATE_NOOP("POINT-core", "Input is not valid."),
-QT_TRANSLATE_NOOP("POINT-core", "Insufficient funds"),
-QT_TRANSLATE_NOOP("POINT-core", "Insufficient funds."),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid -onion address or hostname: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid -proxy address or hostname: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid amount for -maxtxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid amount for -minrelaytxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid amount for -mintxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid amount for -reservebalance=<amount>"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid amount"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid masternodeprivkey. Please see documenation."),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid netmask specified in -whitelist: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid port detected in masternode.conf"),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid private key."),
-QT_TRANSLATE_NOOP("POINT-core", "Invalid script detected."),
-QT_TRANSLATE_NOOP("POINT-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Last Obfuscation was too recent."),
-QT_TRANSLATE_NOOP("POINT-core", "Last successful Obfuscation action was too recent."),
-QT_TRANSLATE_NOOP("POINT-core", "Limit size of signature cache to <n> entries (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Line: %d"),
-QT_TRANSLATE_NOOP("POINT-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Listen for connections on <port> (default: %u or testnet: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Loading addresses..."),
-QT_TRANSLATE_NOOP("POINT-core", "Loading block index..."),
-QT_TRANSLATE_NOOP("POINT-core", "Loading budget cache..."),
-QT_TRANSLATE_NOOP("POINT-core", "Loading masternode cache..."),
-QT_TRANSLATE_NOOP("POINT-core", "Loading masternode payment cache..."),
-QT_TRANSLATE_NOOP("POINT-core", "Loading sporks..."),
-QT_TRANSLATE_NOOP("POINT-core", "Loading wallet... (%3.2f %%)"),
-QT_TRANSLATE_NOOP("POINT-core", "Loading wallet..."),
-QT_TRANSLATE_NOOP("POINT-core", "Lock is already in place."),
-QT_TRANSLATE_NOOP("POINT-core", "Lock masternodes from masternode configuration file (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Maintain at most <n> connections to peers (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Masternode options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Masternode queue is full."),
-QT_TRANSLATE_NOOP("POINT-core", "Masternode:"),
-QT_TRANSLATE_NOOP("POINT-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Missing input transaction information."),
-QT_TRANSLATE_NOOP("POINT-core", "Mixing in progress..."),
-QT_TRANSLATE_NOOP("POINT-core", "Need to specify a port with -whitebind: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "No Masternodes detected."),
-QT_TRANSLATE_NOOP("POINT-core", "No compatible Masternode found."),
-QT_TRANSLATE_NOOP("POINT-core", "No funds detected in need of denominating."),
-QT_TRANSLATE_NOOP("POINT-core", "No matching denominations found for mixing."),
-QT_TRANSLATE_NOOP("POINT-core", "Node relay options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Non-standard public key detected."),
-QT_TRANSLATE_NOOP("POINT-core", "Not compatible with existing transactions."),
-QT_TRANSLATE_NOOP("POINT-core", "Not enough file descriptors available."),
-QT_TRANSLATE_NOOP("POINT-core", "Not in the Masternode list."),
-QT_TRANSLATE_NOOP("POINT-core", "Number of automatic wallet backups (default: 10)"),
-QT_TRANSLATE_NOOP("POINT-core", "Obfuscation is idle."),
-QT_TRANSLATE_NOOP("POINT-core", "Obfuscation request complete:"),
-QT_TRANSLATE_NOOP("POINT-core", "Obfuscation request incomplete:"),
-QT_TRANSLATE_NOOP("POINT-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
-QT_TRANSLATE_NOOP("POINT-core", "Options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Password for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("POINT-core", "Percentage of automatically minted Zerocoin  (10-100, default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Preparing for resync..."),
-QT_TRANSLATE_NOOP("POINT-core", "Prepend debug output with timestamp (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Print version and exit"),
-QT_TRANSLATE_NOOP("POINT-core", "RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)"),
-QT_TRANSLATE_NOOP("POINT-core", "RPC server options:"),
-QT_TRANSLATE_NOOP("POINT-core", "RPC support for HTTP persistent connections (default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", "Randomly drop 1 of every <n> network messages"),
-QT_TRANSLATE_NOOP("POINT-core", "Randomly fuzz 1 of every <n> network messages"),
-QT_TRANSLATE_NOOP("POINT-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("POINT-core", "Recalculating coin supply may take 30-60 minutes..."),
-QT_TRANSLATE_NOOP("POINT-core", "Recalculating supply statistics may take 30-60 minutes..."),
-QT_TRANSLATE_NOOP("POINT-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Reindex the accumulator database"),
-QT_TRANSLATE_NOOP("POINT-core", "Relay and mine data carrier transactions (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Relay non-P2SH multisig (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Rescan the block chain for missing wallet transactions"),
-QT_TRANSLATE_NOOP("POINT-core", "Rescanning..."),
-QT_TRANSLATE_NOOP("POINT-core", "ResetMintZerocoin finished: "),
-QT_TRANSLATE_NOOP("POINT-core", "ResetSpentZerocoin finished: "),
-QT_TRANSLATE_NOOP("POINT-core", "Run a thread to flush wallet periodically (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Run in the background as a daemon and accept commands"),
-QT_TRANSLATE_NOOP("POINT-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Server certificate file (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Server private key (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Session not complete!"),
-QT_TRANSLATE_NOOP("POINT-core", "Session timed out."),
-QT_TRANSLATE_NOOP("POINT-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", "Set external address:port to get to this masternode (example: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Set key pool size to <n> (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Set maximum block size in bytes (default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", "Set minimum block size in bytes (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Set the Maximum reorg depth (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Set the masternode private key"),
-QT_TRANSLATE_NOOP("POINT-core", "Set the number of threads to service RPC calls (default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", "Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Show all debugging options (usage: --help -help-debug)"),
-QT_TRANSLATE_NOOP("POINT-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
-QT_TRANSLATE_NOOP("POINT-core", "Signing failed."),
-QT_TRANSLATE_NOOP("POINT-core", "Signing timed out."),
-QT_TRANSLATE_NOOP("POINT-core", "Signing transaction failed"),
-QT_TRANSLATE_NOOP("POINT-core", "Specify configuration file (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
-QT_TRANSLATE_NOOP("POINT-core", "Specify data directory"),
-QT_TRANSLATE_NOOP("POINT-core", "Specify masternode configuration file (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Specify pid file (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Specify wallet file (within data directory)"),
-QT_TRANSLATE_NOOP("POINT-core", "Specify your own public address"),
-QT_TRANSLATE_NOOP("POINT-core", "Spend unconfirmed change when sending transactions (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Staking options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Stop running after importing blocks from disk (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Submitted following entries to masternode: %u / %d"),
-QT_TRANSLATE_NOOP("POINT-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
-QT_TRANSLATE_NOOP("POINT-core", "Submitted to masternode, waiting in queue %s"),
-QT_TRANSLATE_NOOP("POINT-core", "SwiftX options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Synchronization failed"),
-QT_TRANSLATE_NOOP("POINT-core", "Synchronization finished"),
-QT_TRANSLATE_NOOP("POINT-core", "Synchronization pending..."),
-QT_TRANSLATE_NOOP("POINT-core", "Synchronizing budgets..."),
-QT_TRANSLATE_NOOP("POINT-core", "Synchronizing masternode winners..."),
-QT_TRANSLATE_NOOP("POINT-core", "Synchronizing masternodes..."),
-QT_TRANSLATE_NOOP("POINT-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("POINT-core", "This help message"),
-QT_TRANSLATE_NOOP("POINT-core", "This is experimental software."),
-QT_TRANSLATE_NOOP("POINT-core", "This is intended for regression testing tools and app development."),
-QT_TRANSLATE_NOOP("POINT-core", "This is not a Masternode."),
-QT_TRANSLATE_NOOP("POINT-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Tor control port password (default: empty)"),
-QT_TRANSLATE_NOOP("POINT-core", "Tor control port to use if onion listening enabled (default: %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Transaction amount too small"),
-QT_TRANSLATE_NOOP("POINT-core", "Transaction amounts must be positive"),
-QT_TRANSLATE_NOOP("POINT-core", "Transaction created successfully."),
-QT_TRANSLATE_NOOP("POINT-core", "Transaction fees are too high."),
-QT_TRANSLATE_NOOP("POINT-core", "Transaction not valid."),
-QT_TRANSLATE_NOOP("POINT-core", "Transaction too large for fee policy"),
-QT_TRANSLATE_NOOP("POINT-core", "Transaction too large"),
-QT_TRANSLATE_NOOP("POINT-core", "Transmitting final transaction."),
-QT_TRANSLATE_NOOP("POINT-core", "Unable to bind to %s on this computer (bind returned error %s)"),
-QT_TRANSLATE_NOOP("POINT-core", "Unable to sign spork message, wrong key?"),
-QT_TRANSLATE_NOOP("POINT-core", "Unknown network specified in -onlynet: '%s'"),
-QT_TRANSLATE_NOOP("POINT-core", "Unknown state: id = %u"),
-QT_TRANSLATE_NOOP("POINT-core", "Upgrade wallet to latest format"),
-QT_TRANSLATE_NOOP("POINT-core", "Use OpenSSL (https) for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("POINT-core", "Use UPnP to map the listening port (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Use UPnP to map the listening port (default: 1 when listening)"),
-QT_TRANSLATE_NOOP("POINT-core", "Use a custom max chain reorganization depth (default: %u)"),
-QT_TRANSLATE_NOOP("POINT-core", "Use the test network"),
-QT_TRANSLATE_NOOP("POINT-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("POINT-core", "Value more than Obfuscation pool maximum allows."),
-QT_TRANSLATE_NOOP("POINT-core", "Verifying blocks..."),
-QT_TRANSLATE_NOOP("POINT-core", "Verifying wallet..."),
-QT_TRANSLATE_NOOP("POINT-core", "Wallet %s resides outside data directory %s"),
-QT_TRANSLATE_NOOP("POINT-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("POINT-core", "Wallet needed to be rewritten: restart Point Core to complete"),
-QT_TRANSLATE_NOOP("POINT-core", "Wallet options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Wallet window title"),
-QT_TRANSLATE_NOOP("POINT-core", "Warning"),
-QT_TRANSLATE_NOOP("POINT-core", "Warning: This version is obsolete, upgrade required!"),
-QT_TRANSLATE_NOOP("POINT-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
-QT_TRANSLATE_NOOP("POINT-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
-QT_TRANSLATE_NOOP("POINT-core", "Will retry..."),
-QT_TRANSLATE_NOOP("POINT-core", "You need to rebuild the database using -reindex to change -txindex"),
-QT_TRANSLATE_NOOP("POINT-core", "Your entries added successfully."),
-QT_TRANSLATE_NOOP("POINT-core", "Your transaction was accepted into the pool!"),
-QT_TRANSLATE_NOOP("POINT-core", "Zapping all transactions from wallet..."),
-QT_TRANSLATE_NOOP("POINT-core", "ZeroMQ notification options:"),
-QT_TRANSLATE_NOOP("POINT-core", "Zerocoin options:"),
-QT_TRANSLATE_NOOP("POINT-core", "failed to validate zerocoin"),
-QT_TRANSLATE_NOOP("POINT-core", "on startup"),
-QT_TRANSLATE_NOOP("POINT-core", "wallet.dat corrupt, salvage failed"),
+QT_TRANSLATE_NOOP("MERGE-core", "(52000 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("MERGE-core", "(default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "(default: 1)"),
+QT_TRANSLATE_NOOP("MERGE-core", "(must be 52000 for mainnet)"),
+QT_TRANSLATE_NOOP("MERGE-core", "<category> can be:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Accept command line and JSON-RPC commands"),
+QT_TRANSLATE_NOOP("MERGE-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Accept public REST requests (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Acceptable ciphers (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Add a node to connect to and attempt to keep the connection open"),
+QT_TRANSLATE_NOOP("MERGE-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
+QT_TRANSLATE_NOOP("MERGE-core", "Already have that input."),
+QT_TRANSLATE_NOOP("MERGE-core", "Always query for peer addresses via DNS lookup (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Attempt to force blockchain corruption recovery"),
+QT_TRANSLATE_NOOP("MERGE-core", "Attempt to recover private keys from a corrupt wallet.dat"),
+QT_TRANSLATE_NOOP("MERGE-core", "Automatically create Tor hidden service (default: %d)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Block creation options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Calculating missing accumulators..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Can't denominate: no compatible inputs left."),
+QT_TRANSLATE_NOOP("MERGE-core", "Can't find random Masternode."),
+QT_TRANSLATE_NOOP("MERGE-core", "Can't mix while sync in progress."),
+QT_TRANSLATE_NOOP("MERGE-core", "Cannot downgrade wallet"),
+QT_TRANSLATE_NOOP("MERGE-core", "Cannot resolve -bind address: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Cannot resolve -externalip address: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Cannot resolve -whitebind address: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Cannot write default address"),
+QT_TRANSLATE_NOOP("MERGE-core", "Collateral not valid."),
+QT_TRANSLATE_NOOP("MERGE-core", "Connect only to the specified node(s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Connect through SOCKS5 proxy"),
+QT_TRANSLATE_NOOP("MERGE-core", "Connect to a node to retrieve peer addresses, and disconnect"),
+QT_TRANSLATE_NOOP("MERGE-core", "Connection options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
+QT_TRANSLATE_NOOP("MERGE-core", "Copyright (C) 2014-%i The Dash Core Developers"),
+QT_TRANSLATE_NOOP("MERGE-core", "Copyright (C) 2015-%i The Merge Core Developers"),
+QT_TRANSLATE_NOOP("MERGE-core", "Corrupted block database detected"),
+QT_TRANSLATE_NOOP("MERGE-core", "Could not parse -rpcbind value %s as network address"),
+QT_TRANSLATE_NOOP("MERGE-core", "Could not parse masternode.conf"),
+QT_TRANSLATE_NOOP("MERGE-core", "Debugging/Testing options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Delete blockchain folders and resync from scratch"),
+QT_TRANSLATE_NOOP("MERGE-core", "Disable OS notifications for incoming transactions (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Disable safemode, override a real safe mode event (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Discover own IP address (default: 1 when listening and no -externalip)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Display the stake modifier calculations in the debug.log file."),
+QT_TRANSLATE_NOOP("MERGE-core", "Display verbose coin stake messages in the debug.log file."),
+QT_TRANSLATE_NOOP("MERGE-core", "Do not load the wallet and disable wallet RPC calls"),
+QT_TRANSLATE_NOOP("MERGE-core", "Do you want to rebuild the block database now?"),
+QT_TRANSLATE_NOOP("MERGE-core", "Done loading"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable publish hash block in <address>"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable publish hash transaction in <address>"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable publish raw block in <address>"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable publish raw transaction (locked via SwiftX) in <address>"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable publish raw transaction in <address>"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable staking functionality (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Enable the client to act as a masternode (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Entries are full."),
+QT_TRANSLATE_NOOP("MERGE-core", "Error connecting to Masternode."),
+QT_TRANSLATE_NOOP("MERGE-core", "Error initializing block database"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error initializing wallet database environment %s!"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error loading block database"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error loading wallet.dat"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error loading wallet.dat: Wallet corrupted"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error loading wallet.dat: Wallet requires newer version of Merge Core"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error opening block database"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error reading from database, shutting down."),
+QT_TRANSLATE_NOOP("MERGE-core", "Error recovering public key."),
+QT_TRANSLATE_NOOP("MERGE-core", "Error"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error: A fatal internal error occured, see debug.log for details"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error: Can't select current denominated inputs"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error: Disk space is low!"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error: Unsupported argument -tor found, use -onion."),
+QT_TRANSLATE_NOOP("MERGE-core", "Error: Wallet locked, unable to create transaction!"),
+QT_TRANSLATE_NOOP("MERGE-core", "Error: You already have pending entries in the Obfuscation pool"),
+QT_TRANSLATE_NOOP("MERGE-core", "Failed to calculate accumulator checkpoint"),
+QT_TRANSLATE_NOOP("MERGE-core", "Failed to listen on any port. Use -listen=0 if you want this."),
+QT_TRANSLATE_NOOP("MERGE-core", "Failed to read block index"),
+QT_TRANSLATE_NOOP("MERGE-core", "Failed to read block"),
+QT_TRANSLATE_NOOP("MERGE-core", "Failed to write block index"),
+QT_TRANSLATE_NOOP("MERGE-core", "Fee (in MERGE/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Finalizing transaction."),
+QT_TRANSLATE_NOOP("MERGE-core", "Force safe mode (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Found enough users, signing ( waiting %s )"),
+QT_TRANSLATE_NOOP("MERGE-core", "Found enough users, signing ..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Generate coins (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "How many blocks to check at startup (default: %u, 0 = all)"),
+QT_TRANSLATE_NOOP("MERGE-core", "If <category> is not supplied, output all debugging information."),
+QT_TRANSLATE_NOOP("MERGE-core", "Importing..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Imports blocks from external blk000??.dat file"),
+QT_TRANSLATE_NOOP("MERGE-core", "Include IP addresses in debug output (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Incompatible mode."),
+QT_TRANSLATE_NOOP("MERGE-core", "Incompatible version."),
+QT_TRANSLATE_NOOP("MERGE-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
+QT_TRANSLATE_NOOP("MERGE-core", "Information"),
+QT_TRANSLATE_NOOP("MERGE-core", "Initialization sanity check failed. Merge Core is shutting down."),
+QT_TRANSLATE_NOOP("MERGE-core", "Input is not valid."),
+QT_TRANSLATE_NOOP("MERGE-core", "Insufficient funds"),
+QT_TRANSLATE_NOOP("MERGE-core", "Insufficient funds."),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid -onion address or hostname: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid -proxy address or hostname: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid amount for -maxtxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid amount for -minrelaytxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid amount for -mintxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid amount for -paytxfee=<amount>: '%s' (must be at least %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid amount for -paytxfee=<amount>: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid amount for -reservebalance=<amount>"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid amount"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid masternodeprivkey. Please see documenation."),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid netmask specified in -whitelist: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid port detected in masternode.conf"),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid private key."),
+QT_TRANSLATE_NOOP("MERGE-core", "Invalid script detected."),
+QT_TRANSLATE_NOOP("MERGE-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Last Obfuscation was too recent."),
+QT_TRANSLATE_NOOP("MERGE-core", "Last successful Obfuscation action was too recent."),
+QT_TRANSLATE_NOOP("MERGE-core", "Limit size of signature cache to <n> entries (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Line: %d"),
+QT_TRANSLATE_NOOP("MERGE-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Listen for connections on <port> (default: %u or testnet: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading addresses..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading block index..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading budget cache..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading masternode cache..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading masternode payment cache..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading sporks..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading wallet... (%3.2f %%)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Loading wallet..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Lock is already in place."),
+QT_TRANSLATE_NOOP("MERGE-core", "Lock masternodes from masternode configuration file (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Maintain at most <n> connections to peers (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Masternode options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Masternode queue is full."),
+QT_TRANSLATE_NOOP("MERGE-core", "Masternode:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Missing input transaction information."),
+QT_TRANSLATE_NOOP("MERGE-core", "Mixing in progress..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Need to specify a port with -whitebind: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "No Masternodes detected."),
+QT_TRANSLATE_NOOP("MERGE-core", "No compatible Masternode found."),
+QT_TRANSLATE_NOOP("MERGE-core", "No funds detected in need of denominating."),
+QT_TRANSLATE_NOOP("MERGE-core", "No matching denominations found for mixing."),
+QT_TRANSLATE_NOOP("MERGE-core", "Node relay options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Non-standard public key detected."),
+QT_TRANSLATE_NOOP("MERGE-core", "Not compatible with existing transactions."),
+QT_TRANSLATE_NOOP("MERGE-core", "Not enough file descriptors available."),
+QT_TRANSLATE_NOOP("MERGE-core", "Not in the Masternode list."),
+QT_TRANSLATE_NOOP("MERGE-core", "Number of automatic wallet backups (default: 10)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Obfuscation is idle."),
+QT_TRANSLATE_NOOP("MERGE-core", "Obfuscation request complete:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Obfuscation request incomplete:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Password for JSON-RPC connections"),
+QT_TRANSLATE_NOOP("MERGE-core", "Percentage of automatically minted Zerocoin  (10-100, default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Preparing for resync..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Prepend debug output with timestamp (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Print version and exit"),
+QT_TRANSLATE_NOOP("MERGE-core", "RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)"),
+QT_TRANSLATE_NOOP("MERGE-core", "RPC server options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "RPC support for HTTP persistent connections (default: %d)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Randomly drop 1 of every <n> network messages"),
+QT_TRANSLATE_NOOP("MERGE-core", "Randomly fuzz 1 of every <n> network messages"),
+QT_TRANSLATE_NOOP("MERGE-core", "Rebuild block chain index from current blk000??.dat files"),
+QT_TRANSLATE_NOOP("MERGE-core", "Recalculating coin supply may take 30-60 minutes..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Recalculating supply statistics may take 30-60 minutes..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Receive and display P2P network alerts (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Reindex the accumulator database"),
+QT_TRANSLATE_NOOP("MERGE-core", "Relay and mine data carrier transactions (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Relay non-P2SH multisig (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Rescan the block chain for missing wallet transactions"),
+QT_TRANSLATE_NOOP("MERGE-core", "Rescanning..."),
+QT_TRANSLATE_NOOP("MERGE-core", "ResetMintZerocoin finished: "),
+QT_TRANSLATE_NOOP("MERGE-core", "ResetSpentZerocoin finished: "),
+QT_TRANSLATE_NOOP("MERGE-core", "Run a thread to flush wallet periodically (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Run in the background as a daemon and accept commands"),
+QT_TRANSLATE_NOOP("MERGE-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Server certificate file (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Server private key (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Session not complete!"),
+QT_TRANSLATE_NOOP("MERGE-core", "Session timed out."),
+QT_TRANSLATE_NOOP("MERGE-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Set external address:port to get to this masternode (example: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Set key pool size to <n> (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Set maximum block size in bytes (default: %d)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Set minimum block size in bytes (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Set the Maximum reorg depth (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Set the masternode private key"),
+QT_TRANSLATE_NOOP("MERGE-core", "Set the number of threads to service RPC calls (default: %d)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Sets the DB_PRIVATE flag in the wallet db environment (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Show all debugging options (usage: --help -help-debug)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Signing failed."),
+QT_TRANSLATE_NOOP("MERGE-core", "Signing timed out."),
+QT_TRANSLATE_NOOP("MERGE-core", "Signing transaction failed"),
+QT_TRANSLATE_NOOP("MERGE-core", "Specify configuration file (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Specify connection timeout in milliseconds (minimum: 1, default: %d)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Specify data directory"),
+QT_TRANSLATE_NOOP("MERGE-core", "Specify masternode configuration file (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Specify pid file (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Specify wallet file (within data directory)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Specify your own public address"),
+QT_TRANSLATE_NOOP("MERGE-core", "Spend unconfirmed change when sending transactions (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Staking options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Stop running after importing blocks from disk (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Submitted following entries to masternode: %u / %d"),
+QT_TRANSLATE_NOOP("MERGE-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
+QT_TRANSLATE_NOOP("MERGE-core", "Submitted to masternode, waiting in queue %s"),
+QT_TRANSLATE_NOOP("MERGE-core", "SwiftX options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Synchronization failed"),
+QT_TRANSLATE_NOOP("MERGE-core", "Synchronization finished"),
+QT_TRANSLATE_NOOP("MERGE-core", "Synchronization pending..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Synchronizing budgets..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Synchronizing masternode winners..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Synchronizing masternodes..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Synchronizing sporks..."),
+QT_TRANSLATE_NOOP("MERGE-core", "This help message"),
+QT_TRANSLATE_NOOP("MERGE-core", "This is experimental software."),
+QT_TRANSLATE_NOOP("MERGE-core", "This is intended for regression testing tools and app development."),
+QT_TRANSLATE_NOOP("MERGE-core", "This is not a Masternode."),
+QT_TRANSLATE_NOOP("MERGE-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Tor control port password (default: empty)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Tor control port to use if onion listening enabled (default: %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Transaction amount too small"),
+QT_TRANSLATE_NOOP("MERGE-core", "Transaction amounts must be positive"),
+QT_TRANSLATE_NOOP("MERGE-core", "Transaction created successfully."),
+QT_TRANSLATE_NOOP("MERGE-core", "Transaction fees are too high."),
+QT_TRANSLATE_NOOP("MERGE-core", "Transaction not valid."),
+QT_TRANSLATE_NOOP("MERGE-core", "Transaction too large for fee policy"),
+QT_TRANSLATE_NOOP("MERGE-core", "Transaction too large"),
+QT_TRANSLATE_NOOP("MERGE-core", "Transmitting final transaction."),
+QT_TRANSLATE_NOOP("MERGE-core", "Unable to bind to %s on this computer (bind returned error %s)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Unable to sign spork message, wrong key?"),
+QT_TRANSLATE_NOOP("MERGE-core", "Unknown network specified in -onlynet: '%s'"),
+QT_TRANSLATE_NOOP("MERGE-core", "Unknown state: id = %u"),
+QT_TRANSLATE_NOOP("MERGE-core", "Upgrade wallet to latest format"),
+QT_TRANSLATE_NOOP("MERGE-core", "Use OpenSSL (https) for JSON-RPC connections"),
+QT_TRANSLATE_NOOP("MERGE-core", "Use UPnP to map the listening port (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Use UPnP to map the listening port (default: 1 when listening)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Use a custom max chain reorganization depth (default: %u)"),
+QT_TRANSLATE_NOOP("MERGE-core", "Use the test network"),
+QT_TRANSLATE_NOOP("MERGE-core", "Username for JSON-RPC connections"),
+QT_TRANSLATE_NOOP("MERGE-core", "Value more than Obfuscation pool maximum allows."),
+QT_TRANSLATE_NOOP("MERGE-core", "Verifying blocks..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Verifying wallet..."),
+QT_TRANSLATE_NOOP("MERGE-core", "Wallet %s resides outside data directory %s"),
+QT_TRANSLATE_NOOP("MERGE-core", "Wallet is locked."),
+QT_TRANSLATE_NOOP("MERGE-core", "Wallet needed to be rewritten: restart Merge Core to complete"),
+QT_TRANSLATE_NOOP("MERGE-core", "Wallet options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Wallet window title"),
+QT_TRANSLATE_NOOP("MERGE-core", "Warning"),
+QT_TRANSLATE_NOOP("MERGE-core", "Warning: This version is obsolete, upgrade required!"),
+QT_TRANSLATE_NOOP("MERGE-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
+QT_TRANSLATE_NOOP("MERGE-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
+QT_TRANSLATE_NOOP("MERGE-core", "Will retry..."),
+QT_TRANSLATE_NOOP("MERGE-core", "You need to rebuild the database using -reindex to change -txindex"),
+QT_TRANSLATE_NOOP("MERGE-core", "Your entries added successfully."),
+QT_TRANSLATE_NOOP("MERGE-core", "Your transaction was accepted into the pool!"),
+QT_TRANSLATE_NOOP("MERGE-core", "Zapping all transactions from wallet..."),
+QT_TRANSLATE_NOOP("MERGE-core", "ZeroMQ notification options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "Zerocoin options:"),
+QT_TRANSLATE_NOOP("MERGE-core", "failed to validate zerocoin"),
+QT_TRANSLATE_NOOP("MERGE-core", "on startup"),
+QT_TRANSLATE_NOOP("MERGE-core", "wallet.dat corrupt, salvage failed"),
 };

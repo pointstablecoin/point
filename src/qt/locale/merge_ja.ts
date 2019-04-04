@@ -269,6 +269,6 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>POINT-core</name>
+    <name>MERGE-core</name>
     </context>
 </TS>

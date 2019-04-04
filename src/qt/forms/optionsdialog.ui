@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start POINT after logging in to the system.</string>
+          <string>Automatically start MERGE after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start POINT on system login</string>
+          <string>&amp;Start MERGE on system login</string>
          </property>
         </widget>
        </item>
@@ -144,10 +144,10 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough POINT for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough MERGE for this denomination is available</string>
            </property>
            <property name="text">
-            <string>Preferred Automint zPOINT Denomination</string>
+            <string>Preferred Automint zMERGE Denomination</string>
            </property>
           </widget>
          </item>
@@ -160,7 +160,7 @@
             </size>
            </property>
            <property name="toolTip">
-            <string>Wait with automatic conversion to Zerocoin until enough POINT for this denomination is available</string>
+            <string>Wait with automatic conversion to Zerocoin until enough MERGE for this denomination is available</string>
            </property>
            <property name="maxVisibleItems">
             <number>9</number>
@@ -241,7 +241,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open The Point client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open The Merge client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -261,7 +261,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to The Point network through a SOCKS5 proxy.</string>
+          <string>Connect to The Merge network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -427,7 +427,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting POINT.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting MERGE.</string>
            </property>
           </widget>
          </item>
@@ -449,7 +449,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/POINT-project/POINT-project-translations</string>
+https://www.transifex.com/MERGE-project/MERGE-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

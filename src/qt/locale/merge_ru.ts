@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши POINT-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your MERGE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши MERGE-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши POINT-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your MERGE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши MERGE-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>POINT will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POINTs from being stolen by malware infecting your computer.</source>
-        <translation>POINT сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши POINT от кражи с использованием вредоносного ПО.</translation>
+        <source>MERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERGEs from being stolen by malware infecting your computer.</source>
+        <translation>MERGE сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши MERGE от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ POINT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ MERGE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Шифрование</translation>
     </message>
     <message>
-        <source>Enter a POINT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите POINT адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <source>Enter a MERGE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Введите MERGE адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>Адрес POINT для подписи сообщения с помощью</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>Адрес MERGE для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес POINT</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес MERGE</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на Импортировать Адрес после дешифровки, вы добавите секретный ключ к кошельку.</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>Адрес POINT, которым подписано сообщение</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>Адрес MERGE, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным POINT адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным MERGE адресом </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
-        <source>Send coins to a POINT address</source>
-        <translation>Отправить монеты на POINT адрес</translation>
+        <source>Send coins to a MERGE address</source>
+        <translation>Отправить монеты на MERGE адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and POINT: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и POINT: URI)</translation>
+        <source>Request payments (generates QR codes and MERGE: URIs)</source>
+        <translation>Запросить платежи (генерирует QR-код и MERGE: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -618,24 +618,24 @@
         <translation>Обзор мастернод</translation>
     </message>
     <message>
-        <source>&amp;About POINT Core</source>
-        <translation>&amp;О POINT Core</translation>
+        <source>&amp;About MERGE Core</source>
+        <translation>&amp;О MERGE Core</translation>
     </message>
     <message>
-        <source>Show information about POINT Core</source>
-        <translation>Показать информацию о POINT Core</translation>
+        <source>Show information about MERGE Core</source>
+        <translation>Показать информацию о MERGE Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for POINT</source>
-        <translation>Изменение параметров конфигурации POINT</translation>
+        <source>Modify configuration options for MERGE</source>
+        <translation>Изменение параметров конфигурации MERGE</translation>
     </message>
     <message>
-        <source>Sign messages with your POINT addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими POINT адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your MERGE addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими MERGE адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified POINT addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным POINT адресом </translation>
+        <source>Verify messages to ensure they were signed with specified MERGE addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным MERGE адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a POINT: URI or payment request</source>
-        <translation>Открыть POINT: URI или запрос платежа</translation>
+        <source>Open a MERGE: URI or payment request</source>
+        <translation>Открыть MERGE: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Окно обзора блока</translation>
     </message>
     <message>
-        <source>Show the POINT Core help message to get a list with possible POINT command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды POINT</translation>
+        <source>Show the MERGE Core help message to get a list with possible MERGE command-line options</source>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды MERGE</translation>
     </message>
     <message>
-        <source>POINT Core client</source>
-        <translation>Клиент POINT Core</translation>
+        <source>MERGE Core client</source>
+        <translation>Клиент MERGE Core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -817,8 +817,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (POINT.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (POINT.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (MERGE.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (MERGE.conf).</translation>
     </message>
 </context>
 <context>
@@ -1106,8 +1106,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid POINT address.</source>
-        <translation>Введенный адрес "%1" не является POINT адресом.</translation>
+        <source>The entered address "%1" is not a valid MERGE address.</source>
+        <translation>Введенный адрес "%1" не является MERGE адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1152,16 +1152,16 @@ MultiSend: %1</translation>
         <translation>версия</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About POINT Core</source>
-        <translation>О POINT Core</translation>
+        <source>About MERGE Core</source>
+        <translation>О MERGE Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1207,16 +1207,16 @@ MultiSend: %1</translation>
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to POINT Core.</source>
-        <translation>Добро пожаловать в POINT Core.</translation>
+        <source>Welcome to MERGE Core.</source>
+        <translation>Добро пожаловать в MERGE Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where POINT Core will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные POINT Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where MERGE Core will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные MERGE Core.</translation>
     </message>
     <message>
-        <source>POINT Core will download and store a copy of the POINT block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>POINT Core загрузит и сохранит копию цепочки блоков POINT. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>MERGE Core will download and store a copy of the MERGE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>MERGE Core загрузит и сохранит копию цепочки блоков MERGE. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1227,8 +1227,8 @@ MultiSend: %1</translation>
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1369,12 +1369,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other POINT addresses after it matures.
-To Add: enter percentage to give and POINT address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MERGE addresses after it matures.
+To Add: enter percentage to give and MERGE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие POINT адреса.
-Для добавления: введите передаваемый процент и POINT адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие MERGE адреса.
+Для добавления: введите передаваемый процент и MERGE адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1527,48 +1527,48 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 POINT</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 POINT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MERGE</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 MERGE</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 POINT</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 POINT</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MERGE</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 MERGE</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 POINT to anonymize 10000 POINT</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 POINT для анонимизации 10000 POINT</translation>
+        <source>This option is the quickest and will cost about ~0.025 MERGE to anonymize 10000 MERGE</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 MERGE для анонимизации 10000 MERGE</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 POINT to anonymize 10000 POINT</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 POINT для анонимизации 10000 POINT</translation>
+        <source>This option is moderately fast and will cost about 0.05 MERGE to anonymize 10000 MERGE</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 MERGE для анонимизации 10000 MERGE</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 POINT per 10000 POINT you anonymize.</source>
-        <translation>0.1 POINT за 10000 POINT которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 MERGE per 10000 MERGE you anonymize.</source>
+        <translation>0.1 MERGE за 10000 MERGE которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Настройка Перемешивания</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening POINT's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки POINT.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки MERGE.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening POINT's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки POINT.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки MERGE.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening POINT's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки POINT.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки MERGE.</translation>
     </message>
 </context>
 <context>
@@ -1629,8 +1629,8 @@ Please check the address and try again.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the POINT client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт POINT через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the MERGE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт MERGE через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1649,12 +1649,12 @@ Please check the address and try again.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start POINT after logging in to the system.</source>
-        <translation>Автоматически запускать POINT после входа в систему.</translation>
+        <source>Automatically start MERGE after logging in to the system.</source>
+        <translation>Автоматически запускать MERGE после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start POINT on system login</source>
-        <translation>&amp;Запускать POINT при входе в систему</translation>
+        <source>&amp;Start MERGE on system login</source>
+        <translation>&amp;Запускать MERGE при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1681,34 +1681,34 @@ Please check the address and try again.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting POINT.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска POINT.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MERGE.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска MERGE.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/POINT-project/POINT-project-translations</source>
+https://www.transifex.com/MERGE-project/MERGE-project-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/POINT-project/POINT-project-translations</translation>
+https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming POINT which get automatically converted to zPOINT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих POINT, которые автоматически конвертируются в zPOINT благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming MERGE which get automatically converted to zMERGE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих MERGE, которые автоматически конвертируются в zMERGE благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPOINT</source>
-        <translation>Процент  авточеканненых zPOINT</translation>
+        <source>Percentage of autominted zMERGE</source>
+        <translation>Процент  авточеканненых zMERGE</translation>
     </message>
     <message>
-        <source>Preferred Automint zPOINT Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zPOINT</translation>
+        <source>Preferred Automint zMERGE Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zMERGE</translation>
     </message>
     <message>
-        <source>Connect to the POINT network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети POINT через SOCKS5 прокси.</translation>
+        <source>Connect to the MERGE network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети MERGE через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1838,8 +1838,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Вид</translation>
     </message>
     <message>
-        <source>POINT Balances</source>
-        <translation>Баланс POINT</translation>
+        <source>MERGE Balances</source>
+        <translation>Баланс MERGE</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1866,8 +1866,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Награды за хранение и мастерноды, которые еще не *созрели*</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINT network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью POINT после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGE network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью MERGE после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1902,12 +1902,12 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Расходуемый:</translation>
     </message>
     <message>
-        <source>POINT:</source>
-        <translation>POINT:</translation>
+        <source>MERGE:</source>
+        <translation>MERGE:</translation>
     </message>
     <message>
-        <source>zPOINT:</source>
-        <translation>zPOINT:</translation>
+        <source>zMERGE:</source>
+        <translation>zMERGE:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1945,12 +1945,12 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start POINT: click-to-pay handler</source>
-        <translation>Не удалось запустить POINT: обработчик click-to-pay </translation>
+        <source>Cannot start MERGE: click-to-pay handler</source>
+        <translation>Не удалось запустить MERGE: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid POINT address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный POINT адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid MERGE address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный MERGE адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2031,16 +2031,16 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>POINT which were anonymized via Zerocin Protocol</source>
-        <translation>POINT, который был анонимно использован через Zerocoin протокол</translation>
+        <source>MERGE which were anonymized via Zerocin Protocol</source>
+        <translation>MERGE, который был анонимно использован через Zerocoin протокол</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Действия Zerocoin </translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINT network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью POINT после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGE network after a connection is established, but this process has not completed yet.</source>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью MERGE после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zPiv</source>
@@ -2198,8 +2198,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a POINT address (e.g. %1)</source>
-        <translation>Введите адрес POINT (например %1)</translation>
+        <source>Enter a MERGE address (e.g. %1)</source>
+        <translation>Введите адрес MERGE (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2332,8 +2332,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the POINT debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки POINT. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the MERGE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки MERGE. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2493,8 +2493,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the POINT RPC console.</source>
-        <translation>Добро пожаловать в окружение POINT RPC.</translation>
+        <source>Welcome to the MERGE RPC console.</source>
+        <translation>Добро пожаловать в окружение MERGE RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2713,8 +2713,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 POINT</source>
-        <translation>0 POINT</translation>
+        <source>0 MERGE</source>
+        <translation>0 MERGE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2789,8 +2789,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Копировать изменение</translation>
     </message>
     <message>
-        <source>Warning: Invalid POINT address</source>
-        <translation>Предупреждение: неправильный POINT адрес</translation>
+        <source>Warning: Invalid MERGE address</source>
+        <translation>Предупреждение: неправильный MERGE адрес</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2839,8 +2839,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>POINT Core is shutting down...</source>
-        <translation>POINT Core выключается...</translation>
+        <source>MERGE Core is shutting down...</source>
+        <translation>MERGE Core выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2850,8 +2850,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>Адрес POINT для подписи сообщения с помощью</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>Адрес MERGE для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2874,16 +2874,16 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес POINT</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес MERGE</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>Адрес POINT, которым подписано сообщение</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>Адрес MERGE, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным POINT адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным MERGE адресом </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2929,8 +2929,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2945,8 +2945,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>The POINT Core developers</source>
-        <translation>Разработчики POINT Core</translation>
+        <source>The MERGE Core developers</source>
+        <translation>Разработчики MERGE Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3204,7 +3204,7 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
     </message>
     </context>
 <context>
-    <name>POINT-core</name>
+    <name>MERGE-core</name>
     <message>
         <source>Block creation options:</source>
         <translation>Варианты создания блока:</translation>
@@ -3234,8 +3234,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The POINT Core Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики POINT Core</translation>
+        <source>Copyright (C) 2015-%i The MERGE Core Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики MERGE Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

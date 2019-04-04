@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/point-config.h"
+#include "config/merge-config.h"
 #endif
 
 #ifdef WIN32

@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços POINT para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
+        <source>These are your MERGE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços MERGE para enviar pagamentos. Sempre confira a quantidade e os endereços de destino antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços POINT para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your MERGE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços MERGE para receber pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>POINT will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POINTs from being stolen by malware infecting your computer.</source>
-        <translation>POINT encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas POINTs contra roubo por malware infectando seu computador.</translation>
+        <source>MERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERGEs from being stolen by malware infecting your computer.</source>
+        <translation>MERGE encerrará para terminar o processo de encriptação. Lembre-se que encriptar sua carteira não protege completamente suas MERGEs contra roubo por malware infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Tem certeza que deseja encriptar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
-        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA POINT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
+        <translation>Atenção: Se você encriptar sua carteira e perder a senha, você &lt;B&gt;PERDERÁ TODA SUA MERGE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>Encriptar com &amp;BIP 38</translation>
     </message>
     <message>
-        <source>Enter a POINT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Digite um endereço POINT que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
+        <source>Enter a MERGE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Digite um endereço MERGE que você gostaria de criptografar usando BIP 38. Digite uma frase secreta na caixa do meio. Pressione criptografar para calcular a chave privada criptografada.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>Um endereço POINT para assinar a mensagem</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>Um endereço MERGE para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço POINT.</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço MERGE.</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,8 +299,8 @@
         <translation>Criptografia BIP 38</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>O endereço POINT que foi assinado com</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>O endereço MERGE que foi assinado com</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -675,8 +675,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>Um endereço POINT para assinar a mensagem</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>Um endereço MERGE para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -707,12 +707,12 @@
         <translation>Copiar a assinatura para a area de trabalho</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço POINT.</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço MERGE.</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>O endereço POINT que foi assinado com</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>O endereço MERGE que foi assinado com</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -913,7 +913,7 @@
     <name>ZPivControlDialog</name>
     </context>
 <context>
-    <name>POINT-core</name>
+    <name>MERGE-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
@@ -1271,8 +1271,8 @@
         <translation>Carteira esta bloqueada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart POINT Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o POINT Core para completar.</translation>
+        <source>Wallet needed to be rewritten: restart MERGE Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o MERGE Core para completar.</translation>
     </message>
     <message>
         <source>Wallet options:</source>

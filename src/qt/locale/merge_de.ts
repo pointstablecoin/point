@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie POINT überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie MERGE überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie POINT empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie MERGE empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre POINT-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie POINT überweisen.</translation>
+        <source>These are your MERGE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre MERGE-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie MERGE überweisen.</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre POINT-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your MERGE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre MERGE-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>POINT will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POINTs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer POINTs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>MERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERGEs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer MERGEs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre POINTs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre MERGEs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a POINT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine POINT Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a MERGE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine MERGE Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>POINT Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>MERGE Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese POINT Adresse besitzt</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese MERGE Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>Die POINT Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>Die MERGE Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen POINT-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen MERGE-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
-        <source>Send coins to a POINT address</source>
-        <translation>An eine POINT-Adresse überweisen</translation>
+        <source>Send coins to a MERGE address</source>
+        <translation>An eine MERGE-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and POINT: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und POINT: URIs)</translation>
+        <source>Request payments (generates QR codes and MERGE: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und MERGE: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -626,24 +626,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About POINT Core</source>
-        <translation>Über.POINT Core</translation>
+        <source>&amp;About MERGE Core</source>
+        <translation>Über.MERGE Core</translation>
     </message>
     <message>
-        <source>Show information about POINT Core</source>
-        <translation>Zeigt Informationen über POINT Core</translation>
+        <source>Show information about MERGE Core</source>
+        <translation>Zeigt Informationen über MERGE Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for POINT</source>
-        <translation>Konfiguration von POINT verändern</translation>
+        <source>Modify configuration options for MERGE</source>
+        <translation>Konfiguration von MERGE verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your POINT addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer POINT-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your MERGE addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer MERGE-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified POINT addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten POINT-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified MERGE addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten MERGE-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -670,8 +670,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a POINT: URI or payment request</source>
-        <translation>Öffne eine POINT: URI or Zahlungsanfrage</translation>
+        <source>Open a MERGE: URI or payment request</source>
+        <translation>Öffne eine MERGE: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -682,16 +682,16 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the POINT Core help message to get a list with possible POINT command-line options</source>
-        <translation>Zeige die POINT-Core Hilfe, um mögliche POINT Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the MERGE Core help message to get a list with possible MERGE command-line options</source>
+        <translation>Zeige die MERGE-Core Hilfe, um mögliche MERGE Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>POINT Core client</source>
-        <translation>POINT Core Client</translation>
+        <source>MERGE Core client</source>
+        <translation>MERGE Core Client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to POINT network</source>
-        <translation><numerusform>%n aktive Verbindung zum POINT Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum POINT Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to MERGE network</source>
+        <translation><numerusform>%n aktive Verbindung zum MERGE Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum MERGE Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -840,8 +840,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (POINT.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "POINT.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (MERGE.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "MERGE.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1133,8 +1133,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid POINT address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige POINT-Adresse.</translation>
+        <source>The entered address "%1" is not a valid MERGE address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige MERGE-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1179,16 +1179,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About POINT Core</source>
-        <translation>Über POINT Core</translation>
+        <source>About MERGE Core</source>
+        <translation>Über MERGE Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1234,16 +1234,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to POINT Core.</source>
-        <translation>Willkommen zu POINT Core.</translation>
+        <source>Welcome to MERGE Core.</source>
+        <translation>Willkommen zu MERGE Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where POINT Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie POINT Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where MERGE Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie MERGE Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>POINT Core will download and store a copy of the POINT block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>POINT Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>MERGE Core will download and store a copy of the MERGE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>MERGE Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1254,8 +1254,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1392,12 +1392,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other POINT addresses after it matures.
-To Add: enter percentage to give and POINT address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MERGE addresses after it matures.
+To Add: enter percentage to give and MERGE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen POINT-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die POINT-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen MERGE-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die MERGE-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1554,48 +1554,48 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 POINT</source>
-        <translation>2 separate Masternodes verwenden um bis zu 10000 POINT zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MERGE</source>
+        <translation>2 separate Masternodes verwenden um bis zu 10000 MERGE zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 POINT</source>
-        <translation>8 separate Masternodes verwenden um bis zu 10000 POINT zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MERGE</source>
+        <translation>8 separate Masternodes verwenden um bis zu 10000 MERGE zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 separate Masternodes verwenden</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 POINT to anonymize 10000 POINT</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 POINT um 10000 POINT zu anonymisieren </translation>
+        <source>This option is the quickest and will cost about ~0.025 MERGE to anonymize 10000 MERGE</source>
+        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 MERGE um 10000 MERGE zu anonymisieren </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 POINT to anonymize 10000 POINT</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 POINT um 10000 POINT zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 MERGE to anonymize 10000 MERGE</source>
+        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 MERGE um 10000 MERGE zu anonymisieren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
     </message>
     <message>
-        <source>0.1 POINT per 10000 POINT you anonymize.</source>
-        <translation>0.1 POINT per 10000 POINT die anonymisiert werden.</translation>
+        <source>0.1 MERGE per 10000 MERGE you anonymize.</source>
+        <translation>0.1 MERGE per 10000 MERGE die anonymisiert werden.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Verschleierungskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening POINT's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den POINTs Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den MERGEs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening POINT's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den POINTs Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den MERGEs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening POINT's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den POINTs Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den MERGEs Konfigurationen ändern.</translation>
     </message>
 </context>
 <context>
@@ -1656,8 +1656,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the POINT client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisches öffnen des POINT-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
+        <source>Automatically open the MERGE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisches öffnen des MERGE-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1676,12 +1676,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start POINT after logging in to the system.</source>
-        <translation>POINT automatisch nach dem Login starten.</translation>
+        <source>Automatically start MERGE after logging in to the system.</source>
+        <translation>MERGE automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start POINT on system login</source>
-        <translation>POINT automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start MERGE on system login</source>
+        <translation>MERGE automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1708,38 +1708,38 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting POINT.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting MERGE.</source>
         <translation>Die Sprache der Benutzeroberfläche kann hier festgelegt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/POINT-project/POINT-project-translations</source>
+https://www.transifex.com/MERGE-project/MERGE-project-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung bei unter:
-https://www.transifex.com/POINT-project/POINT-project-translations</translation>
+https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Percentage of incoming POINT which get automatically converted to zPOINT via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden POINT, welcher automatisch zu zPOINT via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming MERGE which get automatically converted to zMERGE via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden MERGE, welcher automatisch zu zMERGE via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPOINT</source>
-        <translation>Prozentsatz der automatisierten zPOINT</translation>
+        <source>Percentage of autominted zMERGE</source>
+        <translation>Prozentsatz der automatisierten zMERGE</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough POINT for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend POINT für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough MERGE for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend MERGE für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zPOINT Denomination</source>
-        <translation>Bevorzugte automatisierte zPOINT Stückelung </translation>
+        <source>Preferred Automint zMERGE Denomination</source>
+        <translation>Bevorzugte automatisierte zMERGE Stückelung </translation>
     </message>
     <message>
-        <source>Connect to the POINT network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem POINT Netzwerk verbinden.</translation>
+        <source>Connect to the MERGE network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem MERGE Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1869,8 +1869,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <source>POINT Balances</source>
-        <translation>POINT Bilanzen</translation>
+        <source>MERGE Balances</source>
+        <translation>MERGE Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1897,8 +1897,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINT network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem POINT-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGE network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem MERGE-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1933,20 +1933,20 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Verfügbar:</translation>
     </message>
     <message>
-        <source>POINT:</source>
-        <translation>POINT:</translation>
+        <source>MERGE:</source>
+        <translation>MERGE:</translation>
     </message>
     <message>
-        <source>zPOINT:</source>
-        <translation>zPOINT:</translation>
+        <source>zMERGE:</source>
+        <translation>zMERGE:</translation>
     </message>
     <message>
         <source>0 %</source>
         <translation>0 %</translation>
     </message>
     <message>
-        <source>0.000 000 00 POINT</source>
-        <translation>0.000 000 00 POINT</translation>
+        <source>0.000 000 00 MERGE</source>
+        <translation>0.000 000 00 MERGE</translation>
     </message>
     <message>
         <source>Zerocoin Balance</source>
@@ -1984,12 +1984,12 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start POINT: click-to-pay handler</source>
-        <translation>Kann POINT nicht starten: click-to-pay Handler</translation>
+        <source>Cannot start MERGE: click-to-pay handler</source>
+        <translation>Kann MERGE nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid POINT address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige POINT-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid MERGE address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige MERGE-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2070,20 +2070,20 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>POINT which were anonymized via Zerocin Protocol</source>
-        <translation>POINT, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
+        <source>MERGE which were anonymized via Zerocin Protocol</source>
+        <translation>MERGE, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
     </message>
     <message>
-        <source>Zerocoin POINT (zPOINT)</source>
-        <translation>Zerocoin POINT (zPOINT)</translation>
+        <source>Zerocoin MERGE (zMERGE)</source>
+        <translation>Zerocoin MERGE (zMERGE)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Aktionen:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINT network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem POINT-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGE network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem MERGE-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zPiv</source>
@@ -2098,16 +2098,16 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPOINT</source>
-        <translation>zPOINT</translation>
+        <source>zMERGE</source>
+        <translation>zMERGE</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Verfügbar für Prägung:</translation>
     </message>
     <message>
-        <source>0.000 000 00 POINT</source>
-        <translation>0.000 000 00 POINT</translation>
+        <source>0.000 000 00 MERGE</source>
+        <translation>0.000 000 00 MERGE</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2166,8 +2166,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>0 zPOINT</source>
-        <translation>0 zPOINT</translation>
+        <source>0 zMERGE</source>
+        <translation>0 zMERGE</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2186,8 +2186,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The POINT address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Die POINT-Adresse, an die die Zahlung gesendet wird. Erstellt eine lokale Zahlung an Sie selbst, wenn die Zeile leer ist.</translation>
+        <source>The MERGE address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Die MERGE-Adresse, an die die Zahlung gesendet wird. Erstellt eine lokale Zahlung an Sie selbst, wenn die Zeile leer ist.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2394,8 +2394,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zPOINT in </source>
-        <translation> zPOINT in </translation>
+        <source> zMERGE in </source>
+        <translation> zMERGE in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2428,8 +2428,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid POINT Address</source>
-        <translation>Ungültige POINT-Adresse </translation>
+        <source>Invalid MERGE Address</source>
+        <translation>Ungültige MERGE-Adresse </translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2469,7 +2469,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPiv Spend #: </source>
-        <translation>zPOINT Ausgeben #:</translation>
+        <translation>zMERGE Ausgeben #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2515,8 +2515,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a POINT address (e.g. %1)</source>
-        <translation>POINT-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a MERGE address (e.g. %1)</source>
+        <translation>MERGE-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2653,8 +2653,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the POINT debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffne POINT-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the MERGE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffne MERGE-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2821,8 +2821,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the POINT RPC console.</source>
-        <translation>Willkommen in der POINT RPC-Konsole.</translation>
+        <source>Welcome to the MERGE RPC console.</source>
+        <translation>Willkommen in der MERGE RPC-Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2892,12 +2892,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ein optionales Etikett, das mit der neuen Empfangsadresse verknüpft werden soll.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POINT network.</source>
-        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das POINT-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MERGE network.</source>
+        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das MERGE-Netzwerk gesendet.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POINT network.</source>
-        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das POINT-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MERGE network.</source>
+        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das MERGE-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3050,7 +3050,7 @@ Bitte haben Sie Geduld...</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>POINTs überweisen</translation>
+        <translation>MERGEs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3121,8 +3121,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 POINT</source>
-        <translation>0 POINT</translation>
+        <source>0 MERGE</source>
+        <translation>0 MERGE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3173,16 +3173,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPOINTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPOINTs in fee,&lt;br /&gt;while "at least" pays 1000 uPOINTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uPOINTs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uPOINTs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uPOINTs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMERGEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERGEs in fee,&lt;br /&gt;while "at least" pays 1000 uMERGEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uMERGEs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uMERGEs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uMERGEs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPOINTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPOINTs in fee,&lt;br /&gt;while "total at least" pays 1000 uPOINTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uPOINTs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uPOINTs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uPOINTs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMERGEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERGEs in fee,&lt;br /&gt;while "total at least" pays 1000 uMERGEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uMERGEs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uMERGEs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uMERGEs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for POINT transactions than the network can process.</source>
-        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken gibt.&lt;br /&gt;Aber seien Sie sich bewusst, dass dies in einer niemals bestätigende Transaktion enden kann, sobald die Nachfrage nach POINT-Transaktionen höher ist, als was das Netzwerk verarbeiten kann.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MERGE transactions than the network can process.</source>
+        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken gibt.&lt;br /&gt;Aber seien Sie sich bewusst, dass dies in einer niemals bestätigende Transaktion enden kann, sobald die Nachfrage nach MERGE-Transaktionen höher ist, als was das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3229,8 +3229,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized POINT</source>
-        <translation>Anonymisierte POINT</translation>
+        <source>Anonymized MERGE</source>
+        <translation>Anonymisierte MERGE</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3285,8 +3285,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>anonyme Mittel</translation>
     </message>
     <message>
-        <source>Warning: Invalid POINT address</source>
-        <translation>Warnung: Ungültige POINT-Adresse</translation>
+        <source>Warning: Invalid MERGE address</source>
+        <translation>Warnung: Ungültige MERGE-Adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3388,8 +3388,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The POINT address to send the payment to</source>
-        <translation>POINT-Adresse, an die überwiesen werden soll</translation>
+        <source>The MERGE address to send the payment to</source>
+        <translation>MERGE-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3428,8 +3428,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the POINT: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the POINT network.</source>
-        <translation>Eine an die POINT-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das POINT-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the MERGE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGE network.</source>
+        <translation>Eine an die MERGE-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das MERGE-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3455,8 +3455,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>POINT Core is shutting down...</source>
-        <translation>POINT Core wird beendet...</translation>
+        <source>MERGE Core is shutting down...</source>
+        <translation>MERGE Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3478,8 +3478,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie diese besitzen. Seien Sie vorsichtig nichts fragwürdiges zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu überschreiben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
     </message>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>POINT Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>MERGE Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3510,16 +3510,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Kopiert die aktuelle Signatur in die Zwischenablage</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese POINT Adresse besitzt</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese MERGE Adresse besitzt</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>Die POINT Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>Die MERGE Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen POINT-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen MERGE-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3605,8 +3605,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3621,8 +3621,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The POINT Core developers</source>
-        <translation>Die POINT Core Entwickler</translation>
+        <source>The MERGE Core developers</source>
+        <translation>Die MERGE Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3764,7 +3764,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte POINTs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine POINTs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte MERGEs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine MERGEs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3910,23 +3910,23 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Converted Piv to zPiv</source>
-        <translation>Umgewandeltes POINT zu zPOINT</translation>
+        <translation>Umgewandeltes MERGE zu zMERGE</translation>
     </message>
     <message>
         <source>Spent zPiv</source>
-        <translation>Ausgeben zPOINT</translation>
+        <translation>Ausgeben zMERGE</translation>
     </message>
     <message>
         <source>Received Piv from zPiv</source>
-        <translation>Empfangene POINT von zPOINT</translation>
+        <translation>Empfangene MERGE von zMERGE</translation>
     </message>
     <message>
         <source>Minted Change as zPiv from zPiv Spend</source>
-        <translation>Geprägtes Wechselgeld als zPOINT von zPOINT Ausgabe</translation>
+        <translation>Geprägtes Wechselgeld als zMERGE von zMERGE Ausgabe</translation>
     </message>
     <message>
         <source>Converted zPiv to Piv</source>
-        <translation>Umgewandeltes zPOINT zu POINT</translation>
+        <translation>Umgewandeltes zMERGE zu MERGE</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3934,7 +3934,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPiv Accumulator</source>
-        <translation>zPOINT Speicher</translation>
+        <translation>zMERGE Speicher</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4045,7 +4045,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Received Piv from zPiv</source>
-        <translation>Empfangene POINT von zPOINT</translation>
+        <translation>Empfangene MERGE von zMERGE</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4057,7 +4057,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPiv</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zPOINT</translation>
+        <translation>Zerocoin Ausgabe, Wechselgeld in zMERGE</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4178,7 +4178,7 @@ Bitte haben Sie Geduld...</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>POINTs überweisen</translation>
+        <translation>MERGEs überweisen</translation>
     </message>
     </context>
 <context>
@@ -4224,7 +4224,7 @@ Bitte haben Sie Geduld...</translation>
     <name>ZPivControlDialog</name>
     <message>
         <source>Select zPiv to Spend</source>
-        <translation>Auswahl zPOINT als Ausgabe</translation>
+        <translation>Auswahl zMERGE als Ausgabe</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4236,7 +4236,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zPOINT</translation>
+        <translation>zMERGE</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4248,7 +4248,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>POINT-core</name>
+    <name>MERGE-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -4266,8 +4266,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Der berechnete Akkumulator-Checkpoint stimmt nicht mit dem vom Blockindex aufgezeichneten überein</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. POINT Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. POINT Core läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s. MERGE Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. MERGE Core läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -4310,12 +4310,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in POINT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in POINT/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in MERGE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in MERGE/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in POINT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in POINT/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in MERGE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in MERGE/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4406,32 +4406,32 @@ Bitte haben Sie Geduld...</translation>
         <translation>Dieses Produkt beinhaltet Software, die vom OpenSSL Projekt für die Nutzung im OpenSSL Toolkit &lt;https://www.openssl.org/&gt; entwickelt wurde. Desweiteren kryptografische Software , die von Eric Young, und UPnP Software, die von Thomas Bernard, geschrieben wurde.</translation>
     </message>
     <message>
-        <source>To use POINTd, or the -server option to point-qt, you must set an rpcpassword in the configuration file:
+        <source>To use MERGEd, or the -server option to merge-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=pointrpc
+rpcuser=mergerpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "MERGE Alert" admin@foo.com
 </source>
-        <translation>Um POINTd oder die -server option in point-qt zu nutzen, muss ein RPC-Passwort mittels rpcpassword in der Konfigurationsdatei gestzt werden:
+        <translation>Um MERGEd oder die -server option in merge-qt zu nutzen, muss ein RPC-Passwort mittels rpcpassword in der Konfigurationsdatei gestzt werden:
 %s
 Es wird empfohlen das folgende zufällige Passwort zu nutzen:
-rpcuser=pointrpc
+rpcuser=mergerpc
 rpcpassword=%s
 (Sie müssen sich das Passwort nicht merken)
 User-Name und Passwort MÜSSEN NICHT die oben genannten sein.
 Falls die Datei bisher nicht existiert, erstellen Sie diese mit der eingeschränkten Berechtigung das nur der Besitzer diese lesen darf.
 Des weiteren wird empfohlen das Argument alertnotify zu setzen, damit Sie bei ggf. auftretenden Problemen benachrichtigt werden.
-Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
+Beispiel: alertnotify=echo %%s | mail -s "MERGE Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. POINT Core is probably already running.</source>
-        <translation>Fehler: Port %s ist bereits belegt! Läuft bereits eine andere POINT Core Wallet ?</translation>
+        <source>Unable to bind to %s on this computer. MERGE Core is probably already running.</source>
+        <translation>Fehler: Port %s ist bereits belegt! Läuft bereits eine andere MERGE Core Wallet ?</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4450,8 +4450,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>Warnung: -paytxfee ist sehr hoch eingestellt! Diese Transaktionsgebühr werden Ihnen abgebucht, falls Sie die Transaktion überweisen.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong POINT Core will not work properly.</source>
-        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird POINT Core nicht korrekt funktionieren.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong MERGE Core will not work properly.</source>
+        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird MERGE Core nicht korrekt funktionieren.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4590,8 +4590,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The POINT Core Developers</source>
-        <translation>Copyright (C) 2015-%i The POINT Core Developers</translation>
+        <source>Copyright (C) 2015-%i The MERGE Core Developers</source>
+        <translation>Copyright (C) 2015-%i The MERGE Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4662,8 +4662,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>Fehler beim Laden von wallet.dat : Wallet beschädigt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of POINT Core</source>
-        <translation>Fehler beim Laden der wallet.dat: Neuere POINT Core Version benötigt</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MERGE Core</source>
+        <translation>Fehler beim Laden der wallet.dat: Neuere MERGE Core Version benötigt</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4714,8 +4714,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in POINT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in POINT/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in MERGE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in MERGE/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4774,8 +4774,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. POINT Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. POINT Core schaltet ab.</translation>
+        <source>Initialization sanity check failed. MERGE Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. MERGE Core schaltet ab.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5366,8 +5366,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart POINT Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte POINT Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart MERGE Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte MERGE Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše POINT adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your MERGE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše MERGE adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše POINT adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your MERGE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše MERGE adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>POINT will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POINTs from being stolen by malware infecting your computer.</source>
-        <translation>POINT se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše POINTy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>MERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERGEs from being stolen by malware infecting your computer.</source>
+        <translation>MERGE se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše MERGEy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE POINTy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE MERGEy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a POINT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte POINT adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a MERGE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte MERGE adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>POINT adresa pro podepsání zprávy</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>MERGE adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto POINT adresu</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto MERGE adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>POINT adresa zprávy byla podpsána</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>MERGE adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou POINT adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou MERGE adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -426,8 +426,8 @@
         <translation>Procházet historii transakcí</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPOINT</source>
-        <translation>Řešení soukromí pro zPOINT</translation>
+        <source>Privacy Actions for zMERGE</source>
+        <translation>Řešení soukromí pro zMERGE</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -634,16 +634,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
-        <source>Send coins to a POINT address</source>
-        <translation>Odeslat platbuna POINT adresu</translation>
+        <source>Send coins to a MERGE address</source>
+        <translation>Odeslat platbuna MERGE adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and POINT: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a POINT: URIs)</translation>
+        <source>Request payments (generates QR codes and MERGE: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a MERGE: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -658,24 +658,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About POINT Core</source>
-        <translation>&amp;O POINT Core</translation>
+        <source>&amp;About MERGE Core</source>
+        <translation>&amp;O MERGE Core</translation>
     </message>
     <message>
-        <source>Show information about POINT Core</source>
-        <translation>Zobraz informace o POINT Core</translation>
+        <source>Show information about MERGE Core</source>
+        <translation>Zobraz informace o MERGE Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for POINT</source>
-        <translation>Upravit možnosti konfigurace pro POINT</translation>
+        <source>Modify configuration options for MERGE</source>
+        <translation>Upravit možnosti konfigurace pro MERGE</translation>
     </message>
     <message>
-        <source>Sign messages with your POINT addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší POINT adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your MERGE addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší MERGE adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified POINT addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými POINT adresami</translation>
+        <source>Verify messages to ensure they were signed with specified MERGE addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými MERGE adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -706,8 +706,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a POINT: URI or payment request</source>
-        <translation>Otevřít POINT: URI nebo platební žádost</translation>
+        <source>Open a MERGE: URI or payment request</source>
+        <translation>Otevřít MERGE: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -718,16 +718,16 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the POINT Core help message to get a list with possible POINT command-line options</source>
-        <translation>Zobrazit POINT Core pomocnou zpráv pro získání seznamu možných parametrů POINT pro příkazy do příkazové řádky</translation>
+        <source>Show the MERGE Core help message to get a list with possible MERGE command-line options</source>
+        <translation>Zobrazit MERGE Core pomocnou zpráv pro získání seznamu možných parametrů MERGE pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>POINT Core client</source>
-        <translation>POINT Core klient</translation>
+        <source>MERGE Core client</source>
+        <translation>MERGE Core klient</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to POINT network</source>
-        <translation><numerusform>Aktivních připojení do sítě POINT: %n</numerusform><numerusform>Aktivních připojení do sítě POINT: %n</numerusform><numerusform>Aktivních připojení do sítě POINT: %n</numerusform></translation>
+        <source>%n active connection(s) to MERGE network</source>
+        <translation><numerusform>Aktivních připojení do sítě MERGE: %n</numerusform><numerusform>Aktivních připojení do sítě MERGE: %n</numerusform><numerusform>Aktivních připojení do sítě MERGE: %n</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -877,8 +877,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (POINT.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (POINT.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (MERGE.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (MERGE.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1138,8 +1138,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid POINT address.</source>
-        <translation>Zadaná adresa "%1" není validní POINT adresa.</translation>
+        <source>The entered address "%1" is not a valid MERGE address.</source>
+        <translation>Zadaná adresa "%1" není validní MERGE adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1184,12 +1184,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
-        <source>About POINT Core</source>
-        <translation>O POINT Core</translation>
+        <source>About MERGE Core</source>
+        <translation>O MERGE Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1223,16 +1223,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to POINT Core.</source>
-        <translation>Vítejte v POINT Core.</translation>
+        <source>Welcome to MERGE Core.</source>
+        <translation>Vítejte v MERGE Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where POINT Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude POINT Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where MERGE Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude MERGE Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>POINT Core will download and store a copy of the POINT block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>POINT Core stáhne a uloží kopii POINT blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>MERGE Core will download and store a copy of the MERGE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>MERGE Core stáhne a uloží kopii MERGE blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1243,8 +1243,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1525,24 +1525,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 POINT</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 POINT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MERGE</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 MERGE</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 POINT to anonymize 10000 POINT</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 POINT pro anonymizaci 10000 POINT</translation>
+        <source>This option is the quickest and will cost about ~0.025 MERGE to anonymize 10000 MERGE</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 MERGE pro anonymizaci 10000 MERGE</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 POINT per 10000 POINT you anonymize.</source>
-        <translation>0.1 POINT za 10000 POINT anonymizujete.</translation>
+        <source>0.1 MERGE per 10000 MERGE you anonymize.</source>
+        <translation>0.1 MERGE za 10000 MERGE anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1607,12 +1607,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start POINT after logging in to the system.</source>
-        <translation>Automaticky spustit POINT po přihlášení do systému</translation>
+        <source>Automatically start MERGE after logging in to the system.</source>
+        <translation>Automaticky spustit MERGE po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start POINT on system login</source>
-        <translation>&amp;Spusti POINT při přihlášení do systému</translation>
+        <source>&amp;Start MERGE on system login</source>
+        <translation>&amp;Spusti MERGE při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2144,8 +2144,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 POINT</source>
-        <translation>0 POINT</translation>
+        <source>0 MERGE</source>
+        <translation>0 MERGE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2269,8 +2269,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>POINT adresa pro podepsání zprávy</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>MERGE adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2297,16 +2297,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto POINT adresu</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto MERGE adresu</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>POINT adresa zprávy byla podpsána</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>MERGE adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou POINT adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou MERGE adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2348,8 +2348,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Core</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Core</translation>
     </message>
     </context>
 <context>
@@ -2459,7 +2459,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>POINT-core</name>
+    <name>MERGE-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

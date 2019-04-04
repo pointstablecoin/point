@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun POINT osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your MERGE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun MERGE osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your POINT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun POINT osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your MERGE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun MERGE osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>POINT will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POINTs from being stolen by malware infecting your computer.</source>
-        <translation>POINT sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella POINTien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>MERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERGEs from being stolen by malware infecting your computer.</source>
+        <translation>MERGE sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella MERGEien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki POINTisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki MERGEisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a POINT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä POINT osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a MERGE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä MERGE osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>POINT osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>MERGE osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän POINT osoitteen</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän MERGE osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>POINT osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>MERGE osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla POINT osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla MERGE osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Ydin</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a POINT address</source>
-        <translation>Lähetä kolikkoja POINT osoitteeseen</translation>
+        <source>Send coins to a MERGE address</source>
+        <translation>Lähetä kolikkoja MERGE osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and POINT: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja POINT: URIja)</translation>
+        <source>Request payments (generates QR codes and MERGE: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja MERGE: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About POINT Core</source>
-        <translation>POINT Core &amp;ytimestä</translation>
+        <source>&amp;About MERGE Core</source>
+        <translation>MERGE Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about POINT Core</source>
-        <translation>Näytä tietoja POINT Ytimestä</translation>
+        <source>Show information about MERGE Core</source>
+        <translation>Näytä tietoja MERGE Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for POINT</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja POINT:lle</translation>
+        <source>Modify configuration options for MERGE</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja MERGE:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your POINT addresses to prove you own them</source>
+        <source>Sign messages with your MERGE addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified POINT addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä POINT osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified MERGE addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä MERGE osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a POINT: URI or payment request</source>
-        <translation>Avaa POINT: URI tai pyydä maksua</translation>
+        <source>Open a MERGE: URI or payment request</source>
+        <translation>Avaa MERGE: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the POINT Core help message to get a list with possible POINT command-line options</source>
-        <translation>Näytä POINT Ydin apuviesti saadaksesi lista mahdollisista POINT komentolinja komennoista.</translation>
+        <source>Show the MERGE Core help message to get a list with possible MERGE command-line options</source>
+        <translation>Näytä MERGE Ydin apuviesti saadaksesi lista mahdollisista MERGE komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>POINT Core client</source>
-        <translation>POINT Ydin asiakasohjelma</translation>
+        <source>MERGE Core client</source>
+        <translation>MERGE Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Ydin</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to POINT Core.</source>
-        <translation>Tervetuloa POINT Ytimeen.</translation>
+        <source>Welcome to MERGE Core.</source>
+        <translation>Tervetuloa MERGE Ytimeen.</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Ydin</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1150,32 +1150,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 POINT</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 POINT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MERGE</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 MERGE</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 POINT</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 POINT</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MERGE</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 MERGE</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 POINT to anonymize 10000 POINT</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 POINT anonymoidaksesi 10000 POINT</translation>
+        <source>This option is the quickest and will cost about ~0.025 MERGE to anonymize 10000 MERGE</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 MERGE anonymoidaksesi 10000 MERGE</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 POINT to anonymize 10000 POINT</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 POINT anonymoidaksesi 10000 POINT</translation>
+        <source>This option is moderately fast and will cost about 0.05 MERGE to anonymize 10000 MERGE</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 MERGE anonymoidaksesi 10000 MERGE</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 POINT per 10000 POINT you anonymize.</source>
-        <translation>0.1 per 10000 POINT, jotka anonymisoit.</translation>
+        <source>0.1 MERGE per 10000 MERGE you anonymize.</source>
+        <translation>0.1 per 10000 MERGE, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1224,12 +1224,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start POINT after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä POINT kun kirjaudut sisään.</translation>
+        <source>Automatically start MERGE after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä MERGE kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start POINT on system login</source>
-        <translation>&amp;Aloita POINT järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start MERGE on system login</source>
+        <translation>&amp;Aloita MERGE järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1248,12 +1248,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting POINT.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting MERGE.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the POINT network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä POINT verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the MERGE network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä MERGE verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1557,8 +1557,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the POINT debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa POINT debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the MERGE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa MERGE debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1669,8 +1669,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the POINT RPC console.</source>
-        <translation>Tervetuloa POINT RPC konsoliin.</translation>
+        <source>Welcome to the MERGE RPC console.</source>
+        <translation>Tervetuloa MERGE RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1712,12 +1712,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POINT network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana POINT verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MERGE network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana MERGE verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POINT network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana POINT  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MERGE network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana MERGE  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1913,8 +1913,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 POINT</source>
-        <translation>0 POINT</translation>
+        <source>0 MERGE</source>
+        <translation>0 MERGE</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1993,8 +1993,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid POINT address</source>
-        <translation>Varoitus: Virheellinen POINT osoite</translation>
+        <source>Warning: Invalid MERGE address</source>
+        <translation>Varoitus: Virheellinen MERGE osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2040,8 +2040,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The POINT address to send the payment to</source>
-        <translation>POINT osoite johon maksu lähetetään</translation>
+        <source>The MERGE address to send the payment to</source>
+        <translation>MERGE osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2083,8 +2083,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>POINT Core is shutting down...</source>
-        <translation>POINT core sammuu...</translation>
+        <source>MERGE Core is shutting down...</source>
+        <translation>MERGE core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2102,8 +2102,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The POINT address to sign the message with</source>
-        <translation>POINT osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The MERGE address to sign the message with</source>
+        <translation>MERGE osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2134,16 +2134,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän POINT osoitteen</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän MERGE osoitteen</translation>
     </message>
     <message>
-        <source>The POINT address the message was signed with</source>
-        <translation>POINT osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The MERGE address the message was signed with</source>
+        <translation>MERGE osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified POINT address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla POINT osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla MERGE osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2225,8 +2225,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>POINT Core</source>
-        <translation>POINT Ydin</translation>
+        <source>MERGE Core</source>
+        <translation>MERGE Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2241,8 +2241,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The POINT Core developers</source>
-        <translation>POINT core kehittäjät</translation>
+        <source>The MERGE Core developers</source>
+        <translation>MERGE core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2552,7 +2552,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>POINT-core</name>
+    <name>MERGE-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2602,8 +2602,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of POINT Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version POINT Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MERGE Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version MERGE Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

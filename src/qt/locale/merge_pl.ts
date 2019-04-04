@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE POINT!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE MERGE!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres POINT jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres MERGE jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>&amp;Rdzeń POINT</translation>
+        <source>MERGE Core</source>
+        <translation>&amp;Rdzeń MERGE</translation>
     </message>
     <message>
-        <source>Send coins to a POINT address</source>
-        <translation>Wyślij monety do adresu POINT</translation>
+        <source>Send coins to a MERGE address</source>
+        <translation>Wyślij monety do adresu MERGE</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and POINT: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i POINT:URI)</translation>
+        <source>Request payments (generates QR codes and MERGE: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i MERGE:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About POINT Core</source>
+        <source>&amp;About MERGE Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about POINT Core</source>
+        <source>Show information about MERGE Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for POINT</source>
-        <translation>Modyfikuj opcje konfiguracji POINT</translation>
+        <source>Modify configuration options for MERGE</source>
+        <translation>Modyfikuj opcje konfiguracji MERGE</translation>
     </message>
     <message>
-        <source>Sign messages with your POINT addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami POINT, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your MERGE addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami MERGE, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified POINT addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu POINT</translation>
+        <source>Verify messages to ensure they were signed with specified MERGE addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu MERGE</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a POINT: URI or payment request</source>
-        <translation>Otwórz POINT: URI i żądanie zapłaty</translation>
+        <source>Open a MERGE: URI or payment request</source>
+        <translation>Otwórz MERGE: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the POINT Core help message to get a list with possible POINT command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia POINT, aby dostać listę możliwych opcji POINT command-line</translation>
+        <source>Show the MERGE Core help message to get a list with possible MERGE command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia MERGE, aby dostać listę możliwych opcji MERGE command-line</translation>
     </message>
     <message>
-        <source>POINT Core client</source>
-        <translation>Rdzeń POINT klient</translation>
+        <source>MERGE Core client</source>
+        <translation>Rdzeń MERGE klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>POINT Core</source>
-        <translation>&amp;Rdzeń POINT</translation>
+        <source>MERGE Core</source>
+        <translation>&amp;Rdzeń MERGE</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>POINT Core</source>
-        <translation>&amp;Rdzeń POINT</translation>
+        <source>MERGE Core</source>
+        <translation>&amp;Rdzeń MERGE</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1203,12 +1203,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start POINT after logging in to the system.</source>
-        <translation>Automatycznie uruchom POINT po zalogowaniu do systemu</translation>
+        <source>Automatically start MERGE after logging in to the system.</source>
+        <translation>Automatycznie uruchom MERGE po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start POINT on system login</source>
-        <translation>&amp;Uruchom POINT podczas logowania do systemu</translation>
+        <source>&amp;Start MERGE on system login</source>
+        <translation>&amp;Uruchom MERGE podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1227,18 +1227,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting POINT.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie POINT</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MERGE.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie MERGE</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/POINT-project/POINT-project-translations</source>
+https://www.transifex.com/MERGE-project/MERGE-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/POINT-project/POINT-project-translations </translation>
+https://www.transifex.com/MERGE-project/MERGE-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the POINT network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią POINT poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the MERGE network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią MERGE poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1476,8 +1476,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations </translation
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a POINT address (e.g. %1)</source>
-        <translation>Wprowadź adres POINT (np. %1)</translation>
+        <source>Enter a MERGE address (e.g. %1)</source>
+        <translation>Wprowadź adres MERGE (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1915,8 +1915,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations </translation
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this POINT address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres POINT jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this MERGE address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres MERGE jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1950,8 +1950,8 @@ https://www.transifex.com/POINT-project/POINT-project-translations </translation
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>POINT Core</source>
-        <translation>&amp;Rdzeń POINT</translation>
+        <source>MERGE Core</source>
+        <translation>&amp;Rdzeń MERGE</translation>
     </message>
     </context>
 <context>
@@ -2049,7 +2049,7 @@ https://www.transifex.com/POINT-project/POINT-project-translations </translation
     </message>
     </context>
 <context>
-    <name>POINT-core</name>
+    <name>MERGE-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

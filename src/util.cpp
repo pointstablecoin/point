@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/point-config.h"
+#include "config/merge-config.h"
 #endif
 
 #include "util.h"

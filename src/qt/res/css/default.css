@@ -695,13 +695,13 @@ QWidget#PrivacyDialog QLabel {
 border:0px solid #000;
 }
 
-QWidget#PrivacyDialog QLabel#zPOINTLabel {
+QWidget#PrivacyDialog QLabel#zMERGELabel {
 font-size:14px;
 color:#ffffff;
 background-color:#5B4C7C;
 }
 
-QWidget#PrivacyDialog QLabel#oPOINTLabel {
+QWidget#PrivacyDialog QLabel#oMERGELabel {
 font-size:14px;
 color:#ffffff;
 background-color:#5B4C7C;
@@ -849,12 +849,12 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
 border:0;
 }
 
-/* About POINT Dialog */
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About POINT Contents */
+/* About MERGE Dialog */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About MERGE Contents */
 margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About POINT text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About MERGE text */
 margin-right:10px;
 }
 
@@ -878,7 +878,7 @@ font-weight:normal;
 min-height:30px;
 }
 
-QWidget .QFrame#frame .QLabel#label_5 { /* POINT Balances Label */
+QWidget .QFrame#frame .QLabel#label_5 { /* MERGE Balances Label */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 min-width:160px;
 background-color:transparent;
@@ -1015,7 +1015,7 @@ margin-right:5px;
 padding-right:5px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceText { /* Available zPOINT Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceText { /* Available zMERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1027,7 +1027,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalance { /* Available zPOINT Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalance { /* Available zMERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -1035,7 +1035,7 @@ color:#5B4C7C;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zPOINT Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmedText { /* Unconfirmed zMERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1047,7 +1047,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmed { /* Unconfirmed zPOINT Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceUnconfirmed { /* Unconfirmed zMERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -1055,7 +1055,7 @@ color:#5B4C7C;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText { /* Mature zPOINT Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceMatureText { /* Mature zMERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1067,7 +1067,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature { /* Mature zPOINT Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceMature { /* Mature zMERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -1075,7 +1075,7 @@ color:#5B4C7C;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText { /* Immature zPOINT Label */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmatureText { /* Immature zMERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1087,7 +1087,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmature { /* Immature zPOINT Balance */
+QWidget .QFrame#frame_4 .QLabel#labelzBalanceImmature { /* Immature zMERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -1106,7 +1106,7 @@ margin-right:5px;
 padding-right:5px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz { /* Available POINT Label */
+QWidget .QFrame#frame_3 .QLabel#labelBalanceTextz { /* Available MERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1118,7 +1118,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelBalancez { /* Available POINT Balance */
+QWidget .QFrame#frame_3 .QLabel#labelBalancez { /* Available MERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -1126,7 +1126,7 @@ color:#5B4C7C;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zPOINT Label */
+QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zMERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1138,7 +1138,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zPOINT Balance */
+QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zMERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:bold;
@@ -1146,7 +1146,7 @@ color:#5B4C7C;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zPOINT Label */
+QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zMERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1158,7 +1158,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zPOINT Balance */
+QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zMERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:normal;
@@ -1166,7 +1166,7 @@ color:#5B4C7C;
 margin-left:0px;
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zPOINT Label */
+QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zMERGE Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:#5B4C7C;
@@ -1178,7 +1178,7 @@ font-size:14px;
 /* min-height:35px; */
 }
 
-QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zPOINT Balance */
+QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zMERGE Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:12px;
 font-weight:normal;
