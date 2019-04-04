@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three startup configurations assume the existence of a "MERGE" user
+All three startup configurations assume the existence of a "POINT" user
 and group.  They must be created before attempting to use these scripts.
 
 2. Configuration
@@ -35,10 +35,10 @@ generate one from the shell yourself like this:
 
 bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-Once you have a password in hand, set rpcpassword= in /etc/MERGE/MERGE.conf
+Once you have a password in hand, set rpcpassword= in /etc/POINT/POINT.conf
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/MERGE.conf.
+see contrib/debian/examples/POINT.conf.
 
 3. Paths
 ---------------------------------
@@ -46,7 +46,7 @@ see contrib/debian/examples/MERGE.conf.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              /usr/bin/merged
-Configuration file:  /etc/MERGE/MERGE.conf
+Configuration file:  /etc/POINT/POINT.conf
 Data directory:      /var/lib/merged
 PID file:            /var/run/merged/merged.pid (OpenRC and Upstart)
                      /var/lib/merged/merged.pid (systemd)
@@ -54,7 +54,7 @@ PID file:            /var/run/merged/merged.pid (OpenRC and Upstart)
 The configuration file, PID directory (if applicable) and data directory
 should all be owned by The Merge user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-MERGE user and group.  Access to merge-cli and other merged rpc clients
+POINT user and group.  Access to merge-cli and other merged rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration
@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy merged.init to /etc/init.d/merged. Test by running "service merged start".
 
 Using this script, you can adjust the path and flags to the merged program by
-setting the MERGED and FLAGS environment variables in the file
+setting the POINTD and FLAGS environment variables in the file
 /etc/sysconfig/merged. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

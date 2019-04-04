@@ -12,8 +12,8 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via SwiftX
 
 This mechanism has been integrated into Bitcore-Node-Merge which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/ProjectMerge/insight-api-MERGE#web-socket-api](https://github.com/MERGE-Project/insight-api-MERGE#web-socket-api) 
-* API: [https://github.com/ProjectMerge/insight-api-MERGE#swifttx-transactions](https://github.com/MERGE-Project/insight-api-MERGE#swifttx-transactions) 
+* WebSocket: [https://github.com/ProjectMerge/insight-api-POINT#web-socket-api](https://github.com/POINT-Project/insight-api-POINT#web-socket-api) 
+* API: [https://github.com/ProjectMerge/insight-api-POINT#swifttx-transactions](https://github.com/POINT-Project/insight-api-POINT#swifttx-transactions) 
 
 ####Command line option
 

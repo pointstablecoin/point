@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your MERGE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите MERGE адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your POINT addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите POINT адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your MERGE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите MERGE адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your POINT addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите POINT адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>MERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERGEs from being stolen by malware infecting your computer.</source>
-        <translation>MERGE сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия MERGE от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>POINT will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POINTs from being stolen by malware infecting your computer.</source>
+        <translation>POINT сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия POINT от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Сигурни ли сте, че искате да шифрирате вашия портфейл?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGE&lt;/b&gt;!</source>
-        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ MERGE&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINT&lt;/b&gt;!</source>
+        <translation>&lt;b&gt;Внимание: Ако шифрирате вашия портфейл и загубите вашата парола, вие ще ЗАГУБИТЕ ВСИЧКИТЕ ВИ POINT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Шифриране</translation>
     </message>
     <message>
-        <source>Enter a MERGE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете MERGE адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
+        <source>Enter a POINT Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете POINT адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The MERGE address to sign the message with</source>
-        <translation>MERGE адреса, с който да подпишете съобщението</translation>
+        <source>The POINT address to sign the message with</source>
+        <translation>POINT адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MERGE address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този MERGE адрес</translation>
+        <source>Sign the message to prove you own this POINT address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този POINT адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Въведете личният си BIP 38 ключ. Въведете тайната фраза в средното поле. Избери Дешифриращия Ключ за да изчислим личния ключ. След като ключа се дешифрира, за да добаите ключа към портфейла, кликнете "Импортирай адрес".</translation>
     </message>
     <message>
-        <source>The MERGE address the message was signed with</source>
-        <translation>MERGE адреса, който е подписано съобщението</translation>
+        <source>The POINT address the message was signed with</source>
+        <translation>POINT адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения MERGE адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified POINT address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения POINT адрес</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Ядро</translation>
+        <source>POINT Core</source>
+        <translation>POINT Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a MERGE address</source>
-        <translation>Изпратете монети до MERGE адрес</translation>
+        <source>Send coins to a POINT address</source>
+        <translation>Изпратете монети до POINT адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and MERGE: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  MERGE:URI)</translation>
+        <source>Request payments (generates QR codes and POINT: URIs)</source>
+        <translation>Поискай плащане (генерира QR кодове и  POINT:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -626,24 +626,24 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About MERGE Core</source>
-        <translation>&amp;Относно MERGE Ядрото</translation>
+        <source>&amp;About POINT Core</source>
+        <translation>&amp;Относно POINT Ядрото</translation>
     </message>
     <message>
-        <source>Show information about MERGE Core</source>
-        <translation>Информациза за MERGE Ядрото</translation>
+        <source>Show information about POINT Core</source>
+        <translation>Информациза за POINT Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for MERGE</source>
-        <translation>Промени MERGE конфигурацията</translation>
+        <source>Modify configuration options for POINT</source>
+        <translation>Промени POINT конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your MERGE addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте MERGE адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your POINT addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте POINT адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MERGE addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните MERGE адреси</translation>
+        <source>Verify messages to ensure they were signed with specified POINT addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните POINT адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -674,8 +674,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a MERGE: URI or payment request</source>
-        <translation>Отвори MERGE:URI платежно нареждане</translation>
+        <source>Open a POINT: URI or payment request</source>
+        <translation>Отвори POINT:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -686,16 +686,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the MERGE Core help message to get a list with possible MERGE command-line options</source>
-        <translation>Разкрийте Помощ за MERGE Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the POINT Core help message to get a list with possible POINT command-line options</source>
+        <translation>Разкрийте Помощ за POINT Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>MERGE Core client</source>
-        <translation>Клиент MERGE Ядро</translation>
+        <source>POINT Core client</source>
+        <translation>Клиент POINT Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MERGE network</source>
-        <translation><numerusform>%n активни връзки към MERGE мрежата</numerusform><numerusform>%n активни свръзки към MERGE мрежата</numerusform></translation>
+        <source>%n active connection(s) to POINT network</source>
+        <translation><numerusform>%n активни връзки към POINT мрежата</numerusform><numerusform>%n активни свръзки към POINT мрежата</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -845,8 +845,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (MERGE.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (MERGE.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (POINT.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (POINT.conf).</translation>
     </message>
 </context>
 <context>
@@ -1138,8 +1138,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MERGE address.</source>
-        <translation>Зададения адрес "%1"не е валиден MERGE адрес.</translation>
+        <source>The entered address "%1" is not a valid POINT address.</source>
+        <translation>Зададения адрес "%1"не е валиден POINT адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1184,16 +1184,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Ядро</translation>
+        <source>POINT Core</source>
+        <translation>POINT Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About MERGE Core</source>
-        <translation>Относно MERGE Ядрото</translation>
+        <source>About POINT Core</source>
+        <translation>Относно POINT Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to MERGE Core.</source>
-        <translation>Добре Дошли в MERGE Ядрото</translation>
+        <source>Welcome to POINT Core.</source>
+        <translation>Добре Дошли в POINT Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where MERGE Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде MERGE Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where POINT Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде POINT Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>MERGE Core will download and store a copy of the MERGE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>MERGE Ядрото ще изтегли и запише копие на целия MERGE блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>POINT Core will download and store a copy of the POINT block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>POINT Ядрото ще изтегли и запише копие на целия POINT блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Ядро</translation>
+        <source>POINT Core</source>
+        <translation>POINT Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1401,12 +1401,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MERGE addresses after it matures.
-To Add: enter percentage to give and MERGE address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other POINT addresses after it matures.
+To Add: enter percentage to give and POINT address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други MERGE адреси.
-Да Добавите: въведете процент и задайте MERGE адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други POINT адреси.
+Да Добавите: въведете процент и задайте POINT адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1559,47 +1559,47 @@ Please check the address and try again.</source>
         <translation>Изберете ниво на поверителност.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MERGE</source>
-        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 MERGE</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 POINT</source>
+        <translation>Използвай 2 различни мастърноуда за смесване на средства над 10000 POINT</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MERGE</source>
-        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 MERGE</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 POINT</source>
+        <translation>Използвай 8 различни мастърноуда за да смесите средства до 10000 POINT</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Използвай 16 различни мастърноуда</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MERGE to anonymize 10000 MERGE</source>
-        <translation>Това е най-бързия метод и ще струва около 0.025 MERGE за да скриете 10000 MERGE</translation>
+        <source>This option is the quickest and will cost about ~0.025 POINT to anonymize 10000 POINT</source>
+        <translation>Това е най-бързия метод и ще струва около 0.025 POINT за да скриете 10000 POINT</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MERGE to anonymize 10000 MERGE</source>
-        <translation>Тази опция е сравнително бърза и ще струва около 0.05 MERGE за да скриете 10000 MERGE</translation>
+        <source>This option is moderately fast and will cost about 0.05 POINT to anonymize 10000 POINT</source>
+        <translation>Тази опция е сравнително бърза и ще струва около 0.05 POINT за да скриете 10000 POINT</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Това е най-бавния и най-сигурен вариант за скриване на MERGE. Използването й ще струва</translation>
+        <translation>Това е най-бавния и най-сигурен вариант за скриване на POINT. Използването й ще струва</translation>
     </message>
     <message>
-        <source>0.1 MERGE per 10000 MERGE you anonymize.</source>
-        <translation>0.1 MERGE за 10000 скрити MERGE</translation>
+        <source>0.1 POINT per 10000 POINT you anonymize.</source>
+        <translation>0.1 POINT за 10000 скрити POINT</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening POINT's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening POINT's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MERGE's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening POINT's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1661,8 +1661,8 @@ Please check the address and try again.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the MERGE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори MERGE порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the POINT client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори POINT порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1681,12 +1681,12 @@ Please check the address and try again.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start MERGE after logging in to the system.</source>
-        <translation>Стартирай MERGE автоматично след влизане в системата.</translation>
+        <source>Automatically start POINT after logging in to the system.</source>
+        <translation>Стартирай POINT автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start MERGE on system login</source>
-        <translation>&amp;Стартирай MERGE заедно с операционната система</translation>
+        <source>&amp;Start POINT on system login</source>
+        <translation>&amp;Стартирай POINT заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1713,34 +1713,34 @@ Please check the address and try again.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting MERGE.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting POINT.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/MERGE-project/MERGE-project-translations</source>
+https://www.transifex.com/POINT-project/POINT-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
+https://www.transifex.com/POINT-project/POINT-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming MERGE which get automatically converted to zMERGE via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите MERGE, който автоматично да се конвертира в zMERGE посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming POINT which get automatically converted to zPOINT via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите POINT, който автоматично да се конвертира в zPOINT посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zMERGE</source>
-        <translation>Процент автоматично сечени zMERGE</translation>
+        <source>Percentage of autominted zPOINT</source>
+        <translation>Процент автоматично сечени zPOINT</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough MERGE for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zMERGE докато не се съберат достатъчно MERGE за тази деноминация</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough POINT for this denomination is available</source>
+        <translation>Не бързай с автоматичното конвертиране в zPOINT докато не се съберат достатъчно POINT за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zMERGE Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zMERGE</translation>
+        <source>Preferred Automint zPOINT Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zPOINT</translation>
     </message>
     <message>
-        <source>Connect to the MERGE network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с MERGE мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the POINT network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с POINT мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1870,8 +1870,8 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>От</translation>
     </message>
     <message>
-        <source>MERGE Balances</source>
-        <translation>MERGE Баланс</translation>
+        <source>POINT Balances</source>
+        <translation>POINT Баланс</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1898,8 +1898,8 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>Възнаграждение от стейкване или мастърноуд, които все още не са узрели.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с MERGE мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINT network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с POINT мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1934,20 +1934,20 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>Налични за харчене:</translation>
     </message>
     <message>
-        <source>MERGE:</source>
-        <translation>MERGE:</translation>
+        <source>POINT:</source>
+        <translation>POINT:</translation>
     </message>
     <message>
-        <source>zMERGE:</source>
-        <translation>zMERGE:</translation>
+        <source>zPOINT:</source>
+        <translation>zPOINT:</translation>
     </message>
     <message>
         <source>0 %</source>
         <translation>0 %</translation>
     </message>
     <message>
-        <source>0.000 000 00 MERGE</source>
-        <translation>0.000 000 00 MERGE</translation>
+        <source>0.000 000 00 POINT</source>
+        <translation>0.000 000 00 POINT</translation>
     </message>
     <message>
         <source>Zerocoin Balance</source>
@@ -1985,12 +1985,12 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start MERGE: click-to-pay handler</source>
-        <translation>Провал при стартирането на MERGE: click-to-pay обработвател</translation>
+        <source>Cannot start POINT: click-to-pay handler</source>
+        <translation>Провал при стартирането на POINT: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MERGE address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден MERGE адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid POINT address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден POINT адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2071,24 +2071,24 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>MERGE which were anonymized via Zerocin Protocol</source>
-        <translation>MERGE скрити посредством Зерокойн протокола</translation>
+        <source>POINT which were anonymized via Zerocin Protocol</source>
+        <translation>POINT скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>Zerocoin MERGE (zMERGE)</source>
-        <translation>Zerocoin MERGE (zMERGE)</translation>
+        <source>Zerocoin POINT (zPOINT)</source>
+        <translation>Zerocoin POINT (zPOINT)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGE network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с MERGE мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINT network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с POINT мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Enter an amount of Piv to convert to zPiv</source>
-        <translation>Въведете колко MERGE  да се конвертират в zMERGE</translation>
+        <translation>Въведете колко POINT  да се конвертират в zPOINT</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2099,16 +2099,16 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zMERGE</source>
-        <translation>zMERGE</translation>
+        <source>zPOINT</source>
+        <translation>zPOINT</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Налични за сечене:</translation>
     </message>
     <message>
-        <source>0.000 000 00 MERGE</source>
-        <translation>0.000 000 00 MERGE</translation>
+        <source>0.000 000 00 POINT</source>
+        <translation>0.000 000 00 POINT</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2144,11 +2144,11 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
     </message>
     <message>
         <source>zPiv Control</source>
-        <translation>zMERGE Контрол</translation>
+        <translation>zPOINT Контрол</translation>
     </message>
     <message>
         <source>zPiv Selected:</source>
-        <translation>Избрани zMERGE:</translation>
+        <translation>Избрани zPOINT:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2167,8 +2167,8 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zMERGE</source>
-        <translation>0 zMERGE</translation>
+        <source>0 zPOINT</source>
+        <translation>0 zPOINT</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2187,7 +2187,7 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The MERGE address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The POINT address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2220,7 +2220,7 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zMERGE от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zPOINT от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2395,8 +2395,8 @@ https://www.transifex.com/MERGE-project/MERGE-project-translations</translation>
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zMERGE in </source>
-        <translation>zMERGE в</translation>
+        <source> zPOINT in </source>
+        <translation>zPOINT в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2429,8 +2429,8 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid MERGE Address</source>
-        <translation>Невалиден MERGE адрес</translation>
+        <source>Invalid POINT Address</source>
+        <translation>Невалиден POINT адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2470,7 +2470,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPiv Spend #: </source>
-        <translation>zMERGE Похарчени #:</translation>
+        <translation>zPOINT Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2494,7 +2494,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPiv Mint</source>
-        <translation>Сечене на zMERGE</translation>
+        <translation>Сечене на zPOINT</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2516,8 +2516,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a MERGE address (e.g. %1)</source>
-        <translation>Задайте MERGE адрес (например %1)</translation>
+        <source>Enter a POINT address (e.g. %1)</source>
+        <translation>Задайте POINT адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2654,8 +2654,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the MERGE debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори MERGE дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the POINT debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори POINT дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2822,8 +2822,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the MERGE RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на MERGE.</translation>
+        <source>Welcome to the POINT RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на POINT.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2893,12 +2893,12 @@ Please be patient...</source>
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MERGE network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по MERGE мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POINT network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по POINT мрежата.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MERGE network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по MERGE мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POINT network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по POINT мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3122,8 +3122,8 @@ Please be patient...</source>
         <translation>Размер на UTXO:</translation>
     </message>
     <message>
-        <source>0 MERGE</source>
-        <translation>0 MERGE</translation>
+        <source>0 POINT</source>
+        <translation>0 POINT</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3174,15 +3174,15 @@ Please be patient...</source>
         <translation>Автоматично избрани монети</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMERGEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERGEs in fee,&lt;br /&gt;while "at least" pays 1000 uMERGEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uMERGE и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uMERGE входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uMERGE. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uPOINTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPOINTs in fee,&lt;br /&gt;while "at least" pays 1000 uPOINTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uPOINT и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPOINT входяща такса, &lt;br /&gt;докато "минимална сума" плаща 1000 uPOINT. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMERGEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERGEs in fee,&lt;br /&gt;while "total at least" pays 1000 uMERGEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Ако собствената такса е настроена на 1000 uMERGE и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uMERGE входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uMERGE. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
+        <source>If the custom fee is set to 1000 uPOINTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPOINTs in fee,&lt;br /&gt;while "total at least" pays 1000 uPOINTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Ако собствената такса е настроена на 1000 uPOINT и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPOINT входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uPOINT. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MERGE transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for POINT transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3230,8 +3230,8 @@ Please be patient...</source>
         <translation>Добави Получател</translation>
     </message>
     <message>
-        <source>Anonymized MERGE</source>
-        <translation>Анонимизиран MERGE</translation>
+        <source>Anonymized POINT</source>
+        <translation>Анонимизиран POINT</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3286,8 +3286,8 @@ Please be patient...</source>
         <translation>анонимни средства</translation>
     </message>
     <message>
-        <source>Warning: Invalid MERGE address</source>
-        <translation>Предупреждение: Невалиден MERGE адрес</translation>
+        <source>Warning: Invalid POINT address</source>
+        <translation>Предупреждение: Невалиден POINT адрес</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3389,8 +3389,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The MERGE address to send the payment to</source>
-        <translation>MERGE адреса - получател на плащането</translation>
+        <source>The POINT address to send the payment to</source>
+        <translation>POINT адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3429,8 +3429,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the MERGE: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGE network.</source>
-        <translation>Съобщение, което е било прикачено към MERGE:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по MERGE мрежата.</translation>
+        <source>A message that was attached to the POINT: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the POINT network.</source>
+        <translation>Съобщение, което е било прикачено към POINT:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по POINT мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3456,8 +3456,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>MERGE Core is shutting down...</source>
-        <translation>Изключване на MERGE Ядрото...</translation>
+        <source>POINT Core is shutting down...</source>
+        <translation>Изключване на POINT Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3479,8 +3479,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The MERGE address to sign the message with</source>
-        <translation>MERGE адреса, с който да подпишете съобщението</translation>
+        <source>The POINT address to sign the message with</source>
+        <translation>POINT адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3511,16 +3511,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MERGE address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този MERGE адрес</translation>
+        <source>Sign the message to prove you own this POINT address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този POINT адрес</translation>
     </message>
     <message>
-        <source>The MERGE address the message was signed with</source>
-        <translation>MERGE адреса, който е подписано съобщението</translation>
+        <source>The POINT address the message was signed with</source>
+        <translation>POINT адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MERGE address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения MERGE адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified POINT address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения POINT адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3606,8 +3606,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>MERGE Core</source>
-        <translation>MERGE Ядро</translation>
+        <source>POINT Core</source>
+        <translation>POINT Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3622,8 +3622,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The MERGE Core developers</source>
-        <translation>MERGE Core разработчици</translation>
+        <source>The POINT Core developers</source>
+        <translation>POINT Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3911,23 +3911,23 @@ Please be patient...</source>
     </message>
     <message>
         <source>Converted Piv to zPiv</source>
-        <translation>Конвертиран MERGE във zMERGE</translation>
+        <translation>Конвертиран POINT във zPOINT</translation>
     </message>
     <message>
         <source>Spent zPiv</source>
-        <translation>Похарчени zMERGE</translation>
+        <translation>Похарчени zPOINT</translation>
     </message>
     <message>
         <source>Received Piv from zPiv</source>
-        <translation>Получен MERGE от zMERGE</translation>
+        <translation>Получен POINT от zPOINT</translation>
     </message>
     <message>
         <source>Minted Change as zPiv from zPiv Spend</source>
-        <translation>Исечено ресто като zMERGE от похарчените zMERGE</translation>
+        <translation>Исечено ресто като zPOINT от похарчените zPOINT</translation>
     </message>
     <message>
         <source>Converted zPiv to Piv</source>
-        <translation>Конвертирани zMERGE в MERGE</translation>
+        <translation>Конвертирани zPOINT в POINT</translation>
     </message>
     <message>
         <source>watch-only</source>
@@ -3935,7 +3935,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPiv Accumulator</source>
-        <translation>zMERGE Акумулатор</translation>
+        <translation>zPOINT Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4042,7 +4042,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received Piv from zPiv</source>
-        <translation>Получен MERGE от zMERGE</translation>
+        <translation>Получен POINT от zPOINT</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4054,7 +4054,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zPiv</source>
-        <translation>Харчене на Zerocoin, Ресто в zMERGE</translation>
+        <translation>Харчене на Zerocoin, Ресто в zPOINT</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4213,7 +4213,7 @@ Please be patient...</source>
     <name>ZPivControlDialog</name>
     <message>
         <source>Select zPiv to Spend</source>
-        <translation>Изберете zMERGE за Изпращане</translation>
+        <translation>Изберете zPOINT за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4225,7 +4225,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zMERGE</translation>
+        <translation>zPOINT</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4237,7 +4237,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>MERGE-core</name>
+    <name>POINT-core</name>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
         <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>
@@ -4287,12 +4287,12 @@ Please be patient...</source>
         <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
     </message>
     <message>
-        <source>Fees (in MERGE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в MERGE/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+        <source>Fees (in POINT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в POINT/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in MERGE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в MERGE/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+        <source>Fees (in POINT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в POINT/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

@@ -1,6 +1,6 @@
 [Protocol]
 exec=merge-qt '%u'
-protocol=MERGE
+protocol=POINT
 input=none
 output=none
 helper=true

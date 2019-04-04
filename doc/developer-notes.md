@@ -380,7 +380,7 @@ Git and github tips
 ---------------------
 
 - For resolving merge/rebase conflicts, it can be useful to enable diff3 style using
-  `git config MERGE.conflictstyle diff3`. Instead of
+  `git config POINT.conflictstyle diff3`. Instead of
 
         <<<
         yours

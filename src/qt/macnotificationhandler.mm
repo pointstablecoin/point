@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.MERGE.Merge-Qt";
+        return @"io.POINT.Merge-Qt";
     } else {
         return [self __bundleIdentifier];
     }

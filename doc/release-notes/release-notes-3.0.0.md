@@ -128,7 +128,7 @@ Thanks to everyone who directly contributed to this release:
 - Fuzzbawls
 - Jon Spock
 - Mrs-X
-- MERGE
+- POINT
 - amirabrams
 - presstab
 

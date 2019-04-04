@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 PIVX Developers
-// Copyright (c) 2018 -2019 MERGE Developers
+// Copyright (c) 2018 -2019 POINT Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop MERGE server.");
+            "\nStop POINT server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "MERGE server stopping";
+    return "POINT server stopping";
 }
 
 
@@ -319,36 +319,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* MERGE features */
-        {"MERGE", "masternode", &masternode, true, true, false},
-        {"MERGE", "listmasternodes", &listmasternodes, true, true, false},
-        {"MERGE", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"MERGE", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"MERGE", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"MERGE", "masternodedebug", &masternodedebug, true, true, false},
-        {"MERGE", "startmasternode", &startmasternode, true, true, false},
-        {"MERGE", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"MERGE", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"MERGE", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"MERGE", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"MERGE", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"MERGE", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"MERGE", "mnbudget", &mnbudget, true, true, false},
-        {"MERGE", "preparebudget", &preparebudget, true, true, false},
-        {"MERGE", "submitbudget", &submitbudget, true, true, false},
-        {"MERGE", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"MERGE", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"MERGE", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"MERGE", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"MERGE", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"MERGE", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"MERGE", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"MERGE", "checkbudgets", &checkbudgets, true, true, false},
-        {"MERGE", "mnsync", &mnsync, true, true, false},
-        {"MERGE", "spork", &spork, true, true, false},
-        {"MERGE", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* POINT features */
+        {"POINT", "masternode", &masternode, true, true, false},
+        {"POINT", "listmasternodes", &listmasternodes, true, true, false},
+        {"POINT", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"POINT", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"POINT", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"POINT", "masternodedebug", &masternodedebug, true, true, false},
+        {"POINT", "startmasternode", &startmasternode, true, true, false},
+        {"POINT", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"POINT", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"POINT", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"POINT", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"POINT", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"POINT", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"POINT", "mnbudget", &mnbudget, true, true, false},
+        {"POINT", "preparebudget", &preparebudget, true, true, false},
+        {"POINT", "submitbudget", &submitbudget, true, true, false},
+        {"POINT", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"POINT", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"POINT", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"POINT", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"POINT", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"POINT", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"POINT", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"POINT", "checkbudgets", &checkbudgets, true, true, false},
+        {"POINT", "mnsync", &mnsync, true, true, false},
+        {"POINT", "spork", &spork, true, true, false},
+        {"POINT", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"MERGE", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"POINT", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -623,7 +623,7 @@ void StartRPCThreads()
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"MERGE Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"POINT Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);

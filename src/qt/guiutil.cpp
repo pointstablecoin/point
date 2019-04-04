@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 PIVX Developers
-// Copyright (c) 2018 -2019 MERGE Developers
+// Copyright (c) 2018 -2019 POINT Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -117,7 +117,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no MERGE: URI
+    // return if URI is not valid or is no POINT: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -148,7 +148,7 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
             fShouldReturnFalse = false;
         } else if (i->first == "amount") {
             if (!i->second.isEmpty()) {
-                if (!BitcoinUnits::parse(BitcoinUnits::MERGE, i->second, &rv.amount)) {
+                if (!BitcoinUnits::parse(BitcoinUnits::POINT, i->second, &rv.amount)) {
                     return false;
                 }
             }
@@ -166,9 +166,9 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out)
 {
-    // Convert MERGE:// to MERGE:
+    // Convert POINT:// to POINT:
     //
-    //    Cannot handle this later, because MERGE:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because POINT:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
     if (uri.startsWith(URI_SCHEME "://", Qt::CaseInsensitive)) {
         uri.replace(0, std::strlen(URI_SCHEME) + 3, URI_SCHEME ":");
@@ -183,7 +183,7 @@ QString formatBitcoinURI(const SendCoinsRecipient& info)
     int paramCount = 0;
 
     if (info.amount) {
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::MERGE, info.amount, false, BitcoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::POINT, info.amount, false, BitcoinUnits::separatorNever));
         paramCount++;
     }
 
@@ -338,7 +338,7 @@ void openConfigfile()
 {
     boost::filesystem::path pathConfig = GetConfigFile();
 
-    /* Open MERGE.conf with the associated application */
+    /* Open POINT.conf with the associated application */
     if (boost::filesystem::exists(pathConfig))
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
@@ -556,12 +556,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "MERGE.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "POINT.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for MERGE.lnk
+    // check for POINT.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -635,7 +635,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "MERGE.desktop";
+    return GetAutostartDir() / "POINT.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -674,7 +674,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a Merge.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=MERGE\n";
+        optionFile << "Name=POINT\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

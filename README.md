@@ -22,13 +22,13 @@ See the status of the Merge Coin's network at the [Merge Coin Block Explorer](ht
 
 ### Coin Specs
 <table>
-<tr><td>Ticker</td><td>MERGE</td></tr>
+<tr><td>Ticker</td><td>POINT</td></tr>
 <tr><td>Algorithm</td><td>PoW: Argon2m - PoS: See-Saw</td></tr>
-<tr><td>Max Coin Supply</td><td>100,000,000 MERGE</td></tr>
-<tr><td>Masternode Collateral</td><td>10,000 MERGE</td></tr>
+<tr><td>Max Coin Supply</td><td>100,000,000 POINT</td></tr>
+<tr><td>Masternode Collateral</td><td>10,000 POINT</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Premine</td><td>33,000,000 MERGE*</td></tr>
+<tr><td>Premine</td><td>33,000,000 POINT*</td></tr>
 </table>
 
 *Read all about our [Premine](https://kb.projectmerge.org/faq#merge-coins-premine).

@@ -19,9 +19,9 @@ BITCOIN_TX_NAME=merge-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef MERGE_CONFIG_H])
-AH_TOP([#define MERGE_CONFIG_H])
-AH_BOTTOM([#endif //MERGE_CONFIG_H])
+AH_TOP([#ifndef POINT_CONFIG_H])
+AH_TOP([#define POINT_CONFIG_H])
+AH_BOTTOM([#endif //POINT_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME
@@ -913,7 +913,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_MERGE])
+AC_MSG_CHECKING([whether to build test_POINT])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="test"

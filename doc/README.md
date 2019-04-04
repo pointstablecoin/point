@@ -3,11 +3,11 @@ Point Core
 
 Setup
 ---------------------
-[Point Core](http://MERGE.org/wallet) is the original MERGE client and it builds the backbone of the network. However, it downloads and stores the entire history of MERGE transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Point Core](http://POINT.org/wallet) is the original POINT client and it builds the backbone of the network. However, it downloads and stores the entire history of POINT transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run MERGE on your native platform.
+The following are some helpful notes on how to run POINT on your native platform.
 
 ### Unix
 
@@ -26,14 +26,14 @@ Drag Merge-Qt to your applications folder, and then run Merge-Qt.
 
 ### Need Help?
 
-* See the documentation at the [MERGE Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [POINT Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [MERGE Forum](http://forum.MERGE.org/).
-* Join one of our Slack groups [MERGE Slack Groups](https://MERGE.org/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [POINT Forum](http://forum.POINT.org/).
+* Join one of our Slack groups [POINT Slack Groups](https://POINT.org/slack-logins/).
 
 Building
 ---------------------
-The following are developer notes on how to build MERGE on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build POINT on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build MERGE on your native platform.
 
 Development
 ---------------------
-The Merge repo's [root README](https://github.com/MERGE-Project/MERGE/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Merge repo's [root README](https://github.com/POINT-Project/POINT/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +55,8 @@ The Merge repo's [root README](https://github.com/MERGE-Project/MERGE/blob/maste
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [MERGE](http://forum.MERGE.org/) forum.
-* Join the [MERGE-Dev](https://MERGE-dev.slack.com/) Slack group ([Sign-Up](https://MERGE-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [POINT](http://forum.POINT.org/) forum.
+* Join the [POINT-Dev](https://POINT-dev.slack.com/) Slack group ([Sign-Up](https://POINT-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
