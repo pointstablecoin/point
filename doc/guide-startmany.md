@@ -116,16 +116,16 @@ mn02 127.0.0.2:51472 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f103
 
 If you are using a masternode.conf file you no longer need The Merge.conf file. The exception is if you need custom settings (thanks oblox). 
 
-## Update POINT.conf on server
+## Update MERGE.conf on server
 
-If you generated a new masternode private key, you will need to update the remote POINT.conf files.
+If you generated a new masternode private key, you will need to update the remote MERGE.conf files.
 
 Shut down the daemon and then edit the file.
 
-```sudo nano .POINT/POINT.conf```
+```sudo nano .MERGE/MERGE.conf```
 
 ### Edit the masternodeprivkey
-If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote POINT.conf file.
+If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote MERGE.conf file.
 
 ## Start your MasterNodes
 
@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```pointd getinfo```
 
-And compare with the official explorer at http://POINTexplorer.coin-server.com <or> dnet.presstab.pw
+And compare with the official explorer at http://MERGEexplorer.coin-server.com <or> dnet.presstab.pw
 
 ### Local
 

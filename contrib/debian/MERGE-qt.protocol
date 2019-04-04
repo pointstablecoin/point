@@ -1,6 +1,6 @@
 [Protocol]
 exec=point-qt '%u'
-protocol=POINT
+protocol=MERGE
 input=none
 output=none
 helper=true

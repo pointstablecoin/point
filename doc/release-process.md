@@ -29,7 +29,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/ProjectMerge/merge.git
 
-### POINT maintainers/release engineers, suggestion for writing release notes
+### MERGE maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./POINT
+    pushd ./MERGE
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../POINT/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../MERGE/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,7 +92,7 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url POINT=/path/to/POINT,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url MERGE=/path/to/MERGE,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
@@ -100,47 +100,47 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 ### Build and sign Point Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit POINT=v${VERSION} ../POINT/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/POINT-*.tar.gz build/out/src/POINT-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit MERGE=v${VERSION} ../MERGE/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/MERGE-*.tar.gz build/out/src/MERGE-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit POINT=v${VERSION} ../POINT/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/POINT-*-win-unsigned.tar.gz inputs/POINT-win-unsigned.tar.gz
-    mv build/out/POINT-*.zip build/out/POINT-*.exe ../
+    ./bin/gbuild --memory 3000 --commit MERGE=v${VERSION} ../MERGE/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/MERGE-*-win-unsigned.tar.gz inputs/MERGE-win-unsigned.tar.gz
+    mv build/out/MERGE-*.zip build/out/MERGE-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit POINT=v${VERSION} ../POINT/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/POINT-*-osx-unsigned.tar.gz inputs/POINT-osx-unsigned.tar.gz
-    mv build/out/POINT-*.tar.gz build/out/POINT-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit MERGE=v${VERSION} ../MERGE/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/MERGE-*-osx-unsigned.tar.gz inputs/MERGE-osx-unsigned.tar.gz
+    mv build/out/MERGE-*.tar.gz build/out/MERGE-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit POINT=v${VERSION} ../POINT/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/POINT-*.tar.gz build/out/src/POINT-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit MERGE=v${VERSION} ../MERGE/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/MERGE-*.tar.gz build/out/src/MERGE-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`POINT-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`POINT-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`POINT-${VERSION}-win[32|64]-setup-unsigned.exe`, `POINT-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`POINT-${VERSION}-osx-unsigned.dmg`, `POINT-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`MERGE-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`MERGE-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`MERGE-${VERSION}-win[32|64]-setup-unsigned.exe`, `MERGE-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`MERGE-${VERSION}-osx-unsigned.dmg`, `MERGE-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import POINT/contrib/gitian-keys/*.pgp
+    gpg --import MERGE/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../POINT/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../POINT/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../POINT/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../POINT/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../MERGE/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../MERGE/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../MERGE/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../MERGE/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -162,22 +162,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer POINT-osx-unsigned.tar.gz to osx for signing
-    tar xf POINT-osx-unsigned.tar.gz
+    transfer MERGE-osx-unsigned.tar.gz to osx for signing
+    tar xf MERGE-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf POINT-win-unsigned.tar.gz
+    tar xf MERGE-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/POINT-detached-sigs
+    cd ~/MERGE-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -190,25 +190,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [POINT-detached-sigs](https://github.com/POINT-Project/POINT-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [MERGE-detached-sigs](https://github.com/MERGE-Project/MERGE-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../POINT/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../POINT/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/POINT-osx-signed.dmg ../POINT-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../MERGE/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../MERGE/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/MERGE-osx-signed.dmg ../MERGE-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../POINT/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../POINT/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../POINT/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/POINT-*win64-setup.exe ../POINT-${VERSION}-win64-setup.exe
-    mv build/out/POINT-*win32-setup.exe ../POINT-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../MERGE/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../MERGE/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../MERGE/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/MERGE-*win64-setup.exe ../MERGE-${VERSION}-win64-setup.exe
+    mv build/out/MERGE-*win32-setup.exe ../MERGE-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -230,17 +230,17 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-POINT-${VERSION}-aarch64-linux-gnu.tar.gz
-POINT-${VERSION}-arm-linux-gnueabihf.tar.gz
-POINT-${VERSION}-i686-pc-linux-gnu.tar.gz
-POINT-${VERSION}-x86_64-linux-gnu.tar.gz
-POINT-${VERSION}-osx64.tar.gz
-POINT-${VERSION}-osx.dmg
-POINT-${VERSION}.tar.gz
-POINT-${VERSION}-win32-setup.exe
-POINT-${VERSION}-win32.zip
-POINT-${VERSION}-win64-setup.exe
-POINT-${VERSION}-win64.zip
+MERGE-${VERSION}-aarch64-linux-gnu.tar.gz
+MERGE-${VERSION}-arm-linux-gnueabihf.tar.gz
+MERGE-${VERSION}-i686-pc-linux-gnu.tar.gz
+MERGE-${VERSION}-x86_64-linux-gnu.tar.gz
+MERGE-${VERSION}-osx64.tar.gz
+MERGE-${VERSION}-osx.dmg
+MERGE-${VERSION}.tar.gz
+MERGE-${VERSION}-win32-setup.exe
+MERGE-${VERSION}-win32.zip
+MERGE-${VERSION}-win64-setup.exe
+MERGE-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested

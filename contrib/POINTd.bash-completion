@@ -1,12 +1,12 @@
-# bash programmable completion for POINTd(1) and POINT-cli(1)
+# bash programmable completion for MERGEd(1) and MERGE-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have POINTd && {
+have MERGEd && {
 
-# call $POINTd for RPC
-_POINT_rpc() {
+# call $MERGEd for RPC
+_MERGE_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _POINT_rpc() {
                 ;;
         esac
     done
-    $POINTd "${rpcargs[@]}" "$@"
+    $MERGEd "${rpcargs[@]}" "$@"
 }
 
-# Add POINT accounts to COMPREPLY
-_POINT_accounts() {
+# Add MERGE accounts to COMPREPLY
+_MERGE_accounts() {
     local accounts
-    accounts=$(_POINT_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_MERGE_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_POINTd() {
+_MERGEd() {
     local cur prev words=() cword
-    local POINTd
+    local MERGEd
 
-    # save and use original argument to invoke POINTd
-    # POINTd might not be in $PATH
-    POINTd="$1"
+    # save and use original argument to invoke MERGEd
+    # MERGEd might not be in $PATH
+    MERGEd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -53,7 +53,7 @@ _POINTd() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _POINT_accounts
+                _MERGE_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _POINTd() {
                 return 0
                 ;;
             move|setaccount)
-                _POINT_accounts
+                _MERGE_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _POINTd() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _POINT_accounts
+            _MERGE_accounts
             return 0
             ;;
     esac
@@ -114,12 +114,12 @@ _POINTd() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($POINTd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($MERGEd --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_POINT_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_MERGE_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -133,7 +133,7 @@ _POINTd() {
     esac
 }
 
-complete -F _POINTd POINTd POINT-cli
+complete -F _MERGEd MERGEd MERGE-cli
 }
 
 # Local variables:

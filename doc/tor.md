@@ -1,7 +1,7 @@
-TOR SUPPORT IN POINT
+TOR SUPPORT IN MERGE
 =======================
 
-It is possible to run POINT as a Tor hidden service, and connect to such services.
+It is possible to run MERGE as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run POINT behind a Tor proxy
+Run MERGE behind a Tor proxy
 ----------------------------------
 
-The first step is running POINT behind a Tor proxy. This will already make all
+The first step is running MERGE behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 ```
 -proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -71,10 +71,10 @@ NumEntryGuards 8
 The directory can be different of course, but (both) port numbers should be equal to
 your merged's P2P listen port (51472 by default).
 ```
--externalip=X   You can tell POINT about its publicly reachable address using
+-externalip=X   You can tell MERGE about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
-                /var/lib/tor/POINT-service/hostname. Onion addresses are given
+                /var/lib/tor/MERGE-service/hostname. Onion addresses are given
                 preference for your node to advertize itself with, for connections
                 coming from unroutable addresses (such as 127.0.0.1, where the
                 Tor proxy typically runs).
@@ -110,7 +110,7 @@ for normal IPv4/IPv6 communication, use:
 ./merged -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:989 -discover
 ```
 
-List of known POINT Tor relays
+List of known MERGE Tor relays
 ------------------------------------
 ```
 y5kcscnhpygvvnjn.onion:989

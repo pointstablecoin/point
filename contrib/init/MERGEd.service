@@ -1,19 +1,19 @@
 [Unit]
-Description=POINT's distributed currency daemon
+Description=MERGE's distributed currency daemon
 After=network.target
 
 [Service]
-User=POINT
-Group=POINT
+User=MERGE
+Group=MERGE
 
 Type=forking
-PIDFile=/var/lib/POINTd/POINTd.pid
+PIDFile=/var/lib/MERGEd/MERGEd.pid
 
-ExecStart=/usr/bin/POINTd -daemon -pid=/var/lib/POINTd/POINTd.pid \
-          -conf=/etc/POINT/POINT.conf -datadir=/var/lib/POINTd
+ExecStart=/usr/bin/MERGEd -daemon -pid=/var/lib/MERGEd/MERGEd.pid \
+          -conf=/etc/MERGE/MERGE.conf -datadir=/var/lib/MERGEd
 
-ExecStop=-/usr/bin/POINT-cli -conf=/etc/POINT/POINT.conf \
-         -datadir=/var/lib/POINTd stop
+ExecStop=-/usr/bin/MERGE-cli -conf=/etc/MERGE/MERGE.conf \
+         -datadir=/var/lib/MERGEd stop
 
 Restart=always
 PrivateTmp=true

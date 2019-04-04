@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 PIVX Developers
-// Copyright (c) 2018 -2019 POINT Developers
+// Copyright (c) 2018 -2019 MERGE Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -25,8 +25,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called POINT (http://projectmerge.org),
- * which enables instant payments to anyone, anywhere in the world. POINT uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called MERGE (http://projectmerge.org),
+ * which enables instant payments to anyone, anywhere in the world. MERGE uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/POINT.conf are parsed in qt/POINT.cpp's main()
+    // If Qt is used, parameters/MERGE.conf are parsed in qt/MERGE.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -112,7 +112,7 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "POINT:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "MERGE:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
@@ -122,7 +122,7 @@ bool AppInit(int argc, char* argv[])
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "POINT server starting\n");
+            fprintf(stdout, "MERGE server starting\n");
 
             // Daemonize
             pid_t pid = fork();

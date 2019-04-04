@@ -158,7 +158,7 @@ where possible keep them short, un-complex and easy to verify.
 -------------------------
 
 The following applies to code changes to The Point Core project, and is not to be
-confused with overall POINT Network Protocol consensus changes.
+confused with overall MERGE Network Protocol consensus changes.
 
 Whether a pull request is merged into Point Core rests with the project merge
 maintainers and ultimately the project lead.
@@ -174,7 +174,7 @@ In general, all pull requests must:
   - be well peer reviewed;
   - follow code style guidelines;
 
-Patches that change POINT consensus rules are considerably more involved than
+Patches that change MERGE consensus rules are considerably more involved than
 normal because they affect the entire ecosystem and so must be preceded by
 extensive discussions and clear detailing. While each case will be different,
 one should be prepared to expend more time and effort than for other kinds of

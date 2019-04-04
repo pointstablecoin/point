@@ -13,7 +13,7 @@
  * client versioning and copyright year
  */
 
-//! These need to be macros, as clientversion.cpp's and POINT*-res.rc's voodoo requires it
+//! These need to be macros, as clientversion.cpp's and MERGE*-res.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 3
