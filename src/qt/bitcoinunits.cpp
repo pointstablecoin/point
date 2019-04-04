@@ -68,11 +68,11 @@ QString BitcoinUnits::name(int unit)
     } else {
         switch (unit) {
         case POINT:
-            return QString("tPOINT");
+            return QString("POINT");
         case mPOINT:
-            return QString("mtPOINT");
+            return QString("mPOINT");
         case uPOINT:
-            return QString::fromUtf8("μtPOINT");
+            return QString::fromUtf8("μPOINT");
         default:
             return QString("???");
         }
