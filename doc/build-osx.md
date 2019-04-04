@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build pointd (headless client) for OSX.
+This guide will show you how to build merged (headless client) for OSX.
 
 Notes
 -----
@@ -81,7 +81,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `merged` for your own use.
 
-merged/point-cli binaries are not included in The Merge-Qt.app bundle.
+merged/merge-cli binaries are not included in The Merge-Qt.app bundle.
 
 If you are building `merged` or `point-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -117,5 +117,5 @@ Other commands:
 -------
 
     ./merged -daemon # to start The Merge daemon.
-    ./point-cli --help  # for a list of command-line options.
-    ./point-cli help    # When the daemon is running, to get a list of RPC commands
+    ./merge-cli --help  # for a list of command-line options.
+    ./merge-cli help    # When the daemon is running, to get a list of RPC commands

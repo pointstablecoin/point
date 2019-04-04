@@ -1590,11 +1590,7 @@ int64_t GetBlockValue(int nHeight)
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
     
     if (nHeight == 0) {
-        if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-            return 50000 * COIN;
-        }else{
-            return 1 * COIN;
-        }
+        return 1 * COIN;
     } else {
         if (nTx > 1){
             if (nMoneySupplyActual < 1){

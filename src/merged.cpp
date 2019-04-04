@@ -76,7 +76,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  pointd [options]                     " + _("Start Point Core Daemon") + "\n";
+                        "  merged [options]                     " + _("Start Point Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -116,7 +116,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in merged anymore. Use The point-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in merged anymore. Use The merge-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32

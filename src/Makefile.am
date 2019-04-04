@@ -64,11 +64,11 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += pointd
+  bin_PROGRAMS += merged
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += point-cli point-tx
+  bin_PROGRAMS += merge-cli merge-tx
 endif
 
 .PHONY: FORCE
@@ -359,7 +359,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between point-cli and point-qt
+# cli: shared between merge-cli and point-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -387,11 +387,11 @@ endif
 if ENABLE_WALLET
 merged_LDADD += libbitcoin_wallet.a
 endif
-merged_SOURCES = pointd.cpp
+merged_SOURCES = merged.cpp
 #
 
 if TARGET_WINDOWS
-merged_SOURCES += pointd-res.rc
+merged_SOURCES += merged-res.rc
 endif
 
 merged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
@@ -399,7 +399,7 @@ merged_CPPFLAGS = $(BITCOIN_INCLUDES)
 merged_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# point-cli binary #
+# merge-cli binary #
 merge_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
@@ -409,12 +409,12 @@ merge_cli_LDADD = \
   $(EVENT_LIBS)
 
 merge_cli_SOURCES = \
-  point-cli.cpp
+  merge-cli.cpp
 
 merge_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# point-tx binary #
+# merge-tx binary #
 merge_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
@@ -425,13 +425,13 @@ merge_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-merge_tx_SOURCES = point-tx.cpp
+merge_tx_SOURCES = merge-tx.cpp
 merge_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 merge_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-merge_cli_SOURCES += point-cli-res.rc
+merge_cli_SOURCES += merge-cli-res.rc
 endif
 merge_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 

@@ -48,10 +48,10 @@ static bool AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help")) {
         // First part of help message is specific to this utility
-        std::string strUsage = _("Point Core point-tx utility version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Point Core merge-tx utility version") + " " + FormatFullVersion() + "\n\n" +
                                _("Usage:") + "\n" +
-                               "  point-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded MERGE transaction") + "\n" +
-                               "  point-tx [options] -create [commands]   " + _("Create hex-encoded MERGE transaction") + "\n" +
+                               "  merge-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded MERGE transaction") + "\n" +
+                               "  merge-tx [options] -create [commands]   " + _("Create hex-encoded MERGE transaction") + "\n" +
                                "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

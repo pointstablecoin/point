@@ -373,8 +373,8 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/point-cli.cpp \
-           src/point-tx.cpp \
+           src/merge-cli.cpp \
+           src/merge-tx.cpp \
            src/merge.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \

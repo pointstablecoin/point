@@ -101,7 +101,7 @@ built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip pointd" to strip the debug
+The release is built with GCC and then "strip merged" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
