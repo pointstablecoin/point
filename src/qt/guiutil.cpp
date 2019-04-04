@@ -73,7 +73,7 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "merge"
+#define URI_SCHEME "point"
 
 namespace GUIUtil
 {

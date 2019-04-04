@@ -50,9 +50,9 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "POINT"
-#define QAPP_ORG_DOMAIN "projectmerge.org"
-#define QAPP_APP_NAME_DEFAULT "Merge-Qt"
-#define QAPP_APP_NAME_TESTNET "Merge-Qt-testnet"
+#define QAPP_ORG_DOMAIN "pointcoin.website"
+#define QAPP_APP_NAME_DEFAULT "Point-Qt"
+#define QAPP_APP_NAME_TESTNET "Point-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H
 

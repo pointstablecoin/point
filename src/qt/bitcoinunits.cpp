@@ -44,9 +44,9 @@ QString BitcoinUnits::id(int unit)
     case POINT:
         return QString("POINT");
     case mPOINT:
-        return QString("mmerge");
+        return QString("mpoint");
     case uPOINT:
-        return QString::fromUtf8("umerge");
+        return QString::fromUtf8("upoint");
     default:
         return QString("???");
     }

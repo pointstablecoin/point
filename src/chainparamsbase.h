@@ -15,7 +15,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between merge-cli and merged)
+ * CBaseChainParams defines the base parameters (shared between point-cli and pointd)
  * of a given instance of The Point system.
  */
 static const bool bClientVersionIsRelease = CLIENT_VERSION_IS_RELEASE;
