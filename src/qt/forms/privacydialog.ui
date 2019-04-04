@@ -93,7 +93,7 @@
                <item>
                 <widget class="QLabel" name="labelzPOINTSyncStatus">
                  <property name="toolTip">
-                  <string>The displayed information may be out of date. Your wallet automatically synchronizes with The Merge network after a connection is established, but this process has not completed yet.</string>
+                  <string>The displayed information may be out of date. Your wallet automatically synchronizes with The Point network after a connection is established, but this process has not completed yet.</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel { color: red; }</string>
@@ -695,7 +695,7 @@ zPOINT are mature when they have more than 20 confirmations AND more than 2 mint
                     </size>
                    </property>
                    <property name="toolTip">
-                    <string>The Merge address to send the payment to. Creates local payment to yourself when empty.</string>
+                    <string>The Point address to send the payment to. Creates local payment to yourself when empty.</string>
                    </property>
                   </widget>
                  </item>

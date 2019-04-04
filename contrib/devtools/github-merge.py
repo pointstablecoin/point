@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# This script will locally construct a Merge commit for a pull request on a
+# This script will locally construct a Point commit for a pull request on a
 # github repository, inspect it, sign it and optionally push it.
 
 # The following temporary branches are created/overwritten and deleted:
@@ -221,9 +221,9 @@ def main():
         os.chdir(toplevel)
         # Create unsigned merge commit.
         if title:
-            firstline = 'Merge #%s: %s' % (pull,title)
+            firstline = 'Point #%s: %s' % (pull,title)
         else:
-            firstline = 'Merge #%s' % (pull,)
+            firstline = 'Point #%s' % (pull,)
         message = firstline + '\n\n'
         message += subprocess.check_output([GIT,'log','--no-merges','--topo-order','--pretty=format:%h %s (%an)',base_branch+'..'+head_branch]).decode('utf-8')
         try:
@@ -292,9 +292,9 @@ def main():
             subprocess.call([BASH,'-i'])
             reply = ask_prompt("Type 'm' to accept The Merge.")
             if reply.lower() == 'm':
-                print("Merge accepted.",file=stderr)
+                print("Point accepted.",file=stderr)
             else:
-                print("ERROR: Merge rejected.",file=stderr)
+                print("ERROR: Point rejected.",file=stderr)
                 exit(7)
 
         second_sha512 = tree_sha512sum()
@@ -302,7 +302,7 @@ def main():
             print("ERROR: Tree hash changed unexpectedly",file=stderr)
             exit(8)
 
-        # Sign The Merge commit.
+        # Sign The Point commit.
         reply = ask_prompt("Type 's' to sign off on The Merge.")
         if reply == 's':
             try:

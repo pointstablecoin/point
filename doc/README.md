@@ -41,7 +41,7 @@ The following are developer notes on how to build POINT on your native platform.
 
 Development
 ---------------------
-The Merge repo's [root README](https://github.com/POINT-Project/POINT/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Point repo's [root README](https://github.com/POINT-Project/POINT/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

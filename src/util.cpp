@@ -106,7 +106,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// Merge only features
+// Point only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";

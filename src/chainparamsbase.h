@@ -16,7 +16,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between merge-cli and merged)
- * of a given instance of The Merge system.
+ * of a given instance of The Point system.
  */
 static const bool bClientVersionIsRelease = CLIENT_VERSION_IS_RELEASE;
 

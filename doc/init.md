@@ -52,7 +52,7 @@ PID file:            /var/run/merged/merged.pid (OpenRC and Upstart)
                      /var/lib/merged/merged.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by The Merge user and group.  It is advised for security
+should all be owned by The Point user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
 POINT user and group.  Access to merge-cli and other merged rpc clients
 can then be controlled by group membership.

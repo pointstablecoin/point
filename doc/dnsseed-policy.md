@@ -4,7 +4,7 @@ Expectations for DNS Seed operators
 Point Core attempts to minimize the level of trust in DNS seeds,
 but DNS seeds still pose a small amount of risk for the network.
 As such, DNS seeds must be run by entities which have some minimum
-level of trust within The Merge community.
+level of trust within The Point community.
 
 Other implementations of POINT software may also use the same
 seeds and may be more exposed. In light of this exposure this

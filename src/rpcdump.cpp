@@ -313,7 +313,7 @@ Value dumpprivkey(const Array& params, bool fHelp)
             "\nReveals the private key corresponding to 'POINTaddress'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"POINTaddress\"   (string, required) The Merge address for the private key\n"
+            "1. \"POINTaddress\"   (string, required) The Point address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n" +
@@ -400,7 +400,7 @@ Value bip38encrypt(const Array& params, bool fHelp)
             "bip38encrypt \"POINTaddress\"\n"
             "\nEncrypts a private key corresponding to 'POINTaddress'.\n"
             "\nArguments:\n"
-            "1. \"POINTaddress\"   (string, required) The Merge address for the private key (you must hold the key already)\n"
+            "1. \"POINTaddress\"   (string, required) The Point address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
             "\nResult:\n"
             "\"key\"                (string) The encrypted private key\n"

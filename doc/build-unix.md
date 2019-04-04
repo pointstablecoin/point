@@ -132,7 +132,7 @@ It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 ```bash
 POINT_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within The Merge directory
+# Pick some path to install BDB to, here we create a directory within The Point directory
 BDB_PREFIX="${POINT_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 

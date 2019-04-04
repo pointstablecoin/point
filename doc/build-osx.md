@@ -116,6 +116,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./merged -daemon # to start The Merge daemon.
+    ./merged -daemon # to start The Point daemon.
     ./merge-cli --help  # for a list of command-line options.
     ./merge-cli help    # When the daemon is running, to get a list of RPC commands
