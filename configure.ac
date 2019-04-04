@@ -6,22 +6,22 @@ define(_CLIENT_VERSION_REVISION, 3)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, false)
 define(_COPYRIGHT_YEAR, 2019)
-
+AC_INIT([Merge Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.projectmerge.org],[merge])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/merge-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=pointd
+BITCOIN_DAEMON_NAME=merged
 BITCOIN_GUI_NAME=merge-qt
 BITCOIN_CLI_NAME=merge-cli
 BITCOIN_TX_NAME=merge-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef POINT_CONFIG_H])
-AH_TOP([#define POINT_CONFIG_H])
-AH_BOTTOM([#endif //POINT_CONFIG_H])
+AH_TOP([#ifndef MERGE_CONFIG_H])
+AH_TOP([#define MERGE_CONFIG_H])
+AH_BOTTOM([#endif //MERGE_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME
@@ -192,7 +192,7 @@ CPPFLAGS="$CPPFLAGS -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build merge-cli point-tx (default=yes)])],
+  [build merge-cli merge-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -798,7 +798,7 @@ LIBS="$LIBS_TEMP"
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build mergedd])
+AC_MSG_CHECKING([whether to build merged])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
@@ -913,7 +913,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_POINT])
+AC_MSG_CHECKING([whether to build test_MERGE])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="test"

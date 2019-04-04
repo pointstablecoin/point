@@ -4,10 +4,11 @@
 
 
 WalletFrame {
-border-image: url(':/images/walletFrame_bg') 0 0 0 0 stretch stretch;
-border-top:0px solid #000;
-margin:0;
-padding:0;
+  background-image: url(':/images/walletFrame_bg');
+  background-size: 100% 100%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 QStatusBar {
@@ -672,77 +673,6 @@ font-size:12px;
 
 QWidget#AddressBookPage QHeaderView::section { /* Min width for Windows fix */
 min-width:260px;
-}
-
-/**************************** Privacy Dialog ********************************************/
-
-QWidget#PrivacyDialog QFrame {
-background-color:transparent;
-border:1px solid #000;
-}
-
-QWidget#PrivacyDialog QFrame#labelMintStatus {
-/* background-color:transparent; */
-background-color:#eee;
-/* border-style: inset; */
-/* border-width:2; */
-/* border:2px solid #00; */
-border: 1px inset gray;
-}
-
-QWidget#PrivacyDialog QLabel {
-border:0px solid #000;
-}
-
-QWidget#PrivacyDialog QLabel#zMERGELabel {
-font-size:14px;
-color:#ffffff;
-background-color:#5B4C7C;
-}
-
-QWidget#PrivacyDialog QLabel#oMERGELabel {
-font-size:14px;
-color:#ffffff;
-background-color:#5B4C7C;
-}
-
-QWidget#PrivacyDialog QPushButton {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #64ACD2, stop: .1 #382f44, stop: .95 #382f44, stop: 1 #1D80B5);
-border:0;
-border-radius:3px;
-color:#ffffff;
-font-size:12px;
-font-weight:normal;
-padding-left:5px;
-padding-right:5px;
-padding-top:5px;
-padding-bottom:5px;
-}
-
-QWidget#PrivacyDialog QPushButton:hover {
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #5B4C9A, stop: .1 #5B4C86, stop: .95 #5B4C86, stop: 1 #5B4C7C);
-}
-
-QWidget#PrivacyDialog QPushButton:focus {
-border:none;
-outline:none;
-}
-
-QWidget#PrivacyDialog QPushButton:pressed {
-border:1px solid #333;
-}
-
-QWidget#PrivacyDialog QProgressBar#obfuscationProgress { /* Obfuscation Completion */
-border: 1px solid #818181;
-border-radius: 1px;
-margin-right:43px;
-text-align: right;
-color:#818181;
-}
-
-QWidget#PrivacyDialog QProgressBar#obfuscationProgress::chunk {
-background-color: #382f44;
-width:1px;
 }
 
 /**************************** SETTINGS MENU *********************************************/
@@ -1679,7 +1609,7 @@ QLabel#transactionSumLabel { /* Example of setObjectName for widgets without nam
 color:#333333;
 font-weight:bold;
 }
- 
+
 QLabel#transactionSum { /* Example of setObjectName for widgets without name */
 color:#333333;
 }
