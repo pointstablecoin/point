@@ -95,7 +95,7 @@ public:
         nMaturity = 25;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN;
-        nLastPOWBlock = 57601;
+        nLastPOWBlock = 100000000;
         nModifierUpdateBlock = 50;
 
         const char* pszTimestamp = "ABC News 24/DEC/2018 Trump's Treasury Secretary to convene 'Plunge Protection Team' to deal with Wall Street rout";
@@ -182,7 +182,7 @@ public:
         nMaturity = 25;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN;
-        nLastPOWBlock = 1000;
+        nLastPOWBlock = 100000;
         nModifierUpdateBlock = 50;
 
         genesis.SetNull();
