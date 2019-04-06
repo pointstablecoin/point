@@ -526,6 +526,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
     std::string strPayeesPossible = "";
 
     //CAmount nReward = GetBlockValue(nBlockHeight);
+    //Recompensa masternode
     CAmount nReward = 1 * COIN;
 
     if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
