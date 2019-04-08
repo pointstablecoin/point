@@ -35,7 +35,7 @@ bool fHasMinerLogged = false;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// MergeMiner
+// PointMiner
 //
 
 //
@@ -427,7 +427,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("MergeMiner : generated block is stale");
+            return error("PointMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -442,7 +442,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock))
-        return error("MergeMiner : ProcessNewBlock, block not accepted");
+        return error("PointMiner : ProcessNewBlock, block not accepted");
 
     return true;
 }
@@ -456,9 +456,9 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     fIsMinerRunning = true;
     fHasMinerLogged = false;
 
-    LogPrintf("MergeMiner started\n");
+    LogPrintf("PointMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("MergeMiner");
+    RenameThread("PointMiner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -544,7 +544,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             LogPrintf("CPUMiner : proof-of-stake block found %s \n", pblock->GetHash().ToString().c_str());
 
             if (!pblock->SignBlock(*pwallet)) {
-                LogPrintf("MergeMiner(): Signing new block failed \n");
+                LogPrintf("PointMiner(): Signing new block failed \n");
                 continue;
             }
 
@@ -559,7 +559,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
         // Prevent flooding debug.log
         if (fIsMinerRunning == true) {
            if (fHasMinerLogged == false) {
-              LogPrintf("Running MergeMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(), ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
+              LogPrintf("Running PointMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(), ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
               fHasMinerLogged = true;
            }
         }
@@ -579,7 +579,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 if (hash <= hashTarget) {
                     // Found a solution
                     SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                    LogPrintf("MergeMiner:\n");
+                    LogPrintf("PointMiner:\n");
                     LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                     ProcessBlockFound(pblock, *pwallet, reservekey);
                     SetThreadPriority(THREAD_PRIORITY_LOWEST);

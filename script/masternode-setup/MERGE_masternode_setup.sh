@@ -60,7 +60,7 @@ sudo ufw allow ssh/tcp
 sudo ufw limit ssh/tcp
 sudo ufw logging on
 sudo ufw allow 22
-sudo ufw allow 62000
+sudo ufw allow 62100
 echo "y" | sudo ufw enable
 sudo ufw status
 echo ""
@@ -105,7 +105,7 @@ echo "mv ~/.Merge ~/.Merge.oldtestnet.$today"
 mv $CONF_DIR $CONF_DIR.oldnetwork.$today
 
 # Edit configuration file
-PORT=52000
+PORT=52100
 mkdir -p $CONF_DIR
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> $CONF_DIR/$CONF_FILE
 echo "rpcpassword=passw"`shuf -i 100000-10000000 -n 1` >> $CONF_DIR/$CONF_FILE

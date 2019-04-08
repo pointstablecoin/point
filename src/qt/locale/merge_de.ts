@@ -4474,8 +4474,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>Sie müssen einen privaten Masternode-Schlüssel in der Konfiguration festlegen. Bitte nutzen Sie die Dokumentation zwecks Hilfe.</translation>
     </message>
     <message>
-        <source>(52000 could be used only on mainnet)</source>
-        <translation>(52000 kann nur im Mainnet verwendet werden)</translation>
+        <source>(52100 could be used only on mainnet)</source>
+        <translation>(52100 kann nur im Mainnet verwendet werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4486,8 +4486,8 @@ Beispiel: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 52000 for mainnet)</source>
-        <translation>(muss im Mainnet 52000 sein)</translation>
+        <source>(must be 52100 for mainnet)</source>
+        <translation>(muss im Mainnet 52100 sein)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
