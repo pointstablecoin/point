@@ -301,8 +301,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         }
     }
 
-    if (pindexPrev->nHeight < Params().LAST_POW_BLOCK())
-        hasPayment = false;
+    //if (pindexPrev->nHeight < Params().LAST_POW_BLOCK())
+    //    hasPayment = false;
 
     //CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     CAmount blockValue = 1 * COIN;
