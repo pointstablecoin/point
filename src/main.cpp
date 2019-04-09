@@ -1636,7 +1636,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     LogPrintf("\n############################PRINT TEST MASTERNODES BLOCKVALUE: %d\n", blockValue);
     LogPrintf("\n############################PRINT TEST MASTERNODES RECOMPENSA: %d\n", MNReward);
     
-    return (((nHeight-1)*0.000000019)+(nHeight*0.00000001)*0.001) * COIN;
+    return MNReward * COIN;
 }
 
 bool IsInitialBlockDownload()
@@ -2203,9 +2203,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     
     nValorTotal = nValorAcumulado + nValueOut;
 
-    //LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
-    //          FormatMoney(nValueOut), FormatMoney(nValueIn),
-    //          FormatMoney(nFees), FormatMoney(pindex->nMint));
+    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
+              FormatMoney(nValueOut), FormatMoney(nValueIn),
+              FormatMoney(nFees), FormatMoney(pindex->nMint));
 
     if (!pblocktree->WriteBlockIndex(CDiskBlockIndex(pindex)))
         return error("Connect() : WriteBlockIndex for pindex failed");
@@ -2215,10 +2215,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    // Se agrega recompensa de masternode al valor esperado nExpectedMint ->  + (((pindex->pprev->nHeight-1)*0.000000019)+(pindex->pprev->nHeight*0.00000001)*0.001) * COIN
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight) + (((pindex->pprev->nHeight-1)*0.000000019)+(pindex->pprev->nHeight*0.00000001)*0.001) * COIN;
+    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
+    
+    LogPrintf("Minado esperado: %s -> Minado: %s\n", FormatMoney(nExpectedMint), FormatMoney(pindex->nMint));
 
     if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
         return state.DoS(100,

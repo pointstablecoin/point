@@ -304,10 +304,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
     //if (pindexPrev->nHeight < Params().LAST_POW_BLOCK())
     //    hasPayment = false;
 
-    //CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
-    CAmount blockValue = (((pindexPrev->nHeight-1)*0.000000019)+(pindexPrev->nHeight*0.00000001)*0.001) * COIN;
+    CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue);
-
     if (hasPayment) {
         if (fProofOfStake) {
             /**For Proof Of Stake vout[0] must be null
@@ -321,12 +319,14 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             txNew.vout[i].nValue = masternodePayment;
 
             //subtract mn payment from the stake reward
-            txNew.vout[i - 1].nValue -= masternodePayment;
+            //txNew.vout[i - 1].nValue -= masternodePayment;
+            txNew.vout[i - 1].nValue -= 0;
         } else {
             txNew.vout.resize(2);
             txNew.vout[1].scriptPubKey = payee;
             txNew.vout[1].nValue = masternodePayment;
-            txNew.vout[0].nValue = blockValue - masternodePayment;
+            //txNew.vout[0].nValue = blockValue - masternodePayment;
+            txNew.vout[0].nValue = blockValue;
         }
 
         CTxDestination address1;
@@ -525,9 +525,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 
     std::string strPayeesPossible = "";
 
-    //CAmount nReward = GetBlockValue(nBlockHeight);
-    //Recompensa masternode
-    CAmount nReward = 1 * COIN;
+    CAmount nReward = GetBlockValue(nBlockHeight);
 
     if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
         // Get a stable number of masternodes by ignoring newly activated (< 8000 sec old) masternodes
