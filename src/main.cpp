@@ -1630,7 +1630,7 @@ int64_t GetBlockValue(int nHeight)
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
     
-    CAmount MNReward = (((nHeight-1)*0.000000019)+(nHeight*0.00000001)*0.001);
+    double MNReward = (((double nHeight-1)*0.000000019)+(double nHeight*0.00000001)*0.001);
     
     LogPrintf("\n############################PRINT TEST MASTERNODES ACTIVOS: %d\n", nMasternodeCount);
     LogPrintf("\n############################PRINT TEST MASTERNODES BLOCKVALUE: %d\n", blockValue);
