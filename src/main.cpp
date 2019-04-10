@@ -1634,7 +1634,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     
     LogPrintf("\n############################PRINT TEST MASTERNODES ACTIVOS: %d\n", nMasternodeCount);
     LogPrintf("\n############################PRINT TEST MASTERNODES BLOCKVALUE: %d\n", blockValue);
-    LogPrintf("\n############################PRINT TEST MASTERNODES RECOMPENSA: %d\n", MNReward);
+    LogPrintf("\n############################PRINT TEST MASTERNODES RECOMPENSA: %.8g\n", MNReward);
     
     return MNReward * COIN;
 }
