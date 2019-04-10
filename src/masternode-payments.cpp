@@ -214,7 +214,7 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
             //the value of the block is evaluated in CheckBlock
             return true;
         } else {
-            if (nMinted > nExpectedValue + nMasternodePayment) {
+            if (nMinted > nExpectedValue) {
                 return false;
             }
         }
