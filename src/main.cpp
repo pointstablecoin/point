@@ -2216,12 +2216,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
     CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
+    nExpectedMint += GetMasternodePayment(pindex->pprev->nHeight, nExpectedMint);
+    
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
     
     LogPrintf("Minado esperado: %s -> Minado: %s\n", FormatMoney(nExpectedMint), FormatMoney(pindex->nMint));
 
-    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint, GetMasternodePayment(pindex->pprev->nHeight, nExpectedMint))) {
+    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
         return state.DoS(100,
             error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
                 FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
