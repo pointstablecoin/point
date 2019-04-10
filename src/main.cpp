@@ -2221,7 +2221,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     
     LogPrintf("Minado esperado: %s -> Minado: %s\n", FormatMoney(nExpectedMint), FormatMoney(pindex->nMint));
 
-    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint, GetMasternodePayment(pindex->pprev->nHeight, nExpectedMint))) {
         return state.DoS(100,
             error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
                 FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
