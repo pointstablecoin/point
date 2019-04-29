@@ -245,7 +245,9 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04aba3f6d2e8066a19ef79724d7340d3259dea3fc00b7a8ad7e60e91c0984609ab33559f80dd366894ecfcf26025bd2db59a8b8de444fdcff349e07ae36399ad67";
+        //Spork original
+        //strSporkKey = "04aba3f6d2e8066a19ef79724d7340d3259dea3fc00b7a8ad7e60e91c0984609ab33559f80dd366894ecfcf26025bd2db59a8b8de444fdcff349e07ae36399ad67";
+        strSporkKey = "04fef87d92b0bab7ad3dc84be43c7696fd2cd6c2024ad3d164f7fd035ae164281809cb3f32f6bd3c58a86c925606db2dd26dcb7b1aac0550381d463d29ff32712b";
         strObfuscationPoolDummyAddress = "TOINTXXXXXXXXXXXXXXXXXXXXXXXJ7nw4G";
         nStartMasternodePayments = genesis.nTime + 5400;
         nBudget_Fee_Confirmations = 6;
