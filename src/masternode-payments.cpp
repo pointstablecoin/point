@@ -211,7 +211,7 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
         //}
 
         if (budget.IsBudgetPaymentBlock(nHeight)) {
-            LogPrint("##############ES BLOQUE DE PAGO");
+            LogPrint("masternode","BLOQUE DE PAGO DE PRESUPUESTO\n");
             //the value of the block is evaluated in CheckBlock
             return true;
         } else {
