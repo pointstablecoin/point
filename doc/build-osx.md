@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build merged (headless client) for OSX.
+This guide will show you how to build pointd (headless client) for OSX.
 
 Notes
 -----

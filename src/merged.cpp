@@ -25,7 +25,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called POINT (http://projectmerge.org),
+ * This is the developer documentation of the reference client for an experimental new digital currency called POINT (http://globaldao.network),
  * which enables instant payments to anyone, anywhere in the world. POINT uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -76,7 +76,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  merged [options]                     " + _("Start Point Core Daemon") + "\n";
+                        "  pointd [options]                     " + _("Start Point Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -116,7 +116,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in merged anymore. Use The merge-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in pointd anymore. Use The merge-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32

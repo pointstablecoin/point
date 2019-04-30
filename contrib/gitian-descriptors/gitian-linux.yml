@@ -33,7 +33,7 @@ packages:
 - "python"
 reference_datetime: "2019-02-06 00:00:00"
 remotes:
-- "url": "https://gitlab.projectmerge.org/projectmerge/merge.git"
+- "url": "https://gitlab.globaldao.network/projectmerge/merge.git"
   "dir": "merge"
 files: []
 script: |

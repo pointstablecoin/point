@@ -25,7 +25,7 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://gitlab.projectmerge.org/core/merge.git"
+- "url": "https://gitlab.globaldao.network/core/merge.git"
   "dir": "merge"
 files: []
 script: |

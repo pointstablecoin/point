@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://gitlab.projectmerge.org/projectmerge/merge.git"
+- "url": "https://gitlab.globaldao.network/projectmerge/merge.git"
   "dir": "merge"
 files:
 - "MacOSX10.11.sdk.tar.gz"

@@ -13,23 +13,23 @@ The following are some helpful notes on how to run POINT on your native platform
 
 Unpack the files into a directory and run:
 
-- bin/32/merge-qt (GUI, 32-bit) or bin/32/merged (headless, 32-bit)
-- bin/64/merge-qt (GUI, 64-bit) or bin/64/merged (headless, 64-bit)
+- bin/32/point-qt (GUI, 32-bit) or bin/32/pointd (headless, 32-bit)
+- bin/64/point-qt (GUI, 64-bit) or bin/64/pointd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run merge-qt.exe.
+Unpack the files into a directory, and then run point-qt.exe.
 
 ### OSX
 
-Drag Merge-Qt to your applications folder, and then run Merge-Qt.
+Drag point-Qt to your applications folder, and then run point-Qt.
 
 ### Need Help?
 
 * See the documentation at the [POINT Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [POINT Forum](http://forum.POINT.org/).
-* Join one of our Slack groups [POINT Slack Groups](https://POINT.org/slack-logins/).
+* Join one of our Slack groups [POINT Slack Groups](https://globaldao.network/slack-logins/).
 
 Building
 ---------------------

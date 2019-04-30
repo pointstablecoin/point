@@ -614,7 +614,7 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use merged, or the -server option to merge-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use pointd, or the -server option to point-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
                                                "rpcuser=mergerpc\n"

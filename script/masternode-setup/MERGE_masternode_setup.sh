@@ -8,7 +8,7 @@ echo "*                                                                         
 echo "*      If you have any issues, please ask for help on Merge's Discord:     *"
 echo "*                        https://discord.gg/b88VWfB                        *"
 echo "*                                                                          *"
-echo "*                         https://projectmerge.org                         *"
+echo "*                         https://globaldao.network                         *"
 echo "****************************************************************************"
 echo ""
 echo ""

@@ -16,11 +16,11 @@ Budgets go through a series of stages before being paid:
 Prepare collateral transaction
 ------------------------
 
-mnbudget prepare \<proposal-name\> \<url\> \<payment_count\> \<block_start\> \<POINT_address\> \<monthly_payment_POINT\> [use_ix(true|false)]
+mnbudget prepare \<proposal-name\> \<url\> \<payment_count\> \<block_start\> \<POINT_address\> \<monthly_payment_POINT\>
 
 Example:
 ```
-mnbudget prepare cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 1200 true
+mnbudget prepare cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 1200
 ```
 
 Output: `464a0eb70ea91c94295214df48c47baa72b3876cfb658744aaf863c7b5bf1ff0` - This is the collateral hash, copy this output for the next step

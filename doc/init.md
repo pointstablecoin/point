@@ -45,8 +45,8 @@ see contrib/debian/examples/POINT.conf.
 
 All three configurations assume several paths that might need to be adjusted.
 
-Binary:              /usr/bin/merged
-Configuration file:  /etc/POINT/POINT.conf
+Binary:              /usr/bin/pointd
+Configuration file:  /etc/point/point.conf
 Data directory:      /var/lib/merged
 PID file:            /var/run/merged/merged.pid (OpenRC and Upstart)
                      /var/lib/merged/merged.pid (systemd)

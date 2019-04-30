@@ -89,9 +89,9 @@ arriving. Please see `contrib/zmq/zmq_sub.py` for a working example.
 
 ## Remarks
 
-From the perspective of merged, the ZeroMQ socket is write-only; PUB
+From the perspective of pointd, the ZeroMQ socket is write-only; PUB
 sockets don't even have a read function. Thus, there is no state
-introduced into merged directly. Furthermore, no information is
+introduced into pointd directly. Furthermore, no information is
 broadcast that wasn't already received from the public P2P network.
 
 No authentication or authorization is done on connecting clients; it
