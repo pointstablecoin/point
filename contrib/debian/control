@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.globaldao.network
-Vcs-Git: git://github.com/ProjectMerge/merge.git
-Vcs-Browser: https://github.com/ProjectMerge/merge
+Vcs-Git: git://github.com/point/point.git
+Vcs-Browser: https://github.com/point/point
 
 Package: merged
 Architecture: any
@@ -40,9 +40,9 @@ Description: peer-to-peer network based digital currency - daemon
  requires 1+ GB of space, slowly growing.
  .
  This package provides the daemon, merged, and the CLI tool
- merge-cli to interact with the daemon.
+ point-cli to interact with the daemon.
 
-Package: merge-qt
+Package: point-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI

@@ -16,13 +16,13 @@ RUN deps="alpine-sdk curl autoconf automake libtool boost-dev openssl-dev libeve
   make install && \
   mkdir /wallet &&\
   cd /wallet && \
-  git clone https://gitlab.globaldao.network/ProjectMerge/merge.git . &&\   
+  git clone https://gitlab.globaldao.network/point/point.git . &&\   
   ./autogen.sh && \ 
   ./configure LDFLAGS=-L/opt/db/lib CPPFLAGS=-I/opt/db/include && \ 
   make install && \ 
   strip /usr/local/bin/merged &&\ 
-  strip /usr/local/bin/merge-cli &&\ 
-  rm /usr/local/bin/merge-tx &&\ 
+  strip /usr/local/bin/point-cli &&\ 
+  rm /usr/local/bin/point-tx &&\ 
   adduser -D wallet && \ 
   apk del $deps && \
   rm -r /opt/db/docs /var/cache/apk/* /wallet /db-$DB_VERSION 

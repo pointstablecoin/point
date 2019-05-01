@@ -24,10 +24,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/ProjectMerge/gitian.sigs.git
-    git clone https://github.com/ProjectMerge/merge-detached-sigs.git
+    git clone https://github.com/point/gitian.sigs.git
+    git clone https://github.com/point/point-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/ProjectMerge/merge.git
+    git clone https://github.com/point/point.git
 
 ### POINT maintainers/release engineers, suggestion for writing release notes
 

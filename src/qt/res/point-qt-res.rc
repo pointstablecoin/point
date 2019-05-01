@@ -22,10 +22,10 @@ BEGIN
             VALUE "CompanyName",        "POINT"
             VALUE "FileDescription",    "POINT Core (OSS GUI client for POINT)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "merge-qt"
+            VALUE "InternalName",       "point-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "merge-qt.exe"
+            VALUE "OriginalFilename",   "point-qt.exe"
             VALUE "ProductName",        "POINT Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

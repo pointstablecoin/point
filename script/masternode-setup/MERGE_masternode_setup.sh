@@ -21,8 +21,8 @@ echo ""
 echo "Hit [ENTER] to start the masternode setup"
 read setup
 rm -rf POINT_masternode_setup.sh*
-POINT_CLI_CMD="merge-cli"
-POINT_TX_CMD="merge-tx"
+POINT_CLI_CMD="point-cli"
+POINT_TX_CMD="point-tx"
 POINTD_CMD="pointd"
 POINT_CLI=`find . -name "$POINT_CLI_CMD" | tail -1`
 POINT_TX=`find . -name "$POINT_TX_CMD" | tail -1`

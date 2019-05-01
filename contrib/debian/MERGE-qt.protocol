@@ -1,5 +1,5 @@
 [Protocol]
-exec=merge-qt '%u'
+exec=point-qt '%u'
 protocol=POINT
 input=none
 output=none

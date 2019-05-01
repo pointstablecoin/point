@@ -22,7 +22,7 @@ make
 make install # optional
 ```
 
-This will build merge-qt as well if the dependencies are met.
+This will build point-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------

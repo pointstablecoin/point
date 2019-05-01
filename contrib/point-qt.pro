@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/merge-config.h \
+           src/point-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/merge-config.h \
+           src/config/point-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -373,9 +373,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/merge-cli.cpp \
-           src/merge-tx.cpp \
-           src/merge.cpp \
+           src/point-cli.cpp \
+           src/point-tx.cpp \
+           src/point.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -549,7 +549,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_merge.cpp \
+           src/test/test_point.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -640,21 +640,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/merge.qrc src/qt/merge_locale.qrc
+RESOURCES += src/qt/merge.qrc src/qt/point_locale.qrc
 
-TRANSLATIONS += src/qt/locale/merge_bg.ts \
-                src/qt/locale/merge_de.ts \
-                src/qt/locale/merge_en.ts \
-                src/qt/locale/merge_es.ts \
-                src/qt/locale/merge_fi.ts \
-                src/qt/locale/merge_fr.ts \
-                src/qt/locale/merge_it.ts \
-                src/qt/locale/merge_ja.ts \
-                src/qt/locale/merge_pl.ts \
-                src/qt/locale/merge_pt.ts \
-                src/qt/locale/merge_ru.ts \
-                src/qt/locale/merge_sk.ts \
-                src/qt/locale/merge_sv.ts \
-                src/qt/locale/merge_vi.ts \
-                src/qt/locale/merge_zh_CN.ts \
-                src/qt/locale/merge_zh_TW.ts
+TRANSLATIONS += src/qt/locale/point_bg.ts \
+                src/qt/locale/point_de.ts \
+                src/qt/locale/point_en.ts \
+                src/qt/locale/point_es.ts \
+                src/qt/locale/point_fi.ts \
+                src/qt/locale/point_fr.ts \
+                src/qt/locale/point_it.ts \
+                src/qt/locale/point_ja.ts \
+                src/qt/locale/point_pl.ts \
+                src/qt/locale/point_pt.ts \
+                src/qt/locale/point_ru.ts \
+                src/qt/locale/point_sk.ts \
+                src/qt/locale/point_sv.ts \
+                src/qt/locale/point_vi.ts \
+                src/qt/locale/point_zh_CN.ts \
+                src/qt/locale/point_zh_TW.ts

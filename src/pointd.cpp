@@ -116,7 +116,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in pointd anymore. Use The merge-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in pointd anymore. Use The point-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32

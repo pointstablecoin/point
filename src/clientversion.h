@@ -6,7 +6,7 @@
 #define BITCOIN_CLIENTVERSION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/merge-config.h"
+#include "config/point-config.h"
 #else
 
 /**

@@ -6,7 +6,7 @@
 #define BITCOIN_CHAINPARAMSBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/merge-config.h"
+#include "config/point-config.h"
 #else
 #define CLIENT_VERSION_IS_RELEASE false
 #endif

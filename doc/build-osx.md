@@ -69,7 +69,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "merge-qt" as project name, enter src/qt as location
+4. Enter "point-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -81,9 +81,9 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `merged` for your own use.
 
-merged/merge-cli binaries are not included in The Merge-Qt.app bundle.
+pointd/point-cli binaries are not included in The Merge-Qt.app bundle.
 
-If you are building `merged` or `merge-qt` for others, your build machine should be set up
+If you are building `pointd` or `point-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -116,6 +116,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./merged -daemon # to start The Point daemon.
-    ./merge-cli --help  # for a list of command-line options.
-    ./merge-cli help    # When the daemon is running, to get a list of RPC commands
+    ./pointd -daemon # to start The Point daemon.
+    ./point-cli --help  # for a list of command-line options.
+    ./point-cli help    # When the daemon is running, to get a list of RPC commands
