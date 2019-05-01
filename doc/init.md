@@ -4,11 +4,11 @@ Sample init scripts and service configuration for merged
 Sample scripts and configuration files for systemd, Upstart and OpenRC
 can be found in the contrib/init folder.
 
-    contrib/init/merged.service:    systemd service unit configuration
-    contrib/init/merged.openrc:     OpenRC compatible SysV style init script
-    contrib/init/merged.openrcconf: OpenRC conf.d file
-    contrib/init/merged.conf:       Upstart service configuration file
-    contrib/init/merged.init:       CentOS compatible SysV style init script
+    contrib/init/pointd.service:    systemd service unit configuration
+    contrib/init/pointd.openrc:     OpenRC compatible SysV style init script
+    contrib/init/pointd.openrcconf: OpenRC conf.d file
+    contrib/init/pointd.conf:       Upstart service configuration file
+    contrib/init/pointd.init:       CentOS compatible SysV style init script
 
 1. Service User
 ---------------------------------
@@ -19,17 +19,17 @@ and group.  They must be created before attempting to use these scripts.
 2. Configuration
 ---------------------------------
 
-At a bare minimum, merged requires that the rpcpassword setting be set
+At a bare minimum, pointd requires that the rpcpassword setting be set
 when running as a daemon.  If the configuration file does not exist or this
-setting is not set, merged will shutdown promptly after startup.
+setting is not set, pointd will shutdown promptly after startup.
 
 This password does not have to be remembered or typed as it is mostly used
-as a fixed token that merged and client programs read from the configuration
+as a fixed token that pointd and client programs read from the configuration
 file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If merged is run with "-daemon" flag, and no rpcpassword is set, it will
+If pointd is run with "-daemon" flag, and no rpcpassword is set, it will
 print a randomly generated suitable password to stderr.  You can also
 generate one from the shell yourself like this:
 

@@ -40,7 +40,7 @@ Instructions: Homebrew
 
         brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 libzmq
 
-### Building `merged`
+### Building `pointd`
 
 1. Clone the github tree to get the source code and go into the directory.
 

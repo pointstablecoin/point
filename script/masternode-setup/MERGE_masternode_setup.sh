@@ -23,7 +23,7 @@ read setup
 rm -rf POINT_masternode_setup.sh*
 POINT_CLI_CMD="merge-cli"
 POINT_TX_CMD="merge-tx"
-POINTD_CMD="merged"
+POINTD_CMD="pointd"
 POINT_CLI=`find . -name "$POINT_CLI_CMD" | tail -1`
 POINT_TX=`find . -name "$POINT_TX_CMD" | tail -1`
 POINTD=`find . -name "$POINTD_CMD" | tail -1`
