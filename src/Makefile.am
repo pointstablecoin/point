@@ -369,7 +369,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-merged_LDADD = \
+pointd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -381,22 +381,22 @@ merged_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-merged_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+pointd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-merged_LDADD += libbitcoin_wallet.a
+pointd_LDADD += libbitcoin_wallet.a
 endif
-merged_SOURCES = pointd.cpp
+pointd_SOURCES = pointd.cpp
 #
 
 if TARGET_WINDOWS
-merged_SOURCES += pointd-res.rc
+pointd_SOURCES += pointd-res.rc
 endif
 
-merged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-merged_CPPFLAGS = $(BITCOIN_INCLUDES)
-merged_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+pointd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+pointd_CPPFLAGS = $(BITCOIN_INCLUDES)
+pointd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # merge-cli binary #
