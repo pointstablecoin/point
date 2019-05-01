@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>OverviewPage</class>
  <widget class="QWidget" name="OverviewPage">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -881,7 +884,7 @@
             <x>0</x>
             <y>150</y>
             <width>465</width>
-            <height>201</height>
+            <height>16</height>
            </rect>
           </property>
           <property name="frameShape">
@@ -987,24 +990,24 @@
             </property>
            </widget>
           </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
          </layout>
         </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Expanding</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </item>
