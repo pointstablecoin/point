@@ -78,7 +78,7 @@ check ownership and permissions and make it executable.  Test it with
 
 4c) Upstart (for Debian/Ubuntu based distributions)
 
-Drop merged.conf in /etc/init.  Test by running "service merged start"
+Drop pointd.conf in /etc/init.  Test by running "service merged start"
 it will automatically start on reboot.
 
 NOTE: This script is incompatible with CentOS 5 and Amazon Linux 2014 as they
@@ -86,7 +86,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 
 4d) CentOS
 
-Copy merged.init to /etc/init.d/merged. Test by running "service merged start".
+Copy pointd.init to /etc/init.d/pointd. Test by running "service merged start".
 
 Using this script, you can adjust the path and flags to the merged program by
 setting the POINTD and FLAGS environment variables in the file

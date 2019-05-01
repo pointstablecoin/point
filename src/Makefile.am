@@ -387,11 +387,11 @@ endif
 if ENABLE_WALLET
 merged_LDADD += libbitcoin_wallet.a
 endif
-merged_SOURCES = merged.cpp
+merged_SOURCES = pointd.cpp
 #
 
 if TARGET_WINDOWS
-merged_SOURCES += merged-res.rc
+merged_SOURCES += pointd-res.rc
 endif
 
 merged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
