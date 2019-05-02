@@ -1577,6 +1577,15 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
+    //Loop trough every incomming Tx
+    for (unsigned int i = 0; i < pindexActual.vtx.size(); i++) {
+        const CTransaction& tx = pindexActual.vtx[i];
+        CAmount Out = tx.GetValueOut();
+        OutVolume += Out;
+    }
+    
+    LogPrintf("\n############################\nNUEVO OutVolume: %.8g\n################################", OutVolume);
+    
     double nAltura = nHeight;
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
