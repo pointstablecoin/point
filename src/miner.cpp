@@ -252,6 +252,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         TxPriorityCompare comparer(fSortedByFee);
         std::make_heap(vecPriority.begin(), vecPriority.end(), comparer);
+        
+        CAmount nTotalVout = 0;
 
         while (!vecPriority.empty()) {
             // Take highest priority transaction off the priority queue:
@@ -318,6 +320,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             nFees += nTxFees;
             
             CAmount nValorTotal = tx.GetValueOut();
+            CAmount nTotalVout = tx.GetValueOut() + nTotalVout;
             LogPrintf("###############VALOR TOTAL EN MINER: %d\n", nValorTotal);
             
 
@@ -360,7 +363,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         } else if (!fProofOfStake) {
             txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
             pblock->vtx[0] = txNew;
-	    pblock->vtx[0].vout[0].nValue = GetBlockValue(pindexPrev->nHeight, tx.GetValueOut());
+	    pblock->vtx[0].vout[0].nValue = GetBlockValue(pindexPrev->nHeight, nTotalVout);
             pblocktemplate->vTxFees[0] = -nFees;
         }
 
