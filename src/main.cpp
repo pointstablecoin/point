@@ -1595,10 +1595,10 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
     nValorTotal = 0;
-    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", OutVolume);
+    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", OutVolume * 0.00000001);
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
-    LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual);
+    LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual * 0.00000001);
     
     
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
@@ -1616,20 +1616,20 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
             }
 
             double nValorPromedio =  OutVolume / nTx ;
-            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio);
+            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio * 0.00000001);
             
             double nVelocidad = nValorPromedio / nMoneySupplyActual;
-            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad);
+            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad * 0.00000001);
             
             double nInflacion = (((nAltura - 1) * 0.000000019) + (nAltura * 0.0001)) * COIN;
-            LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion);
+            LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion * 0.00000001);
 
             if (nVelocidad > 0){
                 LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA\n");
 
                 if (nValorPromedio < nInflacion){
                     CAmount nRecompensa = (nInflacion - nValorPromedio);
-                    LogPrintf("\n############################PRINT TEST RECOMPENSA: %.8g\n", nRecompensa);
+                    LogPrintf("\n############################PRINT TEST RECOMPENSA: %.8g\n", nRecompensa * 0.00000001);
                     return nRecompensa;
                 }
             }
