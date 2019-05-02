@@ -2415,7 +2415,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             
             LogPrintf("POSIBLE TOTAL EN WALLET.CPP=%d\n", pcoin.first->vout[pcoin.second].nValue);
             
-            uint64_t nTotalSize = pcoin.first->vout[pcoin.second].nValue + GetBlockValue(pIndex0->nHeight, nCredit);
+            uint64_t nTotalSize = pcoin.first->vout[pcoin.second].nValue + GetBlockValue(pIndex0->nHeight, CAmount nCredit);
 
             //presstab HyperStake - if MultiSend is set to send in coinstake we will add our outputs here (values asigned further down)
             if (nTotalSize / 2 > nStakeSplitThreshold * COIN)
@@ -2436,7 +2436,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     
     CAmount nReward;
     const CBlockIndex* pIndex0 = chainActive.Tip();
-    nReward = GetBlockValue(pIndex0->nHeight, nCredit);
+    nReward = GetBlockValue(pIndex0->nHeight, CAmount nCredit);
     nCredit += nReward;
 
     CAmount nMinFee = 0;
