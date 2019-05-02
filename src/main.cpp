@@ -1580,12 +1580,14 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     CBlock block;
     ReadBlockFromDisk(block, chainActive[nHeight]);
     CAmount OutVolume = 0;
+    int64_t nTx = -1;
     
     //Loop trough every incomming Tx
     for (unsigned int i = 0; i < block.vtx.size(); i++) {
         const CTransaction& tx = block.vtx[i];
         CAmount Out = tx.GetValueOut();
         OutVolume += Out;
+        nTx += 1;
     }
     
     LogPrintf("\n############################\nNUEVO OutVolume: %.8g\n################################", OutVolume);
@@ -1599,7 +1601,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply * 0.00000001;
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual);
     
-    double nTx = block.nTx - 1;
+    
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
     
     if (nHeight == 0) {
