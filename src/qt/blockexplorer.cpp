@@ -201,12 +201,19 @@ std::string BlockToString(CBlockIndex* pBlock)
     CAmount OutVolume = 0;
     CAmount Reward = 0;
     CAmount Generated;
+    
+    //Loop trough every incomming Tx
+    for (unsigned int i = 0; i < block.vtx.size(); i++) {
+        const CTransaction& tx = block.vtx[i];
+        CAmount Out = tx.GetValueOut();
+        OutVolume += Out;
+    }
 
     // Get the Current Block Reward
     if (pBlock->nHeight == 0)
         Generated = OutVolume;
     else
-        Generated = GetBlockValue(pBlock->nHeight - 1);
+        Generated = GetBlockValue(pBlock->nHeight - 1, OutVolume);
 
     std::string TxLabels[] = {_("Hash"), _("From"), _("Amount"), _("To"), _("Amount")};
 
