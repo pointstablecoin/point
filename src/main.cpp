@@ -1578,12 +1578,12 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     CBlockIndex* pindexActual = chainActive.Tip();
     
     CBlock block;
-    ReadBlockFromDisk(block, pindexActual);
+    ReadBlockFromDisk(block, chainActive[nHeight]);
     CAmount OutVolume = 0;
     
     //Loop trough every incomming Tx
-    for (unsigned int i = 0; i < pindexActual.vtx.size(); i++) {
-        const CTransaction& tx = pindexActual.vtx[i];
+    for (unsigned int i = 0; i < block.vtx.size(); i++) {
+        const CTransaction& tx = block.vtx[i];
         CAmount Out = tx.GetValueOut();
         OutVolume += Out;
     }
