@@ -143,6 +143,8 @@ extern CFeeRate minRelayTxFee;
 extern bool fAlerts;
 extern bool fVerifyingBlocks;
 
+extern CAmount nTotalVout;
+
 extern bool fLargeWorkForkFound;
 extern bool fLargeWorkInvalidChainFound;
 

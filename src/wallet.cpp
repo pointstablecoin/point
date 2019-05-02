@@ -2414,7 +2414,6 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             const CBlockIndex* pIndex0 = chainActive.Tip();
             
             LogPrintf("POSIBLE TOTAL EN WALLET.CPP=%d\n", pcoin.first->vout[pcoin.second].nValue);
-            nValorTotal = pcoin.first->vout[pcoin.second].nValue;
             
             uint64_t nTotalSize = pcoin.first->vout[pcoin.second].nValue + GetBlockValue(pIndex0->nHeight);
 
