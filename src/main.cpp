@@ -1589,7 +1589,8 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
         nTx += 1;
     }
     
-    
+    double nValorPromedio =  OutVolume / nTx ;
+    LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio * 0.00000001);
     
     double nAltura = nHeight;
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
