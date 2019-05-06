@@ -1583,7 +1583,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
         } else {
             return 1 * COIN;
         }
-    }else{
+    }else if(nHeight > 10){
     
         CBlock block;
         ReadBlockFromDisk(block, chainActive[nHeight]);
@@ -1643,14 +1643,18 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
-    double nAltura = nHeight;
-    CAmount MNReward = (((nAltura-1)*0.000000019)+(nAltura*0.00000001)*0.001) * COIN;
-    
-    LogPrintf("\n############################PRINT TEST MASTERNODES ACTIVOS: %d\n", nMasternodeCount);
-    LogPrintf("\n############################PRINT TEST MASTERNODES BLOCKVALUE: %d\n", blockValue);
-    LogPrintf("\n############################PRINT TEST MASTERNODES RECOMPENSA: %.8g\n", MNReward);
-    
-    return MNReward;
+    if(nHeight > 10){
+        double nAltura = nHeight;
+        CAmount MNReward = (((nAltura-1)*0.000000019)+(nAltura*0.00000001)*0.001) * COIN;
+
+        LogPrintf("\n############################PRINT TEST MASTERNODES ACTIVOS: %d\n", nMasternodeCount);
+        LogPrintf("\n############################PRINT TEST MASTERNODES BLOCKVALUE: %d\n", blockValue);
+        LogPrintf("\n############################PRINT TEST MASTERNODES RECOMPENSA: %.8g\n", MNReward);
+
+        return MNReward;
+    }else{
+        return 0;
+    }
 }
 
 bool IsInitialBlockDownload()
