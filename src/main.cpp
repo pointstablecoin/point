@@ -83,7 +83,6 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-CAmount nValorTotal = 0;
 
 int64_t nReserveBalance = 0;
 
@@ -1591,10 +1590,10 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     }
     
     
+    
     double nAltura = nHeight;
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
-    nValorTotal = 0;
     LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", OutVolume * 0.00000001);
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
@@ -1602,6 +1601,13 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     
     
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
+    
+    double nVelocidad = nValorPromedio / nMoneySupplyActual;
+    LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad * 0.00000001);
+            
+    double nInflacion = (((nAltura - 1) * 0.000000019) + (nAltura * 0.0001)) * COIN;
+    LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion * 0.00000001);
+    
     
     if (nHeight == 0) {
         if (Params().NetworkID() == CBaseChainParams::TESTNET) {
@@ -1614,15 +1620,6 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
             if (nMoneySupplyActual < 1){
                 nMoneySupplyActual = 1;
             }
-
-            double nValorPromedio =  OutVolume / nTx ;
-            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio * 0.00000001);
-            
-            double nVelocidad = nValorPromedio / nMoneySupplyActual;
-            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad * 0.00000001);
-            
-            double nInflacion = (((nAltura - 1) * 0.000000019) + (nAltura * 0.0001)) * COIN;
-            LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion * 0.00000001);
 
             if (nVelocidad > 0){
                 LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA\n");
@@ -2215,7 +2212,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
     
-    nValorTotal = nValorAcumulado + nValueOut;
 
     LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s \n",
               FormatMoney(nValueOut), FormatMoney(nValueIn),
