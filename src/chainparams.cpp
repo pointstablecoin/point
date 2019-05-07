@@ -46,7 +46,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0,  uint256("0x"));
+    (0,  uint256("0x00000c9c17add63997357d96e48fcc66ff5d7526934822f0f961273d5025da28"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -111,7 +111,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1557187200;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 0;
+        genesis.nNonce = 348655;
         
         if (genesis.nNonce == 0) {
 	          while (genesis.GetHash() > bnProofOfWorkLimit) {
@@ -123,8 +123,8 @@ public:
 	      }
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x00000c9c17add63997357d96e48fcc66ff5d7526934822f0f961273d5025da28"));
+        assert(genesis.hashMerkleRoot == uint256("0x5e3d91e0b30abfdf3c3ab1ba735efb6fc3fa3508f74bc77c28b5f0fb248cfd14"));
 
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("165.227.14.110", "165.227.14.110"));
