@@ -60,7 +60,7 @@ sudo ufw allow ssh/tcp
 sudo ufw limit ssh/tcp
 sudo ufw logging on
 sudo ufw allow 22
-sudo ufw allow 72100
+sudo ufw allow 62100
 echo "y" | sudo ufw enable
 sudo ufw status
 echo ""
