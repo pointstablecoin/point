@@ -1576,17 +1576,12 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
-    //Bad fix, i know
     if (nHeight == 0) {
         if (Params().NetworkID() == CBaseChainParams::TESTNET) {
             return 50000 * COIN;
         } else {
             return 1 * COIN;
         };
-    }else if(nHeight <= 7){
-        
-        return 1 * COIN;
-        
     }
     
     CBlock block;
