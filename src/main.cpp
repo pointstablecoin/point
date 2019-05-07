@@ -1581,7 +1581,6 @@ int64_t GetBlockValue(int nHeight)
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
     double nValorTotaldeTx = nValorTotal * 0.00000001;
-    nValorTotal = 0;
     LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", nValorTotaldeTx);
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply * 0.00000001;
