@@ -1630,18 +1630,13 @@ int64_t GetBlockValue(int nHeight)
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
     double nAltura = nHeight;
-    CAmount MNReward = (((nAltura-1)*0.000000019)+(nAltura*0.00000001)*0.001);
+    CAmount MNReward = (((nAltura-1)*0.000000152)+(nAltura*0.00000001)*0.001) * COIN;
     
     LogPrintf("\n############################PRINT TEST MASTERNODES ACTIVOS: %d\n", nMasternodeCount);
     LogPrintf("\n############################PRINT TEST MASTERNODES BLOCKVALUE: %d\n", blockValue);
     LogPrintf("\n############################PRINT TEST MASTERNODES RECOMPENSA: %.8g\n", MNReward);
     
-    if(nMasternodeCount > 0){
-        return MNReward * nMasternodeCount * COIN;
-    }else{
-        return 0;
-    }
-    
+    return MNReward;
 }
 
 bool IsInitialBlockDownload()
