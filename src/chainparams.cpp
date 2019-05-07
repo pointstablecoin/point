@@ -188,7 +188,7 @@ public:
         genesis.SetNull();
 
         //const char* pszTimestamp = "Zero Hedge Wed, 03/06/2019 - 23:45 Civil War Would Erupt If Green New Deal Socialists Actually Get What They";
-        const char* pszTimestamp = "JSXTI Jueves, 04/04/2019 - 00:50 Bitcoin subió 20% en un día";
+        const char* pszTimestamp = "JSXTI Martes, 07/05/2019 - 00:00 | Global DAO, por un desarrollo social y económico libre y soberano";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -200,10 +200,10 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         //genesis.nTime = 1545670001;
-        genesis.nTime = 1554360601;
+        genesis.nTime = 1557187200;
         genesis.nBits = 0x1e0ffff0;
         //genesis.nNonce = 86643;
-        genesis.nNonce = 212058;
+        genesis.nNonce = 0;
 
         if (genesis.nNonce == 0) {
 	          while (genesis.GetHash() > bnProofOfWorkLimit) {
