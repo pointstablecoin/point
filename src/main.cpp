@@ -1582,43 +1582,54 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
             return 50000 * COIN;
         } else {
             return 1 * COIN;
-        }
-    }else{
+        };
+    }else if(nHeight <= 7){
+        
+        return 1 * COIN;
+        
+    }
     
-        CBlock block;
-        ReadBlockFromDisk(block, chainActive[nHeight]);
-        CAmount OutVolume = 0;
-        int64_t nTx = -1;
-
-        //Loop trough every incomming Tx
-        for (unsigned int i = 0; i < block.vtx.size(); i++) {
-            const CTransaction& tx = block.vtx[i];
-            CAmount Out = tx.GetValueOut();
-            OutVolume += Out;
-            nTx += 1;
-        }
-
-        double nValorPromedio =  OutVolume / nTx ;
-        LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio * 0.00000001);
-
-        double nAltura = nHeight;
-        LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
-
-        LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", OutVolume * 0.00000001);
-
-        CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
-        LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual * 0.00000001);
-
-
-        LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
-
-        double nVelocidad = nValorPromedio / nMoneySupplyActual;
-        LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad * 0.00000001);
-
-        double nInflacion = (((nAltura - 1) * 0.000000019) + (nAltura * 0.0001)) * COIN;
-        LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion * 0.00000001);
-
-
+    CBlock block;
+    ReadBlockFromDisk(block, chainActive[nHeight]);
+    CAmount OutVolume = 0;
+    int64_t nTx = -1;
+    
+    //Loop trough every incomming Tx
+    for (unsigned int i = 0; i < block.vtx.size(); i++) {
+        const CTransaction& tx = block.vtx[i];
+        CAmount Out = tx.GetValueOut();
+        OutVolume += Out;
+        nTx += 1;
+    }
+    
+    double nValorPromedio =  OutVolume / nTx ;
+    LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio * 0.00000001);
+    
+    double nAltura = nHeight;
+    LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
+    
+    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", OutVolume * 0.00000001);
+            
+    CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
+    LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual * 0.00000001);
+    
+    
+    LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
+    
+    double nVelocidad = nValorPromedio / nMoneySupplyActual;
+    LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad * 0.00000001);
+            
+    double nInflacion = (((nAltura - 1) * 0.000000019) + (nAltura * 0.0001)) * COIN;
+    LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion * 0.00000001);
+    
+    
+    if (nHeight == 0) {
+        if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+            return 50000 * COIN;
+        } else {
+            return 1 * COIN;
+        };
+    } else {
         if (nTx > 1){
             if (nMoneySupplyActual < 1){
                 nMoneySupplyActual = 1;
@@ -1633,7 +1644,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
                     return nRecompensa;
                 }
             }
-            }
+        }
     }
     
     LogPrintf("\n\n");
