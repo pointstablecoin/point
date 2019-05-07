@@ -321,10 +321,8 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     //if (pindexPrev->nHeight < Params().LAST_POW_BLOCK())
     //    hasPayment = false;
-    
-    CAmount nTotalVout = 0;
-    
-    CAmount blockValue = GetBlockValue(pindexPrev->nHeight, nTotalVout);
+
+    CAmount blockValue = GetBlockValue(pindexPrev->nHeight, CAmount 0);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue);
     if (hasPayment) {
         if (fProofOfStake) {
@@ -546,10 +544,8 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
     int nMasternode_Drift_Count = 0;
 
     std::string strPayeesPossible = "";
-    
-    CAmount nTotalVout = 0;
 
-    CAmount nReward = GetBlockValue(nBlockHeight, nTotalVout);
+    CAmount nReward = GetBlockValue(nBlockHeight, CAmount 0);
 
     //if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
     //    // Get a stable number of masternodes by ignoring newly activated (< 8000 sec old) masternodes
