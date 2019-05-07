@@ -1576,10 +1576,6 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
-    for (unsigned int i = 0; i < pindexActual.vtx.size(); i++) {
-        const CTransaction& tx = block.vtx[i];
-    }
-    
     //Bad fix, i know
     if (nHeight == 0) {
         if (Params().NetworkID() == CBaseChainParams::TESTNET) {
@@ -1590,7 +1586,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     }else if(nHeight > 10){
     
         CBlock block;
-        ReadBlockFromDisk(block, chainActive[nHeight]);
+        ReadBlockFromDisk(block, chainActive[nHeight] + 1);
         CAmount OutVolume = 0;
         int64_t nTx = 0;
 
