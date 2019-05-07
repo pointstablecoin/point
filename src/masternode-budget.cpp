@@ -612,7 +612,10 @@ bool CBudgetManager::IsBudgetPaymentBlock(int nBlockHeight)
               nHighestCount, nFivePercent, mapFinalizedBudgets.size());
 
     // If budget doesn't have 5% of the network votes, then we should pay a masternode instead
-    if (nHighestCount > nFivePercent) return true;
+    if (nHighestCount > nFivePercent) {
+        LogPrint("masternode","SUFICIENTES VOTOS A FAVOR\n");
+        return true;
+    } 
     
         LogPrint("masternode","NO HAY SUFICIENTES VOTOS A FAVOR\n");
 
