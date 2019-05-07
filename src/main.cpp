@@ -1576,14 +1576,6 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
-    if (nHeight == 0) {
-        if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-            return 50000 * COIN;
-        } else {
-            return 1 * COIN;
-        };
-    }
-    
     CBlock block;
     ReadBlockFromDisk(block, chainActive[nHeight]);
     CAmount OutVolume = 0;
