@@ -1572,7 +1572,7 @@ double ConvertBitsToDouble(unsigned int nBits)
     return dDiff;
 }
 
-int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
+int64_t GetBlockValue(int nHeight, nTotalVout)
 {
     
     CBlockIndex* pindexActual = chainActive.Tip();
