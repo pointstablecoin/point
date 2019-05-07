@@ -8,7 +8,7 @@
 #if defined(HAVE_CONFIG_H)
 #include "config/point-config.h"
 #else
-#define CLIENT_VERSION_IS_RELEASE false
+#define CLIENT_VERSION_IS_RELEASE true
 #endif
 
 #include <string>

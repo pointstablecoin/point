@@ -46,7 +46,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0,  uint256("0x00000e44bca505863831d65cf302884eaf6eed296dc59088e89324bccf5d9dca"));
+    (0,  uint256("0x0000078c406e8f38436737726097e08b170cc3d69190873b2593fe5fa3aaa3ca"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -98,7 +98,7 @@ public:
         nLastPOWBlock = 100000000;
         nModifierUpdateBlock = 50;
 
-        const char* pszTimestamp = "ABC News 24/DEC/2018 Trump's Treasury Secretary to convene 'Plunge Protection Team' to deal with Wall Street rout";
+        const char* pszTimestamp = "JSXTI Martes, 07/05/2019 - 00:00 | Global DAO, por un desarrollo social y económico libre y soberano";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -109,13 +109,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1545670000;
+        genesis.nTime = 1557187200;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1997235;
+        genesis.nNonce = 1174;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000e44bca505863831d65cf302884eaf6eed296dc59088e89324bccf5d9dca"));
-        assert(genesis.hashMerkleRoot == uint256("0x2b77d68f79c8c45b77335607c928533950da763a4a16c34555bdf8446aa6cc1c"));
+        assert(hashGenesisBlock == uint256("0x0000078c406e8f38436737726097e08b170cc3d69190873b2593fe5fa3aaa3ca"));
+        assert(genesis.hashMerkleRoot == uint256("0xf410985cbdfdcbb46f4f2815d8922a6472b638ac13f17d0106ad5dae493c998c"));
 
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("165.227.14.110", "165.227.14.110"));
