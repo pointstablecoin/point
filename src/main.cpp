@@ -1576,9 +1576,6 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     
     CBlockIndex* pindexActual = chainActive.Tip();
     
-    for (unsigned int i = 0; i < pindexActual.vtx.size(); i++) {
-        const CTransaction& tx = block.vtx[i];
-    }
     
     //Bad fix, i know
     if (nHeight == 0) {
@@ -1587,28 +1584,16 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
         } else {
             return 1 * COIN;
         }
-    }else if(nHeight > 10){
+    }else{
     
-        CBlock block;
-        ReadBlockFromDisk(block, chainActive[nHeight]);
-        CAmount OutVolume = 0;
-        int64_t nTx = 0;
 
-        //Loop trough every incomming Tx
-        for (unsigned int i = 0; i < block.vtx.size(); i++) {
-            const CTransaction& tx = block.vtx[i];
-            CAmount Out = tx.GetValueOut();
-            OutVolume += Out;
-            nTx += 1;
-        }
-
-        double nValorPromedio =  OutVolume / nTx ;
+        double nValorPromedio =  nTotalVout / nTx ;
         LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio * 0.00000001);
 
         double nAltura = nHeight;
         LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
 
-        LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", OutVolume * 0.00000001);
+        LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", nTotalVout * 0.00000001);
 
         CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
         LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual * 0.00000001);
