@@ -1578,7 +1578,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     CBlockIndex* pindexActual = chainActive.Tip();
     
     CBlock block;
-    ReadBlockFromDisk(block, chainActive[nHeight] + 1);
+    ReadBlockFromDisk(block, chainActive[nHeight]);
     CAmount OutVolume = 0;
     
     //Loop trough every incomming Tx
