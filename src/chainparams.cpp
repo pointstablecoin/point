@@ -55,7 +55,7 @@ static const Checkpoints::CCheckpointData data = {
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
     //(0, uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
-    (0, uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
+    (0, uint256("0x0000078c406e8f38436737726097e08b170cc3d69190873b2593fe5fa3aaa3ca"));
 
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
@@ -113,14 +113,6 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 348655;
         
-        if (genesis.nNonce == 0) {
-	          while (genesis.GetHash() > bnProofOfWorkLimit) {
-                 genesis.nNonce++;
-		             if (genesis.nNonce % 1024 == 0) printf("nonce %08x \n", genesis.nNonce);
-	          }
-	          printf("nonce was %d \n", genesis.nNonce);
-            printf("genesis block %s\n", genesis.ToString().c_str());
-	      }
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000c9c17add63997357d96e48fcc66ff5d7526934822f0f961273d5025da28"));
@@ -212,7 +204,7 @@ public:
         genesis.nTime = 1557187200;
         genesis.nBits = 0x1e0ffff0;
         //genesis.nNonce = 86643;
-        genesis.nNonce = 0;
+        genesis.nNonce = 1174;
 
         if (genesis.nNonce == 0) {
 	          while (genesis.GetHash() > bnProofOfWorkLimit) {
@@ -226,8 +218,8 @@ public:
         hashGenesisBlock = genesis.GetHash();
         //assert(hashGenesisBlock == uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
         //assert(genesis.hashMerkleRoot == uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
-        assert(hashGenesisBlock == uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
-        assert(genesis.hashMerkleRoot == uint256("0x00000c525f441a49600a90513841553fd0e09a2d5eacd3f67649bd7609ee338a"));
+        assert(hashGenesisBlock == uint256("0x0000078c406e8f38436737726097e08b170cc3d69190873b2593fe5fa3aaa3ca"));
+        assert(genesis.hashMerkleRoot == uint256("0xf410985cbdfdcbb46f4f2815d8922a6472b638ac13f17d0106ad5dae493c998c"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
