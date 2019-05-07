@@ -1593,13 +1593,14 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     double nAltura = nHeight;
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
+    double nValorTotaldeTx = nValorTotal * 0.00000001;
     nValorTotal = 0;
     LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", nTotalVout);
             
     CAmount nMoneySupplyActual = pindexActual->nMoneySupply * 0.00000001;
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual);
     
-    double nTx = block.nTx - 1;
+    double nTx = pindexActual->nTx - 1;
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
     
     if (nHeight == 0) {
