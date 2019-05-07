@@ -1590,14 +1590,15 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
         nTx += 1;
     }
     
+    LogPrintf("\n############################\nNUEVO OutVolume: %.8g\n################################", OutVolume);
     
     double nAltura = nHeight;
     LogPrintf("############################PRINT TEST ALTURA: %.8g\n", nAltura);
     
     nValorTotal = 0;
-    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", OutVolume);
+    LogPrintf("############################PRINT TEST VALOR TOTAL: %.8g\n", nTotalVout);
             
-    CAmount nMoneySupplyActual = pindexActual->nMoneySupply;
+    CAmount nMoneySupplyActual = pindexActual->nMoneySupply * 0.00000001;
     LogPrintf("############################PRINT TEST MONEY SUPPLY: %.8g\n", nMoneySupplyActual);
     
     
@@ -1615,20 +1616,20 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
                 nMoneySupplyActual = 1;
             }
 
-            double nValorPromedio =  OutVolume / nTx ;
+            double nValorPromedio =  nTotalVout / nTx ;
             LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio);
             
             double nVelocidad = nValorPromedio / nMoneySupplyActual;
             LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad);
             
-            double nInflacion = (((nAltura - 1) * 0.000000019) + (nAltura * 0.0001)) * COIN;
+            double nInflacion = ((nAltura - 1) * 0.000000019) + (nAltura * 0.0001);
             LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion);
 
             if (nVelocidad > 0){
                 LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA\n");
 
                 if (nValorPromedio < nInflacion){
-                    CAmount nRecompensa = (nInflacion - nValorPromedio);
+                    CAmount nRecompensa = (nInflacion - nValorPromedio) * COIN;
                     LogPrintf("\n############################PRINT TEST RECOMPENSA: %.8g\n", nRecompensa);
                     return nRecompensa;
                 }
