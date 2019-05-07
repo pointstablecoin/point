@@ -1588,7 +1588,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
         CBlock block;
         ReadBlockFromDisk(block, chainActive[nHeight]);
         CAmount OutVolume = 0;
-        int64_t nTx = 0;
+        //int64_t nTx = -1;
 
         //Loop trough every incomming Tx
         for (unsigned int i = 0; i < block.vtx.size(); i++) {
