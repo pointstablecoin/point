@@ -1586,7 +1586,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
     }else if(nHeight > 10){
     
         CBlock block;
-        ReadBlockFromDisk(block, chainActive[nHeight] + 1);
+        ReadBlockFromDisk(block, chainActive[nHeight]);
         CAmount OutVolume = 0;
         int64_t nTx = 0;
 
@@ -1619,7 +1619,7 @@ int64_t GetBlockValue(int nHeight, CAmount nTotalVout)
         LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion * 0.00000001);
 
 
-        if (nTx > 2){
+        if (nTx > 1){
             if (nMoneySupplyActual < 1){
                 nMoneySupplyActual = 1;
             }
