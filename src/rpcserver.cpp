@@ -617,7 +617,7 @@ void StartRPCThreads()
                                              _("To use pointd, or the -server option to point-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=mergerpc\n"
+                                               "rpcuser=pointrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"

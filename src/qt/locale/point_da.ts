@@ -3917,7 +3917,7 @@ https://www.transifex.com/POINT-project/POINT-project-translations</translation>
         <source>To use POINTd, or the -server option to point-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=mergerpc
+rpcuser=pointrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3928,7 +3928,7 @@ for example: alertnotify=echo %%s | mail -s "POINT Alert" admin@foo.com
         <translation>For at bruge POINTd eller -server muligheden sammen med point-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=mergerpc
+Rpcuser=pointrpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!
