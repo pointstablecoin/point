@@ -233,7 +233,7 @@ private:
     void startThread();
 };
 
-#include "merge.moc"
+#include "point.moc"
 
 BitcoinCore::BitcoinCore() : QObject()
 {

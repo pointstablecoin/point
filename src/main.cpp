@@ -1589,6 +1589,15 @@ int64_t GetBlockValue(int nHeight)
     double nTx = pindexActual->nTx - 1;
     LogPrintf("############################PRINT TEST NUMERO DE TXS: %.8g\n", nTx);
     
+    double nInflacion = ((nAltura - 1) * 0.000000019) + (nAltura * 0.0001);
+    LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion);
+    
+    double nValorPromedio =  nValorTotaldeTx / nTx ;
+    LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio);
+            
+    double nVelocidad = nValorPromedio / nMoneySupplyActual;
+    LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad);
+    
     if (nHeight == 0) {
         if (Params().NetworkID() == CBaseChainParams::TESTNET) {
             return 50000 * COIN;
@@ -1600,15 +1609,6 @@ int64_t GetBlockValue(int nHeight)
             if (nMoneySupplyActual < 1){
                 nMoneySupplyActual = 1;
             }
-
-            double nValorPromedio =  nValorTotaldeTx / nTx ;
-            LogPrintf("############################PRINT TEST VALOR PROMEDIO: %.8g\n", nValorPromedio);
-            
-            double nVelocidad = nValorPromedio / nMoneySupplyActual;
-            LogPrintf("############################PRINT TEST VELOCIDAD: %.8g\n", nVelocidad);
-            
-            double nInflacion = ((nAltura - 1) * 0.000000019) + (nAltura * 0.0001);
-            LogPrintf("############################PRINT TEST INFLACION: %.8g\n", nInflacion);
 
             if (nVelocidad > 0){
                 LogPrintf("############################PRINT TEST VELOCIDAD POSITIVA\n");
@@ -1630,13 +1630,13 @@ int64_t GetBlockValue(int nHeight)
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
     double nAltura = nHeight;
-    CAmount MNReward = (((nAltura-1)*0.000000152)+(nAltura*0.00000001)*0.001) * COIN;
+    CAmount MNReward = (((nAltura-1)*0.000000152)+(nAltura*0.00000001)*0.001);
     
     LogPrintf("\n############################PRINT TEST MASTERNODES ACTIVOS: %d\n", nMasternodeCount);
     LogPrintf("\n############################PRINT TEST MASTERNODES BLOCKVALUE: %d\n", blockValue);
     LogPrintf("\n############################PRINT TEST MASTERNODES RECOMPENSA: %.8g\n", MNReward);
     
-    return MNReward;
+    return MNReward * COIN;
 }
 
 bool IsInitialBlockDownload()
