@@ -3196,12 +3196,21 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         // but issue an initial reject message.
         // The case also exists that the sending peer could not have enough data to see
         // that this block is invalid, so don't issue an outright ban.
+        
+        LogPrintf("CheckBlock() : REVISANDO BLOQUE PARA PAYEE BUDGET\n");
+        
         if (nHeight != 0 && !IsInitialBlockDownload()) {
+            
+            LogPrintf("CheckBlock() : REVISANDO ISBLOCKPAYEEVALID BUDGET\n");
+            
             if (!IsBlockPayeeValid(block, nHeight)) {
                 mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
                 return state.DoS(0, error("CheckBlock() : Couldn't find masternode/budget payment"),
                         REJECT_INVALID, "bad-cb-payee");
             }
+            
+            LogPrintf("CheckBlock() : ISBLOCKPAYEEVALID TRUE\n");
+            
         } else {
             if (fDebug)
                 LogPrintf("CheckBlock(): Masternode payment check skipped on sync - skipping IsBlockPayeeValid()\n");

@@ -236,7 +236,9 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
     //check if it's a budget block
     //if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS)) {
         if (budget.IsBudgetPaymentBlock(nBlockHeight)) {
+            LogPrint("masternode:BUDGET","BLOQUE DE PAGO VALIDO\n");
             if (budget.IsTransactionValid(txNew, nBlockHeight))
+                LogPrint("masternode:BUDGET","TRANSACCION VALIDA\n");
                 return true;
 
             LogPrint("masternode","Invalid budget payment detected %s\n", txNew.ToString().c_str());
