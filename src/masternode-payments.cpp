@@ -215,7 +215,9 @@ bool IsBlockValueValid(const CBlock& block, CAmount nExpectedValue, CAmount nMin
             //the value of the block is evaluated in CheckBlock
             return true;
         } else {
+            LogPrint("masternode","NO ES BLOQUE DE PAGO DE PRESUPUESTO\n");
             if (nMinted > nExpectedValue) {
+                LogPrint("masternode","MINADO MAYOR AL ESPERADO - BLOQUE DE PAGO DE PRESUPUESTO\n");
                 return false;
             }
         }
@@ -266,7 +268,9 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake)
 {
     CBlockIndex* pindexPrev = chainActive.Tip();
-    if (!pindexPrev) return;
+    if (!pindexPrev)
+        LogPrint("masternode","NO HAY pindexPrev\n");
+        return;
 
     //if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1)) {
     //    budget.FillBlockPayee(txNew, nFees, fProofOfStake);
@@ -275,8 +279,10 @@ void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStak
     //}
     
     if (budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1)) {
+        LogPrint("masternode","ES BLOQUE DE PAGO\n");
         budget.FillBlockPayee(txNew, nFees, fProofOfStake);
     } else {
+        LogPrint("masternode","NO ES BLOQUE DE PAGO\n");
         masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake);
     }
     

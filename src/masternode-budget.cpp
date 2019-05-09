@@ -498,6 +498,8 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
     int nHighestCount = 0;
     CScript payee;
     CAmount nAmount = 0;
+    
+    LogPrint("masternode","CBudgetManager::FillBlockPayee - BUSCANDO BUDGETS");
 
     // ------- Grab The Highest Count
 
