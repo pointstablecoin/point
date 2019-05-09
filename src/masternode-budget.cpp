@@ -548,8 +548,12 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
             CBitcoinAddress address2(address1);
 
             LogPrint("masternode","CBudgetManager::FillBlockPayee - Budget payment to %s for %lld\n", address2.ToString(), nAmount);
+        }else {
+            LogPrint("masternode","CBudgetManager::FillBlockPayee - No Budget payment, nHighestCount = %d\n", nHighestCount);
         }
     }
+    
+    LogPrint("masternode","CBudgetManager::FillBlockPayee - NAMOUNT ---->>>> %lld\n", nAmount);
 }
 
 CFinalizedBudget* CBudgetManager::FindFinalizedBudget(uint256 nHash)
